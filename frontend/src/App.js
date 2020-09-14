@@ -1,4 +1,5 @@
 import React from 'react';
+import { TestComponent } from './components/TestComponent';
 import { API } from './modules/apis';
 
 export default class App extends React.Component {
@@ -11,8 +12,6 @@ export default class App extends React.Component {
     });
   }
   render() {
-    return this.state.navigation.map(({ title }) => (
-      <div className="text-right text-sm">{title}</div>
-    ));
+    return <TestComponent />;
   }
 }
