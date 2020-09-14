@@ -11,6 +11,8 @@ export default class App extends React.Component {
     });
   }
   render() {
-    return this.state.navigation.map(({ title }) => <div>{title}</div>);
+    return this.state.navigation.map(({ title }) => (
+      <div className="text-right text-sm">{title}</div>
+    ));
   }
 }
