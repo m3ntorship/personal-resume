@@ -1,0 +1,11 @@
+{
+  "navigation": [
+    { "title": "Home" },
+    { "title": "about us" },
+    { "title": "Services" },
+    { "title": "Projects" },
+    { "title": "Testimonials" },
+    { "title": "blog" },
+    { "title": "contact" }
+  ]
+}
