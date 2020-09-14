@@ -1,5 +1,5 @@
 import React from 'react';
 
 export const TestComponent = () => {
-  return 'Besm Allah';
+  return 'Besm Allah Alrahman Alraheem';
 };
