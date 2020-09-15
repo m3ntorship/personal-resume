@@ -29,17 +29,27 @@ module.exports = {
       xlg: '1.875rem',
       xxlg: '3.125rem'
     },
-    color: {
-      c100: '#f9320c',
-      c200: '#141f32',
-      c300: '#7a8baa',
-      c400: '#f9f7ff'
+    colors: {
+      c100: '#f9320c', // red
+      c200: '#141f32', // dark-blue
+      c300: '#7a8baa', // grayish-blue
+      c400: '#f9f7ff' // off-white
     },
     lineHeight: {
       1: '1.75rem',
       2: '2.5rem'
     },
-    extend: {}
+    corePlugins: {
+      container: false
+    },
+    extend: {
+      margin: {
+        35: '8.75rem' //Between every two sections
+      },
+      width: {
+        'main-container': '60%'
+      }
+    }
   },
   variants: {},
   plugins: []

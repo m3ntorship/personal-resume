@@ -5,4 +5,6 @@
 
 @import 'tailwindcss/components';
 
+@import './global.css';
+
 @import 'tailwindcss/utilities';
