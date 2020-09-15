@@ -7,11 +7,10 @@ export const TestComponent = () => {
       <h1> Shared Components Prototype </h1>
       <div>
         <h3> Buttons </h3>
-        <Button Children='First One' rounded={true} customClassNames='mt-20 block' />
-        <Button Children='Second One' rounded={true} customClassNames='mt-10 block' bgColor="red" />
-        <Button Children='Third One' rounded={true} customClassNames='mt-15 block' bgColor="blue" />
+        <Button rounded={true} customClassNames='mt-20 block w-64 h-20 font-medium' bgColor="c100">Download My CV</Button>
+        <Button rounded={true} customClassNames='mt-10 block w-48 h-12'>Hello Two</Button>
+        <Button rounded={true} customClassNames='mt-15 block w-56 h-16' bgColor="c200">Hello Three</Button>
       </div>
     </div>
-
   )
 };
