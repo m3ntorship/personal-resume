@@ -13,14 +13,13 @@ module.exports = {
   // ...
   theme: {
     fontFamily: {
-      display: ['Rubik', 'PT Serif', 'sans-serif'],
+      headings: ['PT Serif', 'serif'],
       body: ['Rubik', 'sans-serif']
     },
-    color: {
-      c100: '#f9320c',
-      c200: '#141f32',
-      c300: '#7a8baa',
-      c400: '#f9f7ff'
+    fontWeight: {
+      regular: 400,
+      medium: 500,
+      bold: 700
     },
     fontSize: {
       sm: '0.875rem',
@@ -30,8 +29,16 @@ module.exports = {
       xlg: '1.875rem',
       xxlg: '3.125rem'
     },
-    //fontWeigt
-    //lineHeight
+    color: {
+      c100: '#f9320c',
+      c200: '#141f32',
+      c300: '#7a8baa',
+      c400: '#f9f7ff'
+    },
+    lineHeight: {
+      1: '1.75rem',
+      2: '2.5rem'
+    },
     extend: {}
   },
   variants: {},
