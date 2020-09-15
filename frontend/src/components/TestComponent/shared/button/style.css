@@ -1,4 +1,14 @@
+/* Styles For Header section buttons */
 .custom_styles {
-    width: 220px;
-    height: 65px
+    font-size: 14px;
+    font-weight: 500;
+    padding: 27px 70px;
+}
+
+.bg__red {
+    background-color: #f9310b;
+}
+
+.bg__blue {
+    background-color: #141f32;
 }
