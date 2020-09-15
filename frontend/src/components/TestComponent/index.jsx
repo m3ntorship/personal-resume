@@ -1,5 +1,16 @@
 import React from 'react';
+import {Button} from '../shared/button'
 
 export const TestComponent = () => {
-  return <div className='font-regular font-body leading-2 text-lg w-main-container'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad rerum eos cum porro ut possimus dolorem ratione nesciunt accusantium quae. Necessitatibus placeat exercitationem nostrum nesciunt illum non, laborum dicta eveniet. Lorem ipsum dolor sit amet consectetur adipisicing elit. <span> Unde, culpa impedit! Optio provident blanditiis tenetur numquam dicta nesciunt. </span> Ab facilis, temporibus aliquid necessitatibus at velit repudiandae doloremque qui quam corporis!</div>;
+  return (
+    <div className="text-center my-10">
+      <h1> Shared Components Prototype </h1>
+      <div>
+        <h3> Buttons </h3>
+        <Button rounded={true} customClassNames='w-48 h-12'>Hello Two</Button>
+        <Button rounded={true} customClassNames='w-56 h-16' bgColor="c200">Hello Three</Button>
+        <Button rounded={true} customClassNames='w-64 h-20 font-medium' bgColor="c100">Download My CV</Button>
+      </div>
+    </div>
+  )
 };
