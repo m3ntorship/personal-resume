@@ -34,7 +34,6 @@ module.exports = {
       c200: '#141f32', // dark-blue
       c300: '#7a8baa', // grayish-blue
       c400: '#f9f7ff', // off-white
-      c500: '#f9320c', // reddish-orange i guess
       c600: '#8072fc', // light-blue
       c700: '#ed3ce3', // purple
       c800: '#74fa5e'  // light-green
