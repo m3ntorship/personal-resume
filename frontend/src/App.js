@@ -1,5 +1,5 @@
 import React from 'react';
-import { TestComponent } from './components/TestComponent';
+import { Prototype } from './components/TestComponent';
 import { API } from './modules/apis';
 import BestExpertiseSection from './components/BestExpertiseSection/BestExpertiseSection';
 
@@ -13,6 +13,11 @@ export default class App extends React.Component {
     });
   }
   render() {
-    return <BestExpertiseSection />;
+    return (
+      <>
+        <BestExpertiseSection />;
+        <div>{/* <Prototype /> */}</div>;
+      </>
+    );
   }
 }

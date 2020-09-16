@@ -1,11 +1,57 @@
 {
   "navigation": [
-    { "title": "Home" },
-    { "title": "about us" },
-    { "title": "Services" },
-    { "title": "Projects" },
-    { "title": "Testimonials" },
-    { "title": "blog" },
-    { "title": "contact" }
+    {
+      "title": "Home"
+    },
+    {
+      "title": "about us"
+    },
+    {
+      "title": "Services"
+    },
+    {
+      "title": "Projects"
+    },
+    {
+      "title": "Testimonials"
+    },
+    {
+      "title": "blog"
+    },
+    {
+      "title": "contact"
+    }
+  ],
+  "services": [
+    {
+      "title": "Web Development",
+      "details": "Nam eu massa vel quam auctor congue. Suspendisse semper erat id tellus entum ultricies. Nulla neck producw in ultrices devel odio sodales.",
+      "button": "get this service"
+    },
+    {
+      "title": "Web Development",
+      "details": "Nam eu massa vel quam auctor congue. Suspendisse semper erat id tellus entum ultricies. Nulla neck producw in ultrices devel odio sodales.",
+      "button": "get this service"
+    },
+    {
+      "title": "Web Development",
+      "details": "Nam eu massa vel quam auctor congue. Suspendisse semper erat id tellus entum ultricies. Nulla neck producw in ultrices devel odio sodales.",
+      "button": "get this service"
+    },
+    {
+      "title": "Web Development",
+      "details": "Nam eu massa vel quam auctor congue. Suspendisse semper erat id tellus entum ultricies. Nulla neck producw in ultrices devel odio sodales.",
+      "button": "get this service"
+    },
+    {
+      "title": "Web Development",
+      "details": "Nam eu massa vel quam auctor congue. Suspendisse semper erat id tellus entum ultricies. Nulla neck producw in ultrices devel odio sodales.",
+      "button": "get this service"
+    },
+    {
+      "title": "Web Development",
+      "details": "Nam eu massa vel quam auctor congue. Suspendisse semper erat id tellus entum ultricies. Nulla neck producw in ultrices devel odio sodales.",
+      "button": "get this service"
+    }
   ]
 }
