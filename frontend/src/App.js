@@ -1,8 +1,7 @@
 import React from 'react';
 import { TestComponent } from './components/TestComponent';
-import { Section } from './components/BestExpertiseSection/Secton';
 import { API } from './modules/apis';
-import Card from './components/BestExpertiseSection/Card/Card';
+import BestExpertiseSection from './components/BestExpertiseSection/BestExpertiseSection';
 
 export default class App extends React.Component {
   state = {
@@ -14,6 +13,6 @@ export default class App extends React.Component {
     });
   }
   render() {
-    return <Card />;
+    return <BestExpertiseSection />;
   }
 }
