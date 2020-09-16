@@ -9,7 +9,7 @@ export const HeaderComponent = () => {
   }
   return (
     <div className="bg-c400 border-b-2 border-c100 " >
-      <div className="w-main-container mx-auto flex flex-row pt-56 ">
+      <header className="w-main-container mx-auto flex flex-row pt-56 ">
 
         <div className="mb-56 ">
 
@@ -39,7 +39,7 @@ export const HeaderComponent = () => {
 
 
 
-      </div>
+      </header>
     </div>
   )
 }
