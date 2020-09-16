@@ -5,7 +5,12 @@ module.exports = {
   },
   purge: {
     // enabled: true,
-    content: ['./src/*.js'],
+    content: [
+      './public/**/*.html',
+      './src/**/*.html',
+      './src/**/*.jsx',
+      './src/**/*.js'
+    ],
 
     // These options are passed through directly to PurgeCSS
     options: {}
