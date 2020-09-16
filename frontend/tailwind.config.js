@@ -5,7 +5,12 @@ module.exports = {
   },
   purge: {
     // enabled: true,
-    content: ['./src/*.js'],
+    content: [
+      './public/**/*.html',
+      './src/**/*.html',
+      './src/**/*.jsx',
+      './src/**/*.js'
+    ],
 
     // These options are passed through directly to PurgeCSS
     options: {}
@@ -36,7 +41,9 @@ module.exports = {
       c400: '#f9f7ff', // off-white
       c600: '#8072fc', // light-blue
       c700: '#ed3ce3', // purple
-      c800: '#74fa5e'  // light-green
+      c800: '#74fa5e', // light-green
+      white: '#fff', // white
+      black: '#000' // Black
     },
     lineHeight: {
       1: '1.75rem',
