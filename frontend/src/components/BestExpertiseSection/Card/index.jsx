@@ -1,11 +1,7 @@
 import React from 'react';
 import { Button } from '../../shared/button/index';
 
-const Card = ({ title, details }) => {
-  const addHoverEffects = e => {
-    console.log(e.target);
-    e.target.getElementById('hover-effect').classList.toggle = 'hidden';
-  };
+const Card = ({ title, details, button }) => {
   return (
     <article className="w-1/3">
       <div className="bg-c400 p-10 m-4 overflow-hidden relative group">
@@ -34,7 +30,7 @@ const Card = ({ title, details }) => {
             rounded={true}
             customClassNames="my-6 mx-auto block w-48 h-12 font-bold group-hover:bg-c100 group-hover:text-white transition-colors duration-200 focus:outline-none focus:shadow-outline"
           >
-            get this service
+            {button}
           </Button>
         </div>
       </div>
