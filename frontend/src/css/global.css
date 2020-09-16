@@ -1,3 +1,12 @@
-body{
-  font-family: 'Rubik', sans-serif;
+body {
+  @apply font-body;
+}
+section {
+  @apply mt-35;
+}
+.container {
+  @apply w-main-container max-w-6xl mx-auto; /* You might get an error warning here, just leave it as it is */
+}
+p{
+  @apply text-c300;
 }
