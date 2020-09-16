@@ -30,11 +30,12 @@ function AboutUs() {
       </div>
       <div>
         <h6 className="text-xxlg text-c200 mt-1">Read About My Life Story</h6>
-        <p className="mt-6">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere
-          dolores at ipsam officiis? Ipsam dolorem non fuga, suscipit quaerat
-          assumenda quasi quo magni quae itaque quos molestiae asperiores? Vel,
-          exercitationem?
+        <p className="mt-8 leading-7 text-c300">
+          Donec commodo augue vitae metus interdum molestie. Fusce dapibus non
+          mauris sit amet blandit. Maecenas quis massa nec sem laoreet vehicula
+          quis sit amet tortor. Proin ornare, lorem ut pellentesque maximus, ex
+          leo viverra lorem, ac dapibus neque tellus id dolor. Curabitur luctus
+          tortor eget dolor ultrices fermentum.
         </p>
         {progressBarData.map((item, idx) => (
           <ProgressBar
