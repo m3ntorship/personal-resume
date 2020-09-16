@@ -12,10 +12,6 @@ export default class App extends React.Component {
     });
   }
   render() {
-    return (
-      <div>
-        <Prototype />
-      </div>
-    );
+    return <div>{/* <Prototype /> */}</div>;
   }
 }
