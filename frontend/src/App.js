@@ -1,6 +1,6 @@
 import React from 'react';
-// import { TestComponent } from './components/TestComponent';
 import { HeaderComponent } from './components/Header/index.jsx';
+import { Prototype } from './components/TestComponent';
 import { API } from './modules/apis';
 
 export default class App extends React.Component {
@@ -13,6 +13,9 @@ export default class App extends React.Component {
     });
   }
   render() {
-    return <HeaderComponent />;
+    return <div>
+      <HeaderComponent />;
+      {/* <Prototype /> */}
+    </div>;
   }
 }
