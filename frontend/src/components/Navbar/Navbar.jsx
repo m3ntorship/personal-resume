@@ -13,15 +13,6 @@ export const Navbar = () => {
     });
   }, []);
   console.log(links);
-  // colors: {
-  //   c100: '#f9320c', // red
-  //   c200: '#141f32', // dark-blue
-  //   c300: '#7a8baa', // grayish-blue
-  //   c400: '#f9f7ff', // off-white
-  //   c600: '#8072fc', // light-blue
-  //   c700: '#ed3ce3', // purple
-  //   c800: '#74fa5e'  // light-green
-  // },
   return (
     <nav className="flex  items-center justify-between w-5/6  bg-white shadow-xl p-3 rounded-full m-auto">
       <div className="mx-12">
