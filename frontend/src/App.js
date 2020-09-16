@@ -1,4 +1,5 @@
 import React from 'react';
+import Gallery from './components/GalleryComponent/Gallery';
 import { TestComponent } from './components/TestComponent';
 import { API } from './modules/apis';
 
@@ -12,6 +13,11 @@ export default class App extends React.Component {
     });
   }
   render() {
-    return <TestComponent />;
+    return (
+      <div>
+        <TestComponent />
+        <Gallery />
+      </div>
+    );
   }
 }
