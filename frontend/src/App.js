@@ -1,4 +1,5 @@
 import React from 'react';
+import AboutUs from './components/AboutUsSection/AboutUs';
 import { Prototype } from './components/TestComponent';
 import { API } from './modules/apis';
 
@@ -12,6 +13,6 @@ export default class App extends React.Component {
     });
   }
   render() {
-    return <div>{/* <Prototype /> */}</div>;
+    return <div></div>;
   }
 }
