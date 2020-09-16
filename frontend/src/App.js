@@ -4,6 +4,7 @@ import { API } from './modules/apis';
 // import componanets
 // Navbar component
 import { Navbar } from './components/Navbar/Navbar';
+import { UpdatedPosts } from './components/UpdatedPosts';
 export default class App extends React.Component {
   state = {
     navigation: []
@@ -18,6 +19,7 @@ export default class App extends React.Component {
       <div>
         {/* <Prototype /> */}
         <Navbar />
+        <UpdatedPosts />
       </div>
     );
   }
