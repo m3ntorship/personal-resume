@@ -1,4 +1,5 @@
 import React from 'react';
+import EstimateSection from './components/EstimateSection';
 import { Prototype } from './components/TestComponent';
 import { API } from './modules/apis';
 
@@ -12,6 +13,11 @@ export default class App extends React.Component {
     });
   }
   render() {
-    return <div>{/* <Prototype /> */}</div>;
+    return (
+      <div>
+        {/* <Prototype /> */}
+        <EstimateSection />
+      </div>
+    );
   }
 }
