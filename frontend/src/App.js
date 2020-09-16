@@ -1,5 +1,5 @@
 import React from 'react';
-import { TestComponent } from './components/TestComponent';
+import { Prototype } from './components/TestComponent';
 import { API } from './modules/apis';
 // import componanets
 // Navbar component
@@ -14,6 +14,11 @@ export default class App extends React.Component {
     });
   }
   render() {
-    return <Navbar />;
+    return (
+      <div>
+        {/* <Prototype /> */}
+        <Navbar />
+      </div>
+    );
   }
 }

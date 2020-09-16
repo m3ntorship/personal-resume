@@ -1,4 +1,4 @@
-# cv
+# Personal resume project
 personal CV template, a project to enhance team collaboration, communication and fast deliverables 
 
 ## youtube video thumbnail
