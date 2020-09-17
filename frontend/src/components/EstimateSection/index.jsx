@@ -1,13 +1,22 @@
 import React from 'react';
 import { Button } from '../shared/button';
-import './style.css';
 
 const EstimateSection = () => {
   return (
-    <div className="estimate__section_bg py-32">
+    <section
+      className="estimate__section_bg py-32 text-c200"
+      style={{
+        backgroundImage: 'url(https://i.imgur.com/lSvq0BZ.png)',
+        backgroundRepeat: 'no-repeat',
+        backgroundSize: '92% 100%',
+        backgroundPosition: '170px 0'
+      }}
+    >
       <div className="container">
         <span className="text-lg">Estimate your project!</span>
-        <h6 className="text-xxlg my-12">Have Any Project On Mind</h6>
+        <h6 className="text-xxlg my-12" style={{ fontFamily: 'PT serif' }}>
+          Have Any Project On Mind
+        </h6>
         <Button
           bgColor="c100"
           rounded={true}
@@ -16,7 +25,7 @@ const EstimateSection = () => {
           GET IN TOUCH
         </Button>
       </div>
-    </div>
+    </section>
   );
 };
 
