@@ -1,6 +1,6 @@
 import React from 'react'
 import dots from './assets/dots3.png';
-import avatar from './assets/avatar2.png'
+import avatar from './assets/avata1r.png'
 import { Button } from './../shared/button/index.js'
 
 export const HeaderComponent = () => {
@@ -26,9 +26,9 @@ export const HeaderComponent = () => {
         </div>
 
 
-        <div className="w-1/2 ">
-          <img src={dots} alt="" className=" absolute w-64  mb-32 ml-6 -top-20 transform  translate-x-4 " />
-          <img src={avatar} alt="" className=" relative rounded-full border-8 border-white ml-16 " />
+        <div className="w-1/2 mb-8 pb-8 ">
+          <img src={dots} alt="" className=" absolute  mb-32   transform  -translate-x-4  -translate-y-8" />
+          <img src={avatar} alt="" className=" object-cover w-60 h-60 relative rounded-full border-8 border-white ml-16 " />
         </div>
 
 
