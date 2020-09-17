@@ -1,0 +1,7 @@
+FROM node:12.18.2-alpine3.12
+
+WORKDIR /personal-resume
+
+COPY backend/db.json backend/package.json /personal-resume/
+RUN yarn
+CMD [ "yarn", "json-server", "db.json", "-H", "0.0.0.0"];
