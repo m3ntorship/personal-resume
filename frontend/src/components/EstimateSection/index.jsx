@@ -4,7 +4,7 @@ import { Button } from '../shared/button';
 const EstimateSection = () => {
   return (
     <section
-      className="estimate__section_bg py-32 text-c200"
+      className="py-32 text-c200"
       style={{
         backgroundImage: 'url(https://i.imgur.com/lSvq0BZ.png)',
         backgroundRepeat: 'no-repeat',
