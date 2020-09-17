@@ -18,7 +18,7 @@ const BestExpertiseSection = () => {
       <h2 className="font-headings text-xxlg text-c200 my-10">
         My Best Expertise
       </h2>
-      <div className="flex flex-wrap">{cards}</div>
+      <div className="grid grid-cols-3 gap-8">{cards}</div>
     </section>
   );
 };

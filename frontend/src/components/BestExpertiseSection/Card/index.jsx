@@ -3,8 +3,8 @@ import { Button } from '../../shared/button/index';
 
 const Card = ({ title, details, button }) => {
   return (
-    <article className="w-1/3">
-      <div className="bg-c400 p-10 m-4 overflow-hidden relative group">
+    <article>
+      <div className="bg-c400 p-10 overflow-hidden relative group">
         {/* Hover Effect */}
         <div
           className="opacity-0 group-hover:opacity-100 absolute w-full h-full -mt-10 -ml-10 flex items-center justify-center transition-opacity duration-200"
