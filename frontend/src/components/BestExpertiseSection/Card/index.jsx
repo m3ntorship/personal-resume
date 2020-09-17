@@ -24,7 +24,7 @@ const Card = ({ title, details, button }) => {
               <path d="M224 144h16v16h-16zm0 0M256 144h16v16h-16zm0 0M64 176h16v16H64zm0 0M64 208h32v16H64zm0 0M64 240h32v16H64zm0 0M64 272h64v16H64zm0 0M64 304h96v16H64zm0 0" />
             </svg>
           </div>
-          <h1 className="font-headings font-bold text-lg">{title}</h1>
+          <h3 className="font-headings font-bold text-lg text-c200 ">{title}</h3>
           <p className="text-base mt-5">{details}</p>
           <Button
             rounded={true}
