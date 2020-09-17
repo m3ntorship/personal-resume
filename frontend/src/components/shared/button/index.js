@@ -16,4 +16,24 @@ export const Button = ({ children, customClassNames, rounded, bgColor }) => {
   );
 };
 
-// Buttons Widths and heights
+export const Heading = ({
+  children,
+  customClassNames,
+  red,
+  ultra,
+  lineHeight
+}) => {
+  return (
+    <p
+      className={
+        (cn('text-xxlg text-c200 font-headings font-bold'),
+        { 'text-c100': red },
+        { 'text-xxxlg': ultra },
+        { 'leading-3': lineHeight },
+        customClassNames)
+      }
+    >
+      {children}
+    </p>
+  );
+};
