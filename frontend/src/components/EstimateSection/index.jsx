@@ -1,5 +1,7 @@
 import React from 'react';
 import { Button } from '../shared/button';
+import { useEffect } from 'react';
+import { API } from '../../modules/apis';
 
 const EstimateSection = () => {
   return (
@@ -22,7 +24,7 @@ const EstimateSection = () => {
           rounded={true}
           customClassNames="my-4 block w-56 h-16"
         >
-          GET IN TOUCH
+          get in touch
         </Button>
       </div>
     </section>
