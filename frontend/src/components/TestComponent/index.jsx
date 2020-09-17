@@ -8,9 +8,10 @@ export const Prototype = () => {
       <h1> Shared Components Prototype </h1>
 
       <div>
-        <Heading color='c200' fontSize='large' fontWeight='regular' >Large - Black</Heading>
-        <Heading red={true} medium={true}>Medium - Red</Heading>
-        <Heading black={true} small={true}>Small - Black</Heading>
+        <Heading color='c200' fontSize='large' fontWeight='regular'>Large - Black</Heading>
+        <Heading color='c100' fontSize='medium' fontWeight='bold'>Medium - Red</Heading>
+        <Heading color='c200' fontSize='small' fontWeight='bold'>Small - Black</Heading>
+        <Heading color='c200' fontSize='xsmall' fontWeight='bold'>xSmall - Black</Heading>
       </div>
       
       <div>
