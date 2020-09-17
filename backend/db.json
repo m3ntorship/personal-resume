@@ -22,36 +22,39 @@
       "title": "contact"
     }
   ],
-  "services": [
-    {
-      "title": "Web Development",
-      "details": "Nam eu massa vel quam auctor congue. Suspendisse semper erat id tellus entum ultricies. Nulla neck producw in ultrices devel odio sodales.",
-      "button": "get this service"
-    },
-    {
-      "title": "Web Development",
-      "details": "Nam eu massa vel quam auctor congue. Suspendisse semper erat id tellus entum ultricies. Nulla neck producw in ultrices devel odio sodales.",
-      "button": "get this service"
-    },
-    {
-      "title": "Web Development",
-      "details": "Nam eu massa vel quam auctor congue. Suspendisse semper erat id tellus entum ultricies. Nulla neck producw in ultrices devel odio sodales.",
-      "button": "get this service"
-    },
-    {
-      "title": "Web Development",
-      "details": "Nam eu massa vel quam auctor congue. Suspendisse semper erat id tellus entum ultricies. Nulla neck producw in ultrices devel odio sodales.",
-      "button": "get this service"
-    },
-    {
-      "title": "Web Development",
-      "details": "Nam eu massa vel quam auctor congue. Suspendisse semper erat id tellus entum ultricies. Nulla neck producw in ultrices devel odio sodales.",
-      "button": "get this service"
-    },
-    {
-      "title": "Web Development",
-      "details": "Nam eu massa vel quam auctor congue. Suspendisse semper erat id tellus entum ultricies. Nulla neck producw in ultrices devel odio sodales.",
-      "button": "get this service"
-    }
-  ]
+  "services": {
+    "title":"My Best Expertise",
+    "cards": [
+      {
+        "title": "Web Development",
+        "details": "Nam eu massa vel quam auctor congue. Suspendisse semper erat id tellus entum ultricies. Nulla neck producw in ultrices devel odio sodales.",
+        "button": "get this service"
+      },
+      {
+        "title": "Web Development",
+        "details": "Nam eu massa vel quam auctor congue. Suspendisse semper erat id tellus entum ultricies. Nulla neck producw in ultrices devel odio sodales.",
+        "button": "get this service"
+      },
+      {
+        "title": "Web Development",
+        "details": "Nam eu massa vel quam auctor congue. Suspendisse semper erat id tellus entum ultricies. Nulla neck producw in ultrices devel odio sodales.",
+        "button": "get this service"
+      },
+      {
+        "title": "Web Development",
+        "details": "Nam eu massa vel quam auctor congue. Suspendisse semper erat id tellus entum ultricies. Nulla neck producw in ultrices devel odio sodales.",
+        "button": "get this service"
+      },
+      {
+        "title": "Web Development",
+        "details": "Nam eu massa vel quam auctor congue. Suspendisse semper erat id tellus entum ultricies. Nulla neck producw in ultrices devel odio sodales.",
+        "button": "get this service"
+      },
+      {
+        "title": "Web Development",
+        "details": "Nam eu massa vel quam auctor congue. Suspendisse semper erat id tellus entum ultricies. Nulla neck producw in ultrices devel odio sodales.",
+        "button": "get this service"
+      }
+    ]
+  }
 }
