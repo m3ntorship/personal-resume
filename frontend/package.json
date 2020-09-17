@@ -23,7 +23,7 @@
     "build": "react-app-rewired build",
     "test": "rreact-app-rewired test",
     "eject": "react-scripts eject",
-    "lint": "eslint .  --ext .js --ext .jsx"
+    "lint": "eslint ./src --ext .js --ext .jsx"
   },
   "eslintConfig": {
     "extends": "react-app"
