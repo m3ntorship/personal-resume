@@ -28,7 +28,7 @@ const Card = ({ title, details, button }) => {
           <p className="text-base mt-5">{details}</p>
           <Button
             rounded={true}
-            customClassNames="my-6 mx-auto block w-48 h-12 font-bold group-hover:bg-c100 group-hover:text-white transition-colors duration-200 focus:outline-none focus:shadow-outline"
+            customClassNames="my-6 mx-auto block w-48 h-12 font-bold hover:bg-c100 hover:text-white transition-colors duration-200 focus:outline-none focus:shadow-outline"
           >
             {button}
           </Button>
