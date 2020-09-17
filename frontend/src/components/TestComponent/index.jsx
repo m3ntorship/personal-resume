@@ -7,7 +7,7 @@ export const Prototype = () => {
       <h1> Shared Components Prototype </h1>
 
       <div>
-        <Heading black={true} large={true}>Large - Black</Heading>
+        <Heading black={true} large={true} customClassNames="font-regular">Large - Black</Heading>
         <Heading red={true} medium={true}>Medium - Red</Heading>
         <Heading black={true} small={true}>Small - Black</Heading>
       </div>
