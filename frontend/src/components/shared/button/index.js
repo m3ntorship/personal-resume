@@ -20,18 +20,24 @@ export const Heading = ({
   children,
   customClassNames,
   red,
-  ultra,
+  black,
+  small,
+  medium,
+  large,
   lineHeight
 }) => {
   return (
     <p
-      className={
-        (cn('text-xxlg text-c200 font-headings font-bold'),
+      className={cn(
+        'font-headings font-bold',
+        { 'text-c200': black },
         { 'text-c100': red },
-        { 'text-xxxlg': ultra },
+        { 'text-xlg': small },
+        { 'text-xxlg': medium },
+        { 'text-xxxlg': large },
         { 'leading-3': lineHeight },
-        customClassNames)
-      }
+        customClassNames
+      )}
     >
       {children}
     </p>

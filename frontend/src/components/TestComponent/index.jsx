@@ -1,10 +1,17 @@
 import React from 'react';
-import {Button} from '../shared/button'
+import {Button, Heading} from '../shared/button'
 
 export const Prototype = () => {
   return (
     <div className="m-10">
       <h1> Shared Components Prototype </h1>
+
+      <div>
+        <Heading black={true} large={true}>Large - Black</Heading>
+        <Heading red={true} medium={true}>Medium - Red</Heading>
+        <Heading black={true} small={true}>Small - Black</Heading>
+      </div>
+      
       <div>
         <h3 className='text-xlg'> Buttons </h3>
         <Button rounded={true} customClassNames='my-4 block w-64 h-20 font-medium' bgColor="c100">Large</Button>
