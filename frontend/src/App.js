@@ -1,5 +1,6 @@
 import React from 'react';
 import { Prototype } from './components/TestComponent';
+import WorkProcess from './components/WorkProcessSection';
 import { API } from './modules/apis';
 
 export default class App extends React.Component {
@@ -12,6 +13,11 @@ export default class App extends React.Component {
     });
   }
   render() {
-    return <div>{/* <Prototype /> */}</div>;
+    return (
+      <div>
+        {/* <Prototype /> */}
+        <WorkProcess />
+      </div>
+    );
   }
 }
