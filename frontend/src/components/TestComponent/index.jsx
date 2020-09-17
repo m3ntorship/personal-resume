@@ -1,5 +1,6 @@
 import React from 'react';
-import {Button, Heading} from '../shared/button'
+import {Button} from '../shared/button'
+import {Heading} from '../shared/heading'
 
 export const Prototype = () => {
   return (
@@ -7,7 +8,7 @@ export const Prototype = () => {
       <h1> Shared Components Prototype </h1>
 
       <div>
-        <Heading black={true} large={true} customClassNames="font-regular">Large - Black</Heading>
+        <Heading color='c200' fontSize='large' fontWeight='regular' >Large - Black</Heading>
         <Heading red={true} medium={true}>Medium - Red</Heading>
         <Heading black={true} small={true}>Small - Black</Heading>
       </div>

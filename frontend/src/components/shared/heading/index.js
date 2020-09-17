@@ -4,6 +4,7 @@ import cn from 'classnames';
 export const Heading = ({
   children,
   customClassNames,
+  color,
   fontSize,
   fontWeight,
   largeLineHeight
@@ -11,7 +12,7 @@ export const Heading = ({
   return (
     <p
       className={cn(
-        'font-headings font-bold custom_styles',
+        'font-headings custom_styles',
         {
           ['text-' + color]: color,
           ['font-' + fontWeight]: fontWeight,
