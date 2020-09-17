@@ -10,11 +10,10 @@ const AboutUs = () => {
   useEffect(() => {
     API('/aboutUs').then(({ data: fetchedData }) => {
       setSectionData({ ...fetchedData });
-      console.log(fetchedData);
     });
-  });
+  }, []);
 
-  if (sectionData) {
+  if (sectionData.progressbars) {
     const {
       title,
       paragraph,
@@ -23,7 +22,6 @@ const AboutUs = () => {
       progressbars
     } = sectionData;
 
-    console.log(progressbars);
     return (
       <div className="grid grid-cols-1 lg:grid-cols-2 items-start container">
         <div
@@ -50,7 +48,7 @@ const AboutUs = () => {
             {title}
           </h6>
           <p className="mt-8 leading-7 text-c300">{paragraph}</p>
-          {/* {progressbars.map(item => {
+          {progressbars.map(item => {
             const { bgcolor, completed, label } = item;
             return (
               <ProgressBar
@@ -60,7 +58,7 @@ const AboutUs = () => {
                 label={label}
               />
             );
-          })} */}
+          })}
         </div>
       </div>
     );
