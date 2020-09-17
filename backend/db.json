@@ -7,5 +7,17 @@
     { "title": "Testimonials" },
     { "title": "blog" },
     { "title": "contact" }
-  ]
+  ],
+  "aboutUs": {
+    "title": "Read About My Life Story",
+    "paragraph": "Donec commodo augue vitae metus interdum molestie. Fusce dapibus non mauris sit amet blandit. Maecenas quis massa nec sem laoreet vehiculaquis sit amet tortor. Proin ornare, lorem ut pellentesque maximus, ex leo viverra lorem, ac dapibus neque tellus id dolor. Curabitur luctus tortor eget dolor ultrices fermentum.",
+    "leftSectionImg": "https://i.imgur.com/nALr0iT.png",
+    "btnLabel": "get in touch",
+    "progressbars": [
+      { "bgcolor": "#f9320c", "completed": 60, "label": "Development" },
+      { "bgcolor": "#7a8baa", "completed": 30, "label": "UI/UX Design" },
+      { "bgcolor": "#ed3ce3", "completed": 53, "label": "Digital Marketing" },
+      { "bgcolor": "#74fa5e", "completed": 73, "label": "Graphic Design" }
+    ]
+  }
 }
