@@ -5,6 +5,7 @@ export const Heading = ({
   children,
   customClassNames,
   fontSize,
+  fontWeight,
   largeLineHeight
 }) => {
   return (
@@ -13,6 +14,7 @@ export const Heading = ({
         'font-headings font-bold custom_styles',
         {
           ['text-' + color]: color,
+          ['font-' + fontWeight]: fontWeight,
           ['text-lg']: fontSize === 'xsmall', //xsmall = 1.5rem
           ['text-xlg']: fontSize === 'small', //small = 1.875rem
           ['text-xxlg']: fontSize === 'medium', //medium = 3.125rem
