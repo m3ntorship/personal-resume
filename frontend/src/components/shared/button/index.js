@@ -15,33 +15,3 @@ export const Button = ({ children, customClassNames, rounded, bgColor }) => {
     </button>
   );
 };
-
-export const Heading = ({
-  children,
-  customClassNames,
-  red,
-  black,
-  xsmall,
-  small,
-  medium,
-  large,
-  lineHeight
-}) => {
-  return (
-    <p
-      className={cn(
-        'font-headings font-bold custom_styles',
-        { 'text-c200': black },
-        { 'text-c100': red },
-        { 'text-lg': xsmall },
-        { 'text-xlg': small },
-        { 'text-xxlg': medium },
-        { 'text-xxxlg': large },
-        { 'leading-3': lineHeight },
-        customClassNames
-      )}
-    >
-      {children}
-    </p>
-  );
-};
