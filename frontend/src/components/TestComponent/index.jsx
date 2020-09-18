@@ -11,7 +11,7 @@ export const Prototype = () => {
         <Heading as='h1' fontSize='large'>Large - Black</Heading>
         <Heading as='h2' color='secondary'>Medium - Red</Heading>
         <Heading as='h3' fontSize='small' hasLineHeight={true} className='font-regular'>Small - Black - hasLineHeight</Heading>
-        <Heading as='h4' fontSize='xsmall'>xSmall - Black</Heading>
+        <Heading as='h4' fontSize='xsmall' hasLineHeight={true}>xSmall - Black - hasLineHeight</Heading>
       </div>
       
       <div>
