@@ -6,14 +6,19 @@ import graylaptop from '../../images/img-gray-laptop-codes.png';
 import imac from '../../images/img-photo-of-imac.png';
 import woman from '../../images/img-young-woman-thinking.png';
 
+import { Button } from '../shared/button/index';
+import { Heading, HEADING_OPTIONS } from '../shared/heading/index';
+
+
 const Gallery = () => {
   return (
-    <React.Fragment>
-      <div className="container  my-32">
-        <div className="mb-16 text-center  text-xxlg">
-          <h2>My Recent Works </h2>
+    <section>
+      <div className="container my-32">
+        <Heading>My Recent Works</Heading>
+        <div className="mb-10 text-center text-xxlg">
+          <h2> </h2>
         </div>
-        <div className="mb-16 text-center text-sm ">
+        <div className="mb-10 text-center text-sm ">
           <p>
             <span className="uppercase  inline-block m-5 ">all works </span>
             <span className="uppercase  inline-block m-5 ">ui/ux</span>
@@ -43,7 +48,7 @@ const Gallery = () => {
           </div>
         </div>
       </div>
-    </React.Fragment>
+    </section>
   );
 };
 
