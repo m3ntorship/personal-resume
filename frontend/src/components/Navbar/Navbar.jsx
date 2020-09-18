@@ -18,7 +18,6 @@ export const Navbar = () => {
       });
   }, []);
   if (data) {
-    console.log(data);
     return (
       <nav className="flex  items-center justify-between w-5/6  bg-white shadow-lg p-3 my-10 rounded-full m-auto">
         <div className="mx-12">
