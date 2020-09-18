@@ -10,10 +10,10 @@ const Gallery = () => {
   return (
     <React.Fragment>
       <div className="container mx-auto my-32">
-        <div className="mb-16 text-center ">
+        <div className="mb-16 text-center  text-xxlg">
           <h2>My Recent Works </h2>
         </div>
-        <div className="mb-16 text-center">
+        <div className="mb-16 text-center text-sm ">
           <p>
             <span className="uppercase  inline-block m-5 ">all works </span>
             <span className="uppercase  inline-block m-5 ">ui/ux</span>
