@@ -32,7 +32,8 @@ module.exports = {
       md: '1.125rem',
       lg: '1.5rem',
       xlg: '1.875rem',
-      xxlg: '3.125rem'
+      xxlg: '3.125rem',
+      xxxlg: '6.25rem'
     },
     colors: {
       c100: '#f9320c', // red
@@ -50,7 +51,8 @@ module.exports = {
     },
     lineHeight: {
       1: '1.75rem',
-      2: '2.5rem'
+      2: '2.5rem',
+      3: '4.375rem'
     },
     corePlugins: {
       container: false
