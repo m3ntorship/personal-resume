@@ -19,6 +19,7 @@ export default class App extends React.Component {
       <div>
         <Prototype />
         <BestExpertiseSection />
+        <EstimateSection />
       </div>
     );
   }
