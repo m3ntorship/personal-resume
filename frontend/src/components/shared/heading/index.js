@@ -1,23 +1,39 @@
 import React from 'react';
 import cn from 'classnames';
 
-const HEADINGS = {
+const HEADING_OPTIONS = {
   FONT_SIZES: {
-    XSMALL: '1.5rem',
-    SMALL: '1.875rem',
-    MEDIUM: '3.125rem',
-    LARGE: '6.25rem'
+    XSMALL: 'xsmall', //1.5rem = 24px
+    SMALL: 'small', //1.875rem = 30px
+    MEDIUM: 'medium', //3.125rem = 50px
+    LARGE: ' large' //6.25rem = 100px
   },
   COLOR: {
-    PRIMARY: '#141f32',
-    SECONDARY: '#f9320c'
-  },
-}
+    PRIMARY: 'primary',
+    SECONDARY: 'secondary'
+  }
+};
 
-const ;
-
-const 
-
-export const Heading = ({children, className, fontSize, color, hasLineHeight}) => {
-  return <p className={cn('font-bold font-headings',{})}>{children}</p>;
+export const Heading = ({
+  children,
+  className,
+  fontSize,
+  color,
+  hasLineHeight
+}) => {
+  return (
+    <p
+      className={cn('font-bold font-headings', {
+        ['text-lg']: fontSize === HEADING_OPTIONS.FONT_SIZES.XSMALL,
+        ['text-xlg']: fontSize === HEADING_OPTIONS.FONT_SIZES.SMALL,
+        ['text-xxlg']: fontSize === HEADING_OPTIONS.FONT_SIZES.MEDIUM,
+        ['text-xxxlg']: fontSize === HEADING_OPTIONS.FONT_SIZES.LARGE,
+        ['text-c200']: color === HEADING_OPTIONS.COLOR.PRIMARY,
+        ['text-c100']: color === HEADING_OPTIONS.COLOR.SECONDARY,
+        'leading-3': hasLineHeight
+      }, className)}
+    >
+      {children}
+    </p>
+  );
 };
