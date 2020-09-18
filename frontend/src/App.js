@@ -1,9 +1,8 @@
 import React from 'react';
 import { Prototype } from './components/TestComponent';
 import { API } from './modules/apis';
-// import componanets
-// Navbar component
-import { Navbar } from './components/Navbar/Navbar';
+import BestExpertiseSection from './components/BestExpertiseSection/BestExpertiseSection';
+
 export default class App extends React.Component {
   state = {
     navigation: []
@@ -15,10 +14,10 @@ export default class App extends React.Component {
   }
   render() {
     return (
-      <div>
-        {/* <Prototype /> */}
-        <Navbar />
-      </div>
+      <>
+        <BestExpertiseSection />;
+        <div>{/* <Prototype /> */}</div>;
+      </>
     );
   }
 }

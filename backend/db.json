@@ -22,7 +22,6 @@
         "id": "c125890e-4a9e-47c5-b1d0-630ba5454aaf"
       },
       {
-        "title": "Testimonials",
         "linkUrl": "/",
         "id": "8d45ed8e-0567-4692-a22c-438fa8bf8c39"
       },
@@ -39,4 +38,64 @@
     ],
     "downloadBtn": "Download My CV"
   }
+    "cards": [
+      {
+        "title": "Web Development",
+        "button": {
+        "details": "Nam eu massa vel quam auctor congue. Suspendisse semper erat id tellus entum ultricies. Nulla neck producw in ultrices devel odio sodales.",
+          "title": "get this service",
+          "url": "/"
+        },
+      },
+        "key":"1"
+      {
+        "title": "Web Development",
+        "button": {
+        "details": "Nam eu massa vel quam auctor congue. Suspendisse semper erat id tellus entum ultricies. Nulla neck producw in ultrices devel odio sodales.",
+        },
+          "url": "/"
+          "title": "get this service",
+        "title": "Web Development",
+      {
+      },
+        "key":"2"
+        "details": "Nam eu massa vel quam auctor congue. Suspendisse semper erat id tellus entum ultricies. Nulla neck producw in ultrices devel odio sodales.",
+        "button": {
+          "title": "get this service",
+          "url": "/"
+        },
+        "key":"3"
+      },
+      {
+        "title": "Web Development",
+        "details": "Nam eu massa vel quam auctor congue. Suspendisse semper erat id tellus entum ultricies. Nulla neck producw in ultrices devel odio sodales.",
+        "button": {
+          "title": "get this service",
+          "url": "/"
+        },
+        "key":"4"
+      {
+      },
+        "title": "Web Development",
+        "details": "Nam eu massa vel quam auctor congue. Suspendisse semper erat id tellus entum ultricies. Nulla neck producw in ultrices devel odio sodales.",
+          "title": "get this service",
+        "button": {
+          "url": "/"
+        },
+        "key":"5"
+      },
+      {
+        "details": "Nam eu massa vel quam auctor congue. Suspendisse semper erat id tellus entum ultricies. Nulla neck producw in ultrices devel odio sodales.",
+        "title": "Web Development",
+        "button": {
+          "title": "get this service",
+        },
+          "url": "/"
+        "key":"6"
+      }
+    ]
+    "title": "My Best Expertise",
+  "services": {
+  }
+        "title": "Testimonials",
 }
