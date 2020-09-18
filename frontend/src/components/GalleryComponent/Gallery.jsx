@@ -9,7 +9,7 @@ import woman from '../../images/img-young-woman-thinking.png';
 const Gallery = () => {
   return (
     <React.Fragment>
-      <div className="container mx-auto ">
+      <div className="container mx-auto my-32">
         <div className="mb-16 text-center ">
           <h2>My Recent Works </h2>
         </div>

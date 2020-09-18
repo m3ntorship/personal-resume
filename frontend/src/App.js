@@ -1,11 +1,7 @@
 import React from 'react';
-<<<<<<< HEAD
-import Gallery from './components/GalleryComponent/Gallery';
-import { TestComponent } from './components/TestComponent';
-=======
 import { Prototype } from './components/TestComponent';
->>>>>>> cf1ed311849a92f521eff5297900823659a959bc
 import { API } from './modules/apis';
+import Gallery from '../src/components/GalleryComponent/Gallery';
 
 export default class App extends React.Component {
   state = {
@@ -17,15 +13,13 @@ export default class App extends React.Component {
     });
   }
   render() {
-<<<<<<< HEAD
     return (
       <div>
-        <TestComponent />
-        <Gallery />
+        <div>
+          <div>{/* <Prototype /> */}</div>;
+          <Gallery />
+        </div>
       </div>
     );
-=======
-    return <div>{/* <Prototype /> */}</div>;
->>>>>>> cf1ed311849a92f521eff5297900823659a959bc
   }
 }
