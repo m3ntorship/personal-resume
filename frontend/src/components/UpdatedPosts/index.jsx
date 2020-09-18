@@ -1,5 +1,8 @@
 import React from 'react';
 import { Heading, HEADING_OPTIONS } from '../shared/heading';
+// Import Icons
+import Heart from './heart-regular.svg';
+import Comment from './comment-regular.svg';
 export const UpdatedPosts = () => {
   return (
     <div className="w-main-container m-auto ">
@@ -23,7 +26,7 @@ export const UpdatedPosts = () => {
           alt="Post update"
           className="rounded-md my-8"
         />
-        <div>
+        <div className="flex justify-between items-center">
           <figure className="flex items-center ">
             <img
               src="https://picsum.photos/300/200"
@@ -32,6 +35,30 @@ export const UpdatedPosts = () => {
             />
             <figcaption className="inline">Eslam Hesham</figcaption>
           </figure>
+          <div>
+            <ul className="flex">
+              <li>
+                <a href="/">
+                  <img
+                    src={Heart}
+                    alt="Heart Icon"
+                    className="w-4 inline ml-1"
+                  />
+                </a>
+                <span className="ml-1">15</span>
+              </li>
+              <li className="ml-10">
+                <a href="/">
+                  <img
+                    src={Comment}
+                    alt="Comment Icon"
+                    className="w-4 inline ml-1"
+                  />
+                </a>
+                <span className="inline ml-1">20</span>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
