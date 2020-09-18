@@ -1,10 +1,20 @@
 import React from 'react';
 import {Button} from '../shared/button'
+import {Heading, HEADING_OPTIONS} from '../shared/heading'
+
 
 export const Prototype = () => {
   return (
     <div className="m-10">
       <h1> Shared Components Prototype </h1>
+
+      <div>
+        <Heading as='h1' fontSize={HEADING_OPTIONS.FONT_SIZES.LARGE}>Large - Black</Heading>
+        <Heading as='h2' color={HEADING_OPTIONS.COLOR.SECONDARY}>Medium - Red</Heading>
+        <Heading as='h3' fontSize={HEADING_OPTIONS.FONT_SIZES.SMALL} hasLineHeight={true} className='font-regular'>Small - Black - hasLineHeight</Heading>
+        <Heading as='h4' fontSize={HEADING_OPTIONS.FONT_SIZES.XSMALL} hasLineHeight={true}>xSmall - Black - hasLineHeight</Heading>
+      </div>
+      
       <div>
         <h3 className='text-xlg'> Buttons </h3>
         <Button rounded={true} customClassNames='my-4 block w-64 h-20 font-medium' bgColor="c100">Large</Button>

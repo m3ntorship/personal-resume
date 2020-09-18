@@ -1,4 +1,4 @@
-const setupPostcss = (config, env) => {
+const setupPostcss = config => {
   require('react-app-rewire-postcss')(config, {
     plugins: () => {
       let plugins = [

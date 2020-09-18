@@ -20,6 +20,7 @@ export default class App extends React.Component {
         {/* <Prototype /> */}
         <Navbar />
         <UpdatedPosts />
+        <Prototype />
       </div>
     );
   }
