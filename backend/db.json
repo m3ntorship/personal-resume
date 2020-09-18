@@ -1,20 +1,43 @@
 {
-  "navigation": [
-    { "title": "Home" },
-    { "title": "about us" },
-    { "title": "Services" },
-    { "title": "Projects" },
-    { "title": "Testimonials" },
-    { "title": "blog" },
-    { "title": "contact" }
-  ],
-  "estimatesection": {
-    "subTitle": "Have Any Project On Mind ?",
-    "title": "Estimate your Project!",
-    "button": {
-      "label": "Get In Touch",
-      "url": "/"
-    }
+  "navigation": {
+    "linksList": [
+      {
+        "title": "Home",
+        "linkUrl": "/",
+        "id": "314cca42-4e6c-402a-b310-549a0bb03aaa"
+      },
+      {
+        "title": "about us",
+        "linkUrl": "/",
+        "id": "7c01a2b6-76f0-4561-9ece-9377c81c6444"
+      },
+      {
+        "title": "Services",
+        "linkUrl": "/",
+        "id": "7d6a4908-171d-4c8f-9e23-b96d0da4a7d0"
+      },
+      {
+        "title": "Projects",
+        "linkUrl": "/",
+        "id": "c125890e-4a9e-47c5-b1d0-630ba5454aaf"
+      },
+      {
+        "title": "Testimonials",
+        "linkUrl": "/",
+        "id": "8d45ed8e-0567-4692-a22c-438fa8bf8c39"
+      },
+      {
+        "title": "blog",
+        "linkUrl": "/",
+        "id": "74229d31-52ec-488b-83c2-b13908ee248d"
+      },
+      {
+        "title": "contact",
+        "linkUrl": "/",
+        "id": "b092b918-630f-4840-bec1-b8f709749086"
+      }
+    ],
+    "downloadBtn": "Download My CV"
   },
   "services": {
     "title": "My Best Expertise",
