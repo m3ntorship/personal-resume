@@ -27,7 +27,7 @@ const EstimateSection = () => {
       >
         <div className="container">
           <span className="text-lg">{title}</span>
-          <Heading className="my-5">{subTitle}</Heading>
+          <Heading as='h6' className="my-5">{subTitle}</Heading>
           <Button
             bgColor="c100"
             rounded={true}
