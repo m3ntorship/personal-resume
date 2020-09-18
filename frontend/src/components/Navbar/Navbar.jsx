@@ -27,7 +27,7 @@ export const Navbar = () => {
           {error ? (
             <p className="text-c100 text-xl"> Hi </p>
           ) : (
-            data.linksList.map(({ title, linkUrl, id }, index) => {
+            data.linksList.map(({ title, linkUrl, id }) => {
               return (
                 <a
                   href={linkUrl}
