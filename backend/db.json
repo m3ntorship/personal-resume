@@ -9,8 +9,11 @@
     { "title": "contact" }
   ],
   "estimatesection": {
-    "subTitle": "Estimate your Project!",
-    "sectionTitle": "Have Any Project On Mind ?",
-    "btnLabel": "get in touch"
+    "subTitle": "Have Any Project On Mind ?",
+    "title": "Estimate your Project!",
+    "button": {
+      "label": "Get In Touch",
+      "url": "/"
+    }
   }
 }
