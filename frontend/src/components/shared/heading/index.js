@@ -1,7 +1,7 @@
 import React from 'react';
 import cn from 'classnames';
 
-const HEADING_OPTIONS = {
+export const HEADING_OPTIONS = {
   FONT_SIZES: {
     XSMALL: 'xsmall', //1.5rem = 24px
     SMALL: 'small', //1.875rem = 30px
@@ -35,7 +35,6 @@ export const Heading = ({
     },
     className
   );
-  
-  return <>{React.createElement(as, { className: classes }, children)}</>;
 
+  return <>{React.createElement(as, { className: classes }, children)}</>;
 };
