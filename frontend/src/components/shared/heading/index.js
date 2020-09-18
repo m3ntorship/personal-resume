@@ -6,7 +6,7 @@ const HEADING_OPTIONS = {
     XSMALL: 'xsmall', //1.5rem = 24px
     SMALL: 'small', //1.875rem = 30px
     MEDIUM: 'medium', //3.125rem = 50px
-    LARGE: ' large' //6.25rem = 100px
+    LARGE: 'large' //6.25rem = 100px
   },
   COLOR: {
     PRIMARY: 'primary',
@@ -17,8 +17,8 @@ const HEADING_OPTIONS = {
 export const Heading = ({
   children,
   className,
-  fontSize,
-  color,
+  fontSize = 'medium',
+  color = 'primary',
   hasLineHeight
 }) => {
   return (

@@ -8,10 +8,10 @@ export const Prototype = () => {
       <h1> Shared Components Prototype </h1>
 
       <div>
-        <Heading >Large - Black</Heading>
-        <Heading color='c100' fontSize='medium' fontWeight='bold'>Medium - Red</Heading>
-        <Heading color='c200' fontSize='small' fontWeight='bold'>Small - Black</Heading>
-        <Heading color='c200' fontSize='xsmall' fontWeight='bold'>xSmall - Black</Heading>
+        <Heading fontSize='large'>Large - Black</Heading>
+        <Heading>Medium - Red</Heading>
+        <Heading>Small - Black</Heading>
+        <Heading>xSmall - Black</Heading>
       </div>
       
       <div>
