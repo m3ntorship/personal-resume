@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Card from './Card';
 import { API } from '../../modules/apis';
+import { Heading, HEADING_OPTIONS } from '../shared/heading/index';
 
 const BestExpertiseSection = () => {
   const [services, setServices] = useState(null);
@@ -11,25 +12,16 @@ const BestExpertiseSection = () => {
   }, []);
   if (services) {
     const cards = services.cards.map(({ title, details, button, key }) => {
-      return (
-        <Card
-          title={title}
-          details={details}
-          button={button}
-          key={key}
-        />
-      );
+      return <Card title={title} details={details} button={button} key={key} />;
     });
     return (
       <section className="container text-center">
-        <h2 className="font-headings text-xxlg text-c200 my-10">
-          {services.title}
-        </h2>
+        <Heading as='h2' className='my-10'>{services.title}</Heading>
         <div className="grid grid-cols-3 gap-8">{cards}</div>
       </section>
     );
-  }else{
-    return <div>Cannot get data from server</div>
+  } else {
+    return <div>Cannot get data from server</div>;
   }
 };
 
