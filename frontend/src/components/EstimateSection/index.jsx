@@ -1,6 +1,7 @@
 import React from 'react';
 import { Button } from '../shared/button';
 import { useEffect, useState } from 'react';
+import { Heading, HEADING_OPTIONS } from '../shared/heading/index';
 import { API } from '../../modules/apis';
 
 const EstimateSection = () => {
@@ -26,9 +27,7 @@ const EstimateSection = () => {
       >
         <div className="container">
           <span className="text-lg">{title}</span>
-          <h6 className="text-xxlg my-8" style={{ fontFamily: 'PT serif' }}>
-            {subTitle}
-          </h6>
+          <Heading as='h6' className="my-5">{subTitle}</Heading>
           <Button
             bgColor="c100"
             rounded={true}
