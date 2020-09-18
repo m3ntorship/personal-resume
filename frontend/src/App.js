@@ -1,5 +1,7 @@
 import React from 'react';
+// import { Prototype } from './components/TestComponent';
 import AboutUs from './components/AboutUsSection/AboutUs';
+import EstimateSection from './components/EstimateSection';
 import { API } from './modules/apis';
 
 export default class App extends React.Component {
@@ -14,7 +16,9 @@ export default class App extends React.Component {
   render() {
     return (
       <div>
+        {/* <Prototype /> */}
         <AboutUs />
+        <EstimateSection />
       </div>
     );
   }
