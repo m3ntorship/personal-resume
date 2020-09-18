@@ -1,6 +1,7 @@
 import React from 'react';
 import { Button } from '../shared/button';
 import ProgressBar from '../ProgressBar/ProgressBar';
+import { Heading, HEADING_OPTIONS } from '../shared/heading';
 import { useEffect, useState } from 'react';
 import { API } from '../../modules/apis';
 
@@ -41,12 +42,14 @@ const AboutUs = () => {
           </Button>
         </div>
         <div>
-          <h6
-            className="text-xxlg text-c200 mt-1"
-            style={{ fontFamily: 'PT serif' }}
+          <Heading
+            as="h2"
+            fontSize={HEADING_OPTIONS.FONT_SIZES.MEDIUM}
+            color={HEADING_OPTIONS.COLOR.PRIMARY}
           >
             {title}
-          </h6>
+          </Heading>
+
           <p className="mt-8 leading-7 text-c300">{paragraph}</p>
           {progressbars.map(item => {
             const { bgcolor, progress, label, icon, id } = item;
