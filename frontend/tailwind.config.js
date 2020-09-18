@@ -42,6 +42,9 @@ module.exports = {
       c600: '#8072fc', // light-blue
       c700: '#ed3ce3', // purple
       c800: '#74fa5e', // light-green
+      c900: '#f9e5e9', // for the services section hover effect
+      c1000: '#f9ebf0', // for the services section hover effect
+      c1100: '#f9f1f7', // for the services section hover effect
       white: '#fff', // white
       black: '#000' // Black
     },
@@ -57,10 +60,23 @@ module.exports = {
         35: '8.75rem' //Between every two sections
       },
       width: {
-        'main-container': '60%'
+        'main-container': '60%',
+        70: '17.5rem', // for the services section hover effect
+        90: '22.5rem', // for the services section hover effect
+        110: '27.5rem' // for the services section hover effect
+      },
+      height: {
+        70: '17.5rem', // for the services section hover effect
+        90: '22.5rem', // for the services section hover effect
+        110: '27.5rem' // for the services section hover effect
       }
     }
   },
-  variants: {},
+  variants: {
+    opacity: ['responsive', 'hover', 'focus', 'group-hover'], // adding opacity to group-hover
+    backgroundColor: ['responsive', 'hover', 'focus', 'group-hover'],  // adding bg to group-hover
+    textColor: ['responsive', 'hover', 'focus', 'active', 'group-hover'],  // adding textColor to group-hover
+
+  },
   plugins: []
 };

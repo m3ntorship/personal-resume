@@ -1,6 +1,7 @@
 import React from 'react';
 import { Prototype } from './components/TestComponent';
 import { API } from './modules/apis';
+import BestExpertiseSection from './components/BestExpertiseSection/BestExpertiseSection';
 
 export default class App extends React.Component {
   state = {
@@ -12,6 +13,11 @@ export default class App extends React.Component {
     });
   }
   render() {
-    return <div>{/* <Prototype /> */}</div>;
+    return (
+      <>
+        <BestExpertiseSection />;
+        <div>{/* <Prototype /> */}</div>;
+      </>
+    );
   }
 }
