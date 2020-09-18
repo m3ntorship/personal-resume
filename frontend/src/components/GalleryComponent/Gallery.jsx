@@ -11,14 +11,15 @@ import { Heading, HEADING_OPTIONS } from '../shared/heading/index';
 
 
 const Gallery = () => {
+
   return (
-    <section>
-      <div className="container my-32">
-        <Heading>My Recent Works</Heading>
-        <div className="mb-10 text-center text-xxlg">
-          <h2> </h2>
-        </div>
-        <div className="mb-10 text-center text-sm ">
+    <section className="text-center">
+      <div className="container">
+        <Heading className="mb-10">My Recent Works</Heading>
+        <ul>
+          
+        </ul>
+        {/* <div className="mb-10 text-center text-sm ">
           <p>
             <span className="uppercase  inline-block m-5 ">all works </span>
             <span className="uppercase  inline-block m-5 ">ui/ux</span>
@@ -26,8 +27,8 @@ const Gallery = () => {
             <span className="uppercase  inline-block m-5 ">logo</span>
             <span className="uppercase  inline-block m-5 ">development</span>
           </p>
-        </div>
-        <div className=" grid grid-rows-2  grid-cols-3 gap-x-8 gap-y-6 ">
+        </div> */}
+        <div className=" grid grid-rows-2 grid-cols-3 gap-x-8 gap-y-6 ">
           <div className="max-w-sm">
             <img className="w-full" src={art} alt="" />
           </div>

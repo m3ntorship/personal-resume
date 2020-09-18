@@ -141,5 +141,27 @@
         "key": "6"
       }
     ]
+  },
+  "RecentWorks":{
+    "title": "My Recent Works",
+    "listItems":{
+      "1": "ALL WORKS",
+      "2": "ALL WORKS",
+      "3": "ALL WORKS",
+      "4": "ALL WORKS",
+      "5": "ALL WORKS"
+    },
+    "imagesURL":{
+      "1": "../frontend/src/components/GalleryComponent/images/img-young-woman-thinking.png",
+      "2": "../frontend/src/components/GalleryComponent/images/img-young-woman-thinking.png",
+      "3": "../frontend/src/components/GalleryComponent/images/img-young-woman-thinking.png",
+      "4": "../frontend/src/components/GalleryComponent/images/img-young-woman-thinking.png",
+      "5": "../frontend/src/components/GalleryComponent/images/img-young-woman-thinking.png",
+      "6": "../frontend/src/components/GalleryComponent/images/img-young-woman-thinking.png"
+    },
+    "button": {
+      "title": "more projects",
+      "url": "/"
+    }
   }
 }
