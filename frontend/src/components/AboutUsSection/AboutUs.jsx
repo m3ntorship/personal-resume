@@ -5,15 +5,15 @@ import { useEffect, useState } from 'react';
 import { API } from '../../modules/apis';
 
 const AboutUs = () => {
-  const [sectionData, setSectionData] = useState({});
+  const [sectionData, setSectionData] = useState();
 
   useEffect(() => {
-    API('/aboutUs').then(({ data: fetchedData }) => {
-      setSectionData({ ...fetchedData });
+    API('/aboutUs').then(({ data }) => {
+      setSectionData(data);
     });
   }, []);
 
-  if (sectionData.progressbars) {
+  if (sectionData) {
     const {
       title,
       paragraph,
@@ -49,12 +49,13 @@ const AboutUs = () => {
           </h6>
           <p className="mt-8 leading-7 text-c300">{paragraph}</p>
           {progressbars.map(item => {
-            const { bgcolor, completed, label } = item;
+            const { bgcolor, progress, label, icon, id } = item;
             return (
               <ProgressBar
-                key={completed}
+                icon={icon}
+                key={id}
                 bgcolor={bgcolor}
-                completed={completed}
+                completed={progress}
                 label={label}
               />
             );

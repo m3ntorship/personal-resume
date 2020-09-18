@@ -14,10 +14,34 @@
     "leftSectionImg": "https://i.imgur.com/nALr0iT.png",
     "btnLabel": "get in touch",
     "progressbars": [
-      { "bgcolor": "#f9320c", "completed": 60, "label": "Development" },
-      { "bgcolor": "#7a8baa", "completed": 30, "label": "UI/UX Design" },
-      { "bgcolor": "#ed3ce3", "completed": 53, "label": "Digital Marketing" },
-      { "bgcolor": "#74fa5e", "completed": 73, "label": "Graphic Design" }
+      {
+        "bgcolor": "#f9320c",
+        "progress": 60,
+        "label": "Development",
+        "id": "1",
+        "icon": "https://www.flaticon.com/svg/static/icons/svg/711/711284.svg"
+      },
+      {
+        "bgcolor": "#7a8baa",
+        "progress": 30,
+        "label": "UI/UX Design",
+        "id": "2",
+        "icon": "https://www.flaticon.com/svg/static/icons/svg/2881/2881093.svg"
+      },
+      {
+        "bgcolor": "#ed3ce3",
+        "progress": 53,
+        "label": "Digital Marketing",
+        "id": "3",
+        "icon": "https://www.flaticon.com/svg/static/icons/svg/455/455691.svg"
+      },
+      {
+        "bgcolor": "#74fa5e",
+        "progress": 73,
+        "label": "Graphic Design",
+        "id": "4",
+        "icon": "https://www.flaticon.com/svg/static/icons/svg/84/84498.svg"
+      }
     ]
   }
 }
