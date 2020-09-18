@@ -28,9 +28,6 @@ const EstimateSection = () => {
         <div className="container">
           <span className="text-lg">{title}</span>
           <Heading className="my-5">{subTitle}</Heading>
-          {/* <h6 className="text-xxlg my-8" style={{ fontFamily: 'PT serif' }}>
-            {subTitle}
-          </h6> */}
           <Button
             bgColor="c100"
             rounded={true}
