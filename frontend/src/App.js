@@ -1,4 +1,5 @@
 import React from 'react';
+import EstimateSection from './components/EstimateSection';
 import { Prototype } from './components/TestComponent';
 import { API } from './modules/apis';
 
