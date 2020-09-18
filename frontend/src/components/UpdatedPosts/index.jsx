@@ -1,13 +1,23 @@
 import React from 'react';
-
+import { Heading, HEADING_OPTIONS } from '../shared/heading';
 export const UpdatedPosts = () => {
   return (
-    <div className="w-main-container m-auto">
-      <h1 className="text-center text-xxlg">Get Every Updates</h1>
+    <div className="w-main-container m-auto ">
+      <Heading
+        as="h2"
+        color={HEADING_OPTIONS.COLOR.PRIMARY}
+        className="mb-12 text-center"
+      >
+        Get Everyday Updates
+      </Heading>
       <div className="bg-c400 w-1/3 p-6">
-        <h2 className=" text-lg">
+        <Heading
+          as="h4"
+          fontSize={HEADING_OPTIONS.FONT_SIZES.XSMALL}
+          hasLineHeight={false}
+        >
           Meet Inclusive Front-End Design Patterns A New Smashing Book
-        </h2>
+        </Heading>
         <img
           src="https://picsum.photos/500/400"
           alt="Post update"
