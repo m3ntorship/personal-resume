@@ -1,7 +1,7 @@
 import React from 'react';
 
 const ProgressBar = props => {
-  const { bgcolor, completed, label, icon } = props;
+  const { bgcolor, progress, label, icon } = props;
 
   const containerStyles = {
     height: 8,
@@ -12,7 +12,7 @@ const ProgressBar = props => {
 
   const fillerStyles = {
     height: '100%',
-    width: `${completed}%`,
+    width: `${progress}%`,
     backgroundColor: bgcolor,
     borderRadius: 'inherit',
     textAlign: 'right'
@@ -23,10 +23,9 @@ const ProgressBar = props => {
       <div className="flex justify-between mb-1">
         <h6 className="text-base flex">
           <img className="w-4 mr-1" src={icon} alt="" />
-
           {label}
         </h6>
-        <p className="text-c200">{`${completed}%`}</p>
+        <p className="text-c200">{`${progress}%`}</p>
       </div>
       <div style={containerStyles}>
         <div style={fillerStyles}></div>

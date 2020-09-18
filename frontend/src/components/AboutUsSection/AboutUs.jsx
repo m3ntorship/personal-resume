@@ -55,7 +55,7 @@ const AboutUs = () => {
                 icon={icon}
                 key={id}
                 bgcolor={bgcolor}
-                completed={progress}
+                progress={progress}
                 label={label}
               />
             );
