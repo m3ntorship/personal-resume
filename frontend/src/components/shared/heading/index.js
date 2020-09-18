@@ -19,21 +19,23 @@ export const Heading = ({
   className,
   fontSize = 'medium',
   color = 'primary',
-  hasLineHeight
+  hasLineHeight,
+  as = 'p'
 }) => {
-  return (
-    <p
-      className={cn('font-bold font-headings', {
-        ['text-lg']: fontSize === HEADING_OPTIONS.FONT_SIZES.XSMALL,
-        ['text-xlg']: fontSize === HEADING_OPTIONS.FONT_SIZES.SMALL,
-        ['text-xxlg']: fontSize === HEADING_OPTIONS.FONT_SIZES.MEDIUM,
-        ['text-xxxlg']: fontSize === HEADING_OPTIONS.FONT_SIZES.LARGE,
-        ['text-c200']: color === HEADING_OPTIONS.COLOR.PRIMARY,
-        ['text-c100']: color === HEADING_OPTIONS.COLOR.SECONDARY,
-        'leading-3': hasLineHeight
-      }, className)}
-    >
-      {children}
-    </p>
+  const classes = cn(
+    'font-bold font-headings',
+    {
+      ['text-lg']: fontSize === HEADING_OPTIONS.FONT_SIZES.XSMALL,
+      ['text-xlg']: fontSize === HEADING_OPTIONS.FONT_SIZES.SMALL,
+      ['text-xxlg']: fontSize === HEADING_OPTIONS.FONT_SIZES.MEDIUM,
+      ['text-xxxlg']: fontSize === HEADING_OPTIONS.FONT_SIZES.LARGE,
+      ['text-c200']: color === HEADING_OPTIONS.COLOR.PRIMARY,
+      ['text-c100']: color === HEADING_OPTIONS.COLOR.SECONDARY,
+      'leading-3': hasLineHeight
+    },
+    className
   );
+  
+  return <>{React.createElement(as, { className: classes }, children)}</>;
+
 };
