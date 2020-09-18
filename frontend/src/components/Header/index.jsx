@@ -2,6 +2,7 @@ import React from 'react'
 import dots from './assets/dots3.png';
 import avatar from './assets/avata1r.png'
 import { Button } from './../shared/button/index.js'
+import './custom.css'
 
 export const HeaderComponent = () => {
   return (
@@ -27,14 +28,15 @@ export const HeaderComponent = () => {
 
 
         <div className="w-1/2 mb-8 pb-8 ">
-          <img src={dots} alt="" className=" absolute  mb-32   transform  -translate-x-4  -translate-y-8" />
-          <img src={avatar} alt="" className=" object-cover w-60 h-60 relative rounded-full border-8 border-white ml-16 " />
+          <img src={dots} alt="" className=" absolute  mb-32   transform  translate-x-8  -translate-y-8   " />
+          <img src={avatar} alt="" className=" object-cover w-60 h-60 relative rounded-full border-8 border-white ml-16 z-10 " />
         </div>
 
 
 
-
       </div>
+      <div className="stick absolute flex " ></div>
+      <div className="triangle absolute  flex " ></div>
 
     </header>
   )
