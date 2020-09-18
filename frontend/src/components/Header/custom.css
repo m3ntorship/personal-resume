@@ -4,17 +4,17 @@
   border-style: solid;
   border-width: 0 0 40.625rem 62.5rem;
   right: 0;
-  bottom: 23.4%;
+  bottom: 22.4%;
   border-color: transparent transparent #ffffff;
   z-index: 0;
 }
 
-.stick{
-    width: 0.25rem;
-    height:73.5rem;
-    background-color: #f9320c;
-    z-index: 1;
-    top:-4.4875rem;
-    right: 30.75rem ;
-    transform: rotate(57deg);
+.stick {
+  width: 0.25rem;
+  height: 74.3rem;
+  background-color: #f9320c;
+  z-index: 1;
+  top: -4.1rem;
+  right: 31rem;
+  transform: rotate(57deg);
 }

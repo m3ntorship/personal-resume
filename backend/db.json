@@ -8,6 +8,10 @@
     { "title": "blog" },
     { "title": "contact" }
   ],
+  "header":[
+    {"heading": "Mark Parker"},
+    {"paragraph": "I am professional UI Designer and Web Developer. I am working in UI Park as a UI/UX Designer."}
+  ],
   "estimatesection": {
     "subTitle": "Have Any Project On Mind ?",
     "title": "Estimate your Project!",
