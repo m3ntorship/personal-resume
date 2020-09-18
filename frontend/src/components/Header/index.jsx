@@ -2,18 +2,19 @@ import React from 'react'
 import dots from './assets/dots3.png';
 import avatar from './assets/avata1r.png'
 import { Button } from './../shared/button/index.js'
+import {Heading, HEADING_OPTIONS} from '../shared/heading'
 import './custom.css'
 
 export const HeaderComponent = () => {
   return (
-    <header className=" w-full border-c100 border-b-4 bg-c400 " >
-      <div className="container flex flex-row pt-32 relative  ">
+    <header className=" w-full  bg-c400  border-c100 border-b-4" >
+      <div className="container flex flex-row pt-64 relative  ">
 
-        <div className="w-1/2 mb-48 mt-8 ">
+        <div className="  mt-16  ">
 
           <div className="  " >
-            <span className=" text-c100 font-body text-xlg font-medium leading-1 ">I am</span>
-            <h1 className=" text-c200  text-xxlg font-headings" >Mark Parker</h1>
+            <span className=" text-c100 font-body text-xxlg font-medium leading-1 ">I am</span>
+            <Heading as='h1' fontSize={HEADING_OPTIONS.FONT_SIZES.LARGE}  >Mark Parker</Heading>
             <p className="text-c300 font-body leading-1 mb-12 " >I am professional UI Designer and Web Developer. I am working
           in UI Park as a UI/UX Designer.</p>
           </div>
