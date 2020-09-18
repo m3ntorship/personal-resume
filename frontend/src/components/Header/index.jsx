@@ -3,9 +3,11 @@ import dots from './assets/dots3.png';
 import avatar from './assets/avata1r.png';
 import { Button } from './../shared/button/index.js';
 import { Heading, HEADING_OPTIONS } from '../shared/heading';
+// import { useEffect } from 'react';
+// import { API } from './../../modules/apis';
 import './custom.css';
 
-export const HeaderComponent = () => {
+const Header = () => {
   return (
     <header className=" w-full  bg-c400  border-c100 border-b-4 pb-32">
       <div className="container flex flex-row pt-64 relative">
@@ -55,3 +57,5 @@ export const HeaderComponent = () => {
     </header>
   );
 };
+
+export default Header;

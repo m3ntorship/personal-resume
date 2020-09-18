@@ -1,5 +1,5 @@
 import React from 'react';
-import { HeaderComponent } from './components/Header/index.jsx';
+import Header from './components/Header/index.jsx';
 import { Prototype } from './components/TestComponent';
 import { API } from './modules/apis';
 
@@ -15,7 +15,8 @@ export default class App extends React.Component {
   render() {
     return (
       <div>
-        <HeaderComponent />;{<Prototype />}
+        <Header />
+        {<Prototype />}
       </div>
     );
   }
