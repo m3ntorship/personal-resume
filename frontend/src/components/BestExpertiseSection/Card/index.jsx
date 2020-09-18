@@ -1,14 +1,12 @@
 import React from 'react';
 import { Button } from '../../shared/button/index';
 
-const Card = ({ title, details, button }) => {
+const Card = ({ title, details, button, key }) => {
   return (
-    <article>
+    <article key={key}>
       <div className="bg-c400 p-10 overflow-hidden relative group">
         {/* Hover Effect */}
-        <div
-          className="opacity-0 group-hover:opacity-100 absolute w-full h-full -mt-10 -ml-10 flex items-center justify-center transition-opacity duration-200"
-        >
+        <div className="opacity-0 group-hover:opacity-100 absolute w-full h-full -mt-10 -ml-10 flex items-center justify-center transition-opacity duration-200">
           <div className="bg-c900 w-70 h-70 rounded-full absolute z-30"></div>
           <div className="bg-c1000 w-90 h-90 rounded-full absolute z-20"></div>
           <div className="bg-c1100 w-110 h-110 rounded-full absolute"></div>
@@ -24,13 +22,15 @@ const Card = ({ title, details, button }) => {
               <path d="M224 144h16v16h-16zm0 0M256 144h16v16h-16zm0 0M64 176h16v16H64zm0 0M64 208h32v16H64zm0 0M64 240h32v16H64zm0 0M64 272h64v16H64zm0 0M64 304h96v16H64zm0 0" />
             </svg>
           </div>
-          <h3 className="font-headings font-bold text-lg text-c200 ">{title}</h3>
+          <h3 className="font-headings font-bold text-lg text-c200 ">
+            {title}
+          </h3>
           <p className="text-base mt-5">{details}</p>
           <Button
             rounded={true}
             customClassNames="my-6 mx-auto block w-48 h-12 font-bold hover:bg-c100 hover:text-white transition-colors duration-200 focus:outline-none focus:shadow-outline"
           >
-            {button}
+            <a href={button.url}>{button.title}</a>
           </Button>
         </div>
       </div>

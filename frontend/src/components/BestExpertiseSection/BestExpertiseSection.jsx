@@ -10,13 +10,13 @@ const BestExpertiseSection = () => {
     });
   }, []);
   if (services) {
-    const cards = services.cards.map(({ title, details, button }) => {
+    const cards = services.cards.map(({ title, details, button, key }) => {
       return (
         <Card
           title={title}
           details={details}
           button={button}
-          key={Math.random()}
+          key={key}
         />
       );
     });
