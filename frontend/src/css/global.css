@@ -5,8 +5,15 @@ section {
   @apply mt-35;
 }
 .container {
-  @apply w-main-container max-w-6xl mx-auto; /* You might get an error warning here, just leave it as it is */
+  max-width: 85%;
+  margin: 0 auto;
 }
-p{
+
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+p {
   @apply text-c300;
 }
