@@ -142,15 +142,21 @@
       }
     ]
   },
-  "gallery": {
-    "img-src": [
-      "../frontend/src/images/img-art.png",
-      "../frontend/src/images/img-battle-board-game.png",
-      "../frontend/src/images/img-black-and-white.png ",
-      "../frontend/src/images/img-gray-laptop-codes.png",
-      "../frontend/src/images/img-photo-of-imac.png",
-      "../frontend/src/images/img-young-woman-thinking.png",
-      "../frontend/src/images/img-young-woman-thinking.png"
-    ]
+
+  "RecentWorks": {
+    "title": "My Recent Works",
+    "listItems": ["all works", "ui/ux", "branding", "logo", "development"],
+    "imagesURL": [
+      "./images/img-young-woman-thinking.png",
+      "./images/img-black-and-white.png",
+      "./images/img-battle-board-game.png",
+      "./images/img-art.png",
+      "./images/img-photo-of-imac.png",
+      "./images/img-gray-laptop-codes.png"
+    ],
+    "button": {
+      "title": "more projects",
+      "url": "/"
+    }
   }
 }

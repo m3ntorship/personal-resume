@@ -1,50 +1,51 @@
-import React from 'react';
-import art from '../../images/img-art.png';
-import battle from '../../images/img-battle-board-game.png';
-import blackandwhite from '../../images/img-black-and-white.png';
-import graylaptop from '../../images/img-gray-laptop-codes.png';
-import imac from '../../images/img-photo-of-imac.png';
-import woman from '../../images/img-young-woman-thinking.png';
+import React, { useState, useEffect } from 'react';
+import { API } from '../../modules/apis';
+import { Button } from '../shared/button/index';
+import { Heading, HEADING_OPTIONS } from '../shared/heading/index';
 
 const Gallery = () => {
-  return (
-    <React.Fragment>
-      <div className="container  my-32">
-        <div className="mb-16 text-center  text-xxlg">
-          <h2>My Recent Works </h2>
-        </div>
-        <div className="mb-16 text-center text-sm ">
-          <p>
-            <span className="uppercase  inline-block m-5 ">all works </span>
-            <span className="uppercase  inline-block m-5 ">ui/ux</span>
-            <span className="uppercase  inline-block m-5 ">branding</span>
-            <span className="uppercase  inline-block m-5 ">logo</span>
-            <span className="uppercase  inline-block m-5 ">development</span>
-          </p>
-        </div>
-        <div className=" grid grid-rows-2  grid-cols-3 gap-x-8 gap-y-6 ">
-          <div className="max-w-sm">
-            <img className="w-full" src={art} alt="" />
-          </div>
-          <div className="max-w-sm">
-            <img className="w-full" src={battle} alt="" />
-          </div>
-          <div className="max-w-sm">
-            <img className="w-full" src={blackandwhite} alt="" />
-          </div>
-          <div className="max-w-sm">
-            <img className="w-full" src={graylaptop} alt="" />
-          </div>
-          <div className="max-w-sm">
-            <img className="w-full" src={imac} alt="" />
-          </div>
-          <div className="max-w-sm">
-            <img className="w-full" src={woman} alt="" />
-          </div>
-        </div>
-      </div>
-    </React.Fragment>
-  );
+  const [works, setWorks] = useState({});
+  useEffect(() => {
+    API('/RecentWorks').then(({ data }) => {
+      setWorks(data);
+    });
+  }, []);
+  if (works.listItems) {
+    const listItems = works.listItems.map(item => {
+      return (
+        <li className="uppercase mr-8 text-sm font-medium text-c300 hover:text-c100">
+          {item}
+        </li>
+      );
+    });
+    const images = works.imagesURL.map(image => {
+      return (
+        <li>
+          <img src={image} alt={image} />
+        </li>
+      );
+    });
+    return (
+      <section className="container text-center mt-35">
+        <Heading as="h2" className="mb-10">
+          {works.title}
+        </Heading>
+        <ul className="flex justify-center items-center mb-10 px">
+          {listItems}
+        </ul>
+        <ul className="grid grid-cols-3 gap-8">{images}</ul>
+        <Button
+          rounded={true}
+          bgColor="c100"
+          customClassNames="my-12 py-4 px-10"
+        >
+          <a href={works.button.url}>{works.button.title}</a>
+        </Button>
+      </section>
+    );
+  } else {
+    return <div>Cannot load data from api ...</div>;
+  }
 };
 
 export default Gallery;

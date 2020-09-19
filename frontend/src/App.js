@@ -16,8 +16,8 @@ export default class App extends React.Component {
         <Navbar />
         <AboutUs />
         <BestExpertiseSection />
-        <EstimateSection />
         <Gallery />
+        <EstimateSection />
       </div>
     );
   }
