@@ -38,7 +38,7 @@ export const UpdatedPosts = () => {
                 alt="Post update"
                 className="rounded-md my-8"
               />
-              <div className="flex justify-between items-center">
+              <div className="flex justify-between items-center text-c300">
                 <figure className="flex items-center ">
                   <img
                     src="https://picsum.photos/300/200"
@@ -54,7 +54,7 @@ export const UpdatedPosts = () => {
                         <img
                           src={Heart}
                           alt="Heart Icon"
-                          className="w-4 inline ml-1"
+                          className="w-4 inline ml-1 border-c300"
                         />
                       </a>
                       <span className="ml-1">{likes}</span>
