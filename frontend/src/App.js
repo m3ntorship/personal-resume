@@ -14,7 +14,6 @@ export default class App extends React.Component {
     return (
       <div>
         <Header />
-        <Navbar />
         {/* <Prototype /> */}
         <AboutUs />
         <BestExpertiseSection />
