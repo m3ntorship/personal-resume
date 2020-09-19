@@ -4,4 +4,4 @@ WORKDIR /personal-resume
 
 COPY backend/db.json backend/package.json /personal-resume/
 RUN yarn
-CMD [ "yarn", "json-server", "db.json", "-H", "0.0.0.0"];
+CMD [ "yarn", "json-server", "db.json", "-H", "0.0.0.0", "-p", "3001"];
