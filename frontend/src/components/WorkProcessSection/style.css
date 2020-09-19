@@ -1,8 +1,3 @@
-#timeline {
-  height: 10px;
-  background-color: #f9320c;
-}
-
 .marker {
   color: #fff;
   width: 130px;
@@ -10,7 +5,6 @@
   line-height: 50px;
   font-size: 1.4em;
   text-align: center;
-  position: absolute;
   border-radius: 50%;
   background-color: #fff;
 }
@@ -19,7 +13,6 @@
   width: 90px;
   height: 90px;
   border-radius: 50%;
-  position: absolute;
   top: 20px;
   left: 20.5px;
   border: 1px dashed #f9320c;
@@ -47,37 +40,4 @@
   transition: all 300ms ease-in-out;
 }
 
-.mfirst {
-  bottom: -65px;
-  left: 10%;
-}
 
-.m2 {
-  bottom: -65px;
-  left: 30%;
-}
-
-.m3 {
-  bottom: -65px;
-  left: 51%;
-}
-
-.mlast {
-  bottom: -65px;
-  left: 71.5%;
-}
-
-.timeline__1 {
-  width: 8.5%;
-  left: 20.4%;
-  top: 20px;
-}
-.timeline__2 {
-  width: 9.5%;
-  left: 40.4%;
-  top: 10px;
-}
-.timeline__3 {
-  width: 9%;
-  left: 61.4%;
-}

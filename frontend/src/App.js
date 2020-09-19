@@ -18,7 +18,6 @@ export default class App extends React.Component {
       <div>
         {/* <Prototype /> */}
         <WorkProcess />
-        <Prototype />
       </div>
     );
   }
