@@ -141,5 +141,28 @@
         "key": "6"
       }
     ]
+  },
+
+  "RecentWorks": {
+    "title": "My Recent Works",
+    "listItems": [
+      { "id": "1", "item": "all works" },
+      { "id": "2", "item": "ui/ux" },
+      { "id": "3", "item": "branding" },
+      { "id": "4", "item": "logo" },
+      { "id": "5", "item": "development" }
+    ],
+    "imagesURL": [
+      { "id": "1", "url": "./images/img-young-woman-thinking.png " },
+      { "id": "2", "url": "./images/img-black-and-white.png " },
+      { "id": "3", "url": "./images/img-battle-board-game.png " },
+      { "id": "4", "url": "./images/img-art.png" },
+      { "id": "5", "url": "./images/img-photo-of-imac.png" },
+      { "id": "6", "url": "./images/img-gray-laptop-codes.png " }
+    ],
+    "button": {
+      "title": "more projects",
+      "url": "/"
+    }
   }
 }
