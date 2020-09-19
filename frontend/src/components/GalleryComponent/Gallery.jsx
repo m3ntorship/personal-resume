@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { API } from '../../modules/apis';
 import { Button } from '../shared/button/index';
-import { Heading, HEADING_OPTIONS } from '../shared/heading/index';
+import { Heading } from '../shared/heading/index';
 
 const Gallery = () => {
   const [works, setWorks] = useState({});
