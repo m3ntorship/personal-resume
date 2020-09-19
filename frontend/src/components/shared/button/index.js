@@ -15,5 +15,3 @@ export const Button = ({ children, customClassNames, rounded, bgColor }) => {
     </button>
   );
 };
-
-// Buttons Widths and heights
