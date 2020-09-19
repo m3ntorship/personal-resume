@@ -1,4 +1,18 @@
 {
+  "header": {
+    "heading": "Mark Parker",
+    "paragraph": "I am professional UI Designer and Web Developer. I am working in UI Park as a UI/UX Designer.",
+    "avatarUrl": "./images/avatar.png",
+    "dotsUrl": "./images/dots3.png",
+    "webServicesButton": {
+      "title": "web services",
+      "url": "/"
+    },
+    "recentWorkesButton": {
+      "title": "recent workes",
+      "url": "/"
+    }
+  },
   "navigation": {
     "linksList": [
       {
