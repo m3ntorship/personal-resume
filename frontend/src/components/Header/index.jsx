@@ -51,12 +51,12 @@ const Header = () => {
           <div className="w-1/2 mb-8 pb-8 ">
             <img
               src={data.dotsUrl}
-              alt="dots image"
+              alt="dots"
               className=" absolute  mb-32   transform  translate-x-4  -translate-y-8   "
             />
             <img
               src={data.avatarUrl}
-              alt="avatar image"
+              alt="avatar"
               className=" object-cover w-60 h-60 relative rounded-full border-8 border-white ml-16 z-10 "
             />
           </div>
