@@ -3,8 +3,13 @@
     {
       "heading": "Mark Parker",
       "paragraph": "I am professional UI Designer and Web Developer. I am working in UI Park as a UI/UX Designer.",
-      "image": {
-        "alt": "Mark photo",
+      "imageUrl": "/",
+      "button1": {
+        "title": "web services",
+        "url": "/"
+      },
+      "button2": {
+        "title": "recent workes",
         "url": "/"
       }
     }
