@@ -8,7 +8,7 @@ import BestExpertiseSection from './components/BestExpertiseSection/BestExpertis
 // import { API } from './modules/apis';
 import Gallery from '../src/components/GalleryComponent/Gallery';
 import { Navbar } from './components/Navbar';
-
+import { UpdatedPosts } from './components/UpdatedPosts';
 export default class App extends React.Component {
   render() {
     return (
@@ -19,6 +19,7 @@ export default class App extends React.Component {
         <BestExpertiseSection />
         <Gallery />
         <EstimateSection />
+        <UpdatedPosts />
       </div>
     );
   }
