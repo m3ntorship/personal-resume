@@ -2,6 +2,8 @@ FROM node:12.18.2-alpine3.12
 
 WORKDIR /personal-resume
 
-COPY backend/db.json backend/package.json /personal-resume/
-RUN yarn
-CMD [ "yarn", "json-server", "db.json", "-H", "0.0.0.0", "-p", "3001"];
+COPY api/dist /personal-resume/dist
+COPY api/package.json api/json-server-db.json /personal-resume/
+RUN yarn global add json-server
+
+CMD [ "yarn", "start:mock"];
