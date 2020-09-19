@@ -16,7 +16,9 @@ const BestExpertiseSection = () => {
     });
     return (
       <section className="container text-center">
-        <Heading as='h2' className='my-10'>{services.title}</Heading>
+        <Heading as="h2" className="my-10">
+          {services.title}
+        </Heading>
         <div className="grid grid-cols-3 gap-8">{cards}</div>
       </section>
     );

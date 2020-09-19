@@ -142,7 +142,32 @@
       }
     ]
   },
-
+  "updatedPosts": {
+    "postsHeader": "Get Everyday Updates",
+    "posts": [
+      {
+        "title": "Meet Inclusive Front-End Design Patterns A New Smashing Book",
+        "userName": "John Wick",
+        "likes": "26",
+        "comments": "19",
+        "id": "0abb6506-eb17-4548-b46c-4dbfcba61d40"
+      },
+      {
+        "title": "Meet Inclusive Front-End Design Patterns A New Smashing Book",
+        "userName": "Ricky Garvis",
+        "likes": "69",
+        "comments": "99",
+        "id": "a50ed195-2a86-4b80-a881-e4237e4bcd82"
+      },
+      {
+        "title": "Meet Inclusive Front-End Design Patterns A New Smashing Book",
+        "userName": "Steven Kyle",
+        "likes": "33",
+        "comments": "77",
+        "id": "d0e57738-ed52-49c2-a586-7928ccece9b1"
+      }
+    ]
+  },
   "RecentWorks": {
     "title": "My Recent Works",
     "listItems": [
