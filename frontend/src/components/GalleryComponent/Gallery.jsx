@@ -27,12 +27,20 @@ const Gallery = () => {
     });
     return (
       <section className="container text-center mt-35">
-          <Heading as='h2' className="mb-10">{works.title}</Heading>
-          <ul className="flex justify-center items-center mb-10 px">
-            {listItems}
-          </ul>
-          <ul className="grid grid-cols-3 gap-8">{images}</ul>
-          <Button rounded={true} bgColor="c100" customClassNames="my-12 py-4 px-10">more projects</Button>
+        <Heading as="h2" className="mb-10">
+          {works.title}
+        </Heading>
+        <ul className="flex justify-center items-center mb-10 px">
+          {listItems}
+        </ul>
+        <ul className="grid grid-cols-3 gap-8">{images}</ul>
+        <Button
+          rounded={true}
+          bgColor="c100"
+          customClassNames="my-12 py-4 px-10"
+        >
+          <a href={works.button.url}>{works.button.title}</a>
+        </Button>
       </section>
     );
   } else {
