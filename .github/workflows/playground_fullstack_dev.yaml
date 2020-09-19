@@ -27,7 +27,8 @@ jobs:
   build_frontend:
     needs: [prepare]
     runs-on: ubuntu-latest
-
+    env:
+      REACT_APP_BACKEND_URL: https://personal-resume-fullstack-dev-be.m3ntorship.net
     steps:
     - uses: actions/checkout@v2
     - name: install dependencies
@@ -71,7 +72,6 @@ jobs:
         build_args: STRAPI_ADMIN_PATH=${{secrets.M3_STRAPI_ADMIN_PATH}}
         
   deploy:
-    if: false
     needs:
       - prepare 
       - build_frontend
@@ -100,28 +100,17 @@ jobs:
           M3_DEPLOYMENT_PATH: deploy/dev/fullstack
           TEMP_DIR: temp
           M3_NAMESPACE: default
-          M3_PROJECT: m3ntorshipcom
+          M3_PROJECT: personal-resume
           M3_COMPONENET: fullstack
           M3_ENVIRONMENT: dev
           M3_REPLICAS: '1'
+          M3_IMAGE_FRONTEND: ${{needs.prepare.outputs.image_frontend}}
           M3_PORT_FRONTEND: '3000'
-          M3_PORT_BACKEND: '1337'
+          M3_IMAGE_BACKEND: ${{needs.prepare.outputs.image_backend}}
+          M3_PORT_BACKEND: '3001'
           M3_SHA: ${{needs.prepare.outputs.sha}}
         run: |
           echo $M3_VERSION
           mkdir -p $TEMP_DIR
           for f in $M3_DEPLOYMENT_PATH/apply/*; do mo -u "$f" > $TEMP_DIR/"$(basename $f)"; done
           kubectl apply -f $TEMP_DIR
-      - name: wait-for-success-deployment
-        env:
-          M3_PROJECT: m3ntorshipcom
-          M3_COMPONENET: fullstack
-          M3_ENVIRONMENT: dev
-        run: |
-          while [[ "$(curl -s -o /dev/null -w ''%{http_code}'' https://m3ntorshipcom-fullstack-dev-fe.m3ntorship.net)" != "200" ]]; do sleep 5; done
-          while [[ "$(curl -s -o /dev/null -w ''%{http_code}'' https://m3ntorshipcom-fullstack-dev-be.m3ntorship.net)" != "200" ]]; do sleep 5; done
-      - name: force-nextjs-incremental-build
-        run: |
-          curl https://m3ntorshipcom-fullstack-dev-fe.m3ntorship.net
-          sleep 10
-          curl https://m3ntorshipcom-fullstack-dev-fe.m3ntorship.net
