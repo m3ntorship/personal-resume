@@ -13,7 +13,9 @@ module.exports = {
     ],
 
     // These options are passed through directly to PurgeCSS
-    options: {}
+    options: {
+      whitelist: ['bg-c100','bg-c200'],
+    }
   },
   // ...
   theme: {
