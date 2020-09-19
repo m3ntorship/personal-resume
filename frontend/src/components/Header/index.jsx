@@ -18,7 +18,7 @@ const Header = () => {
       <header className=" w-full  bg-c400  border-c100 border-b-4 pb-32">
         <div className="container flex flex-row pt-64 relative">
           <div className="  mt-16  ">
-            <div className="  ">
+            <div>
               <span className=" text-c100 font-body text-xxlg font-medium leading-1 ">
                 I am
               </span>
@@ -30,7 +30,7 @@ const Header = () => {
               </p>
             </div>
 
-            <div className="  ">
+            <div>
               <Button
                 rounded={true}
                 customClassNames="w-56 h-16 mr-4"
@@ -51,12 +51,12 @@ const Header = () => {
           <div className="w-1/2 mb-8 pb-8 ">
             <img
               src={data.dotsUrl}
-              alt=""
+              alt="dots image"
               className=" absolute  mb-32   transform  translate-x-4  -translate-y-8   "
             />
             <img
               src={data.avatarUrl}
-              alt=""
+              alt="avatar image"
               className=" object-cover w-60 h-60 relative rounded-full border-8 border-white ml-16 z-10 "
             />
           </div>
@@ -64,7 +64,7 @@ const Header = () => {
       </header>
     );
   } else {
-    return 'HI';
+    return null;
   }
 };
 
