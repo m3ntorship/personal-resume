@@ -142,23 +142,23 @@
       }
     ]
   },
-  "RecentWorks":{
+  "RecentWorks": {
     "title": "My Recent Works",
-    "listItems":{
-      "1": "ALL WORKS",
-      "2": "ALL WORKS",
-      "3": "ALL WORKS",
-      "4": "ALL WORKS",
-      "5": "ALL WORKS"
-    },
-    "imagesURL":{
-      "1": "../frontend/src/components/GalleryComponent/images/img-young-woman-thinking.png",
-      "2": "../frontend/src/components/GalleryComponent/images/img-young-woman-thinking.png",
-      "3": "../frontend/src/components/GalleryComponent/images/img-young-woman-thinking.png",
-      "4": "../frontend/src/components/GalleryComponent/images/img-young-woman-thinking.png",
-      "5": "../frontend/src/components/GalleryComponent/images/img-young-woman-thinking.png",
-      "6": "../frontend/src/components/GalleryComponent/images/img-young-woman-thinking.png"
-    },
+    "listItems": [
+      "all works",
+      "ui/ux",
+      "branding",
+      "logo",
+      "development"
+    ],
+    "imagesURL": [
+      "./images/img-young-woman-thinking.png",
+      "./images/img-black-and-white.png",
+      "./images/img-battle-board-game.png",
+      "./images/img-art.png",
+      "./images/img-photo-of-imac.png",
+      "./images/img-gray-laptop-codes.png"
+    ],
     "button": {
       "title": "more projects",
       "url": "/"
