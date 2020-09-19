@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Card from './Card';
 import { API } from '../../modules/apis';
-import { Heading, HEADING_OPTIONS } from '../shared/heading/index';
+import { Heading } from '../shared/heading/index';
 
 const BestExpertiseSection = () => {
   const [services, setServices] = useState(null);
