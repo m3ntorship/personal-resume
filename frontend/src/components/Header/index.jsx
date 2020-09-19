@@ -3,9 +3,9 @@ import dots from './assets/dots3.png';
 import avatar from './assets/avata1r.png';
 import { Button } from './../shared/button/index.js';
 import { Heading, HEADING_OPTIONS } from '../shared/heading';
+// import { Navbar } from './../../components/Navbar/index.jsx';
 // import { useEffect } from 'react';
 // import { API } from './../../modules/apis';
-import './custom.css';
 
 const Header = () => {
   return (
@@ -52,8 +52,6 @@ const Header = () => {
           />
         </div>
       </div>
-      <div className="stick absolute flex "></div>
-      <div className="triangle absolute  flex "></div>
     </header>
   );
 };
