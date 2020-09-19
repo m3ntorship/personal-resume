@@ -146,11 +146,11 @@
   "RecentWorks": {
     "title": "My Recent Works",
     "listItems": [
-      { "id": "1", "item": "all works" },
-      { "id": "2", "item": "ui/ux" },
-      { "id": "3", "item": "branding" },
-      { "id": "4", "item": "logo" },
-      { "id": "5", "item": "development" }
+      { "id": "1", "title": "all works" },
+      { "id": "2", "title": "ui/ux" },
+      { "id": "3", "title": "branding" },
+      { "id": "4", "title": "logo" },
+      { "id": "5", "title": "development" }
     ],
     "imagesURL": [
       { "id": "1", "url": "./images/img-young-woman-thinking.png " },

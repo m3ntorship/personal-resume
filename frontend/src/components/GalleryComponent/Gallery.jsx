@@ -13,17 +13,16 @@ const Gallery = () => {
   if (works.listItems) {
     const listItems = works.listItems.map(item => {
       return (
-        <li className="uppercase mr-8 text-sm font-medium text-c300 hover:text-c100">
-          {item}
+        <li
+          key={item.id}
+          className="uppercase mr-8 text-sm font-medium text-c300 hover:text-c100"
+        >
+          {item.title}
         </li>
       );
     });
     const images = works.imagesURL.map(image => {
-      return (
-        <li>
-          <img src={image} alt={image} />
-        </li>
-      );
+      return <li key={image.id}>{<img src={image.url} alt={image} />}</li>;
     });
     return (
       <section className="container text-center mt-35">
