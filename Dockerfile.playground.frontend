@@ -1,0 +1,6 @@
+FROM node:12.18.2-alpine3.12
+
+WORKDIR /personal-resume
+COPY frontend/build /personal-resume
+RUN yarn global add serve
+CMD [ "serve", "-l", "3000" ];

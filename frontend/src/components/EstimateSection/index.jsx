@@ -1,7 +1,7 @@
 import React from 'react';
 import { Button } from '../shared/button';
 import { useEffect, useState } from 'react';
-import { Heading, HEADING_OPTIONS } from '../shared/heading/index';
+import { Heading } from '../shared/heading/index';
 import { API } from '../../modules/apis';
 
 const EstimateSection = () => {
