@@ -262,5 +262,11 @@
       "title": "more projects",
       "url": "/"
     }
+  },
+  "footer": {
+    "logo": "./images/Logo.png",
+    "upWardsArrow": "./images/upwards-arrow.svg",
+    "topUrl": "/",
+    "copyRights": "Copyrights By@Example - 2020"
   }
 }
