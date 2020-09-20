@@ -1,96 +1,56 @@
 import React from 'react';
 import { Heading, HEADING_OPTIONS } from '../shared/heading';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+import { API } from '../../modules/apis';
 import './style.css';
 
 const WorkProcess = () => {
-  const circleStyling = {
-    width: '130px',
-    height: '130px',
-    lineHeight: '50px',
-    fontSize: '1.4em',
-    textAlign: 'center',
-    borderRadius: '50%',
-    backgroundColor: '#fff'
-  };
+  const [workProcessData, setData] = useState();
+  useEffect(() => {
+    API('workProcess').then(({ data }) => setData(data));
+  }, []);
 
-  const circleOnHover = {
-    backgroundColor: '#f9320c',
-    transform: `scale(1.7)`,
-    transition: 'all 300ms ease-in-out',
-    borderRadius: '50%'
-  };
+  if (workProcessData) {
+    const { title, circleItem } = workProcessData;
 
-  const innerCircle = {
-    width: '90px',
-    height: '90px',
-    borderRadius: '50%',
-    top: '20px',
-    left: '20.5px',
-    border: '1px dashed #f9320c'
-  };
+    return (
+      <section className="border-4 border-c1000 py-32 bg-c400 my-64">
+        <Heading
+          as="h1"
+          fontSize={HEADING_OPTIONS.FONT_SIZES.MEDIUM}
+          color={HEADING_OPTIONS.COLOR.PRIMARY}
+          className="text-center mb-16"
+        >
+          {title}
+        </Heading>
 
-  const innerCircleHover = {
-    border: '1px dashed #fff'
-  };
-
-  const [circleItem, setStyle] = useState(circleStyling);
-  const [innerCircleItem, setInnerCirlce] = useState(innerCircle);
-
-  return (
-    <>
-      <Heading
-        as="h1"
-        fontSize={HEADING_OPTIONS.FONT_SIZES.MEDIUM}
-        color={HEADING_OPTIONS.COLOR.PRIMARY}
-        className="text-center mb-16"
-      >
-        My Work Process
-      </Heading>
-      <div className="flex items-center justify-center">
-        <div className="relative">
-          <div
-            className="bg-c100 flex justify-center items-center"
-            style={circleItem}
-            onMouseEnter={() => setStyle(circleOnHover)}
-            onMouseLeave={() => setStyle(circleStyling)}
-          >
-            <div className="p-6" style={markerInner}>
-              <img src="https://i.imgur.com/7lxp07y.png" alt="" />
-            </div>
-          </div>
-          <h4 className="mt-10 absolute">Make Wireframe</h4>
+        <div className="container grid grid-cols-4 items-center justify-center ">
+          {circleItem.map(item => {
+            const { icon, title, id } = item;
+            return (
+              <div className="relative z-50 mx-auto" key={id}>
+                <div className="mx-auto circle__container flex justify-center items-center h-40 w-40 rounded-full bg-c400 hover:bg-c100">
+                  <div className="p-10 h-32 w-32 border border-dashed rounded-full border-c100 hover:border-c400">
+                    <img src={icon} alt="" />
+                  </div>
+                </div>
+                <Heading
+                  fontSize={HEADING_OPTIONS.FONT_SIZES.XSMALL}
+                  color={HEADING_OPTIONS.COLOR.PRIMARY}
+                  className="text-center mt-10 w-full font-regular"
+                >
+                  {title}
+                </Heading>
+              </div>
+            );
+          })}
+          <div className="h-2 w-2/5 absolute z-0 bg-c900 row-start-1 ml-40 mt-20"></div>
         </div>
-        <div className="w-32 h-2 bg-c100"></div>
-        <div className="relative">
-          <div className="marker bg-c100 flex justify-center items-center">
-            <div className="marker__inner p-6">
-              <img src="https://i.imgur.com/7lxp07y.png" alt="" />
-            </div>
-          </div>
-          <h4 className="mt-10 absolute">Make Wireframe</h4>
-        </div>
-        <div className="w-32 h-2 bg-c100"></div>
-        <div className="relative">
-          <div className="marker bg-c100 flex justify-center items-center">
-            <div className="marker__inner p-6">
-              <img src="https://i.imgur.com/7lxp07y.png" alt="" />
-            </div>
-          </div>
-          <h4 className="mt-10 absolute">Make Wireframe</h4>
-        </div>
-        <div className="w-32 h-2 bg-c100"></div>
-        <div className="relative">
-          <div className="marker bg-c100 flex justify-center items-center">
-            <div className="marker__inner p-6">
-              <img src="https://i.imgur.com/7lxp07y.png" alt="" />
-            </div>
-          </div>
-          <h4 className="mt-10 absolute">Make Wireframe</h4>
-        </div>
-      </div>
-    </>
-  );
+      </section>
+    );
+  } else {
+    return <div>Fetching..</div>;
+  }
 };
 
 export default WorkProcess;
