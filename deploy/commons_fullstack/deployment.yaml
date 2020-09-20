@@ -1,0 +1,40 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: '{{{M3_PROJECT}}}-{{{M3_COMPONENET}}}-{{{M3_ENVIRONMENT}}}'
+  namespace: '{{{M3_NAMESPACE}}}'
+  labels:
+    project: '{{{M3_PROJECT}}}'
+    environment: '{{{M3_PROJECT}}}'
+    componenet: '{{{M3_COMPONENET}}}'
+    application: '{{{M3_PROJECT}}}-{{{M3_COMPONENET}}}-{{{M3_ENVIRONMENT}}}'
+    version: '{{{M3_VERSION}}}'
+    sha: '{{{M3_SHA}}}'
+spec:
+  replicas: {{{M3_REPLICAS}}}
+  selector:
+    matchLabels:
+      application: '{{{M3_PROJECT}}}-{{{M3_COMPONENET}}}-{{{M3_ENVIRONMENT}}}'
+  template:
+    metadata:
+      labels:
+        project: '{{{M3_PROJECT}}}'
+        environment: '{{{M3_PROJECT}}}'
+        componenet: '{{{M3_COMPONENET}}}'
+        application: '{{{M3_PROJECT}}}-{{{M3_COMPONENET}}}-{{{M3_ENVIRONMENT}}}'
+    spec:
+      containers:
+        - name: '{{{M3_PROJECT}}}-{{{M3_COMPONENET}}}-{{{M3_ENVIRONMENT}}}-backend'
+          image: '{{{M3_IMAGE_BACKEND}}}:{{{M3_VERSION}}}'
+          imagePullPolicy: Always
+          ports:
+            - name: web-backend
+              containerPort: {{{M3_PORT_BACKEND}}}
+              protocol: TCP
+        - name: '{{{M3_PROJECT}}}-{{{M3_COMPONENET}}}-{{{M3_ENVIRONMENT}}}-frontend'
+          image: '{{{M3_IMAGE_FRONTEND}}}:{{{M3_VERSION}}}'
+          imagePullPolicy: Always
+          ports:
+            - name: web-frontend
+              containerPort: {{{M3_PORT_FRONTEND}}}
+              protocol: TCP

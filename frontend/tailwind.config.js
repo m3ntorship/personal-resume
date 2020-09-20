@@ -1,7 +1,7 @@
 module.exports = {
   future: {
-    removeDeprecatedGapUtilities: true
-    // purgeLayersByDefault: true
+    removeDeprecatedGapUtilities: true,
+    purgeLayersByDefault: true
   },
   purge: {
     // enabled: true,
@@ -13,7 +13,9 @@ module.exports = {
     ],
 
     // These options are passed through directly to PurgeCSS
-    options: {}
+    options: {
+      whitelist: ['bg-c100','bg-c200'],
+    }
   },
   // ...
   theme: {
