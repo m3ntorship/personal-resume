@@ -17,7 +17,7 @@ const EstimateSection = () => {
     const { title, subTitle, button } = estimatesection;
     return (
       <section
-        className="py-32 text-c200 my-20"
+        className="py-32 text-c200"
         style={{
           backgroundImage: 'url(https://i.imgur.com/lSvq0BZ.png)',
           backgroundRepeat: 'no-repeat',

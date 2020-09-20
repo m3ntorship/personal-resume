@@ -27,7 +27,7 @@ export const BestDesignQuality = () => {
     });
     return (
       <section
-        className="text-c300 bg-c400 mt-35"
+        className="text-c300 bg-c400"
         style={{
           height: '33rem'
         }}

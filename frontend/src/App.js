@@ -18,7 +18,6 @@ export default class App extends React.Component {
         <BestExpertiseSection />
         <EstimateSection />
         <Gallery />
-        <UpdatedPosts />
         <BestDesignQuality />
         <UpdatedPosts />
         <Footer />

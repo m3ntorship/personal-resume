@@ -15,7 +15,7 @@ const Gallery = () => {
       return (
         <li
           key={item.id}
-          className="uppercase mr-8 text-sm font-medium text-c300 hover:text-c100 my-20"
+          className="uppercase mr-8 text-sm font-medium text-c300 hover:text-c100"
         >
           {item.title}
         </li>
@@ -25,7 +25,7 @@ const Gallery = () => {
       return <li key={image.id}>{<img src={image.url} alt={image} />}</li>;
     });
     return (
-      <section className="container text-center mt-35">
+      <section className="container text-center">
         <Heading as="h2" className="mb-10">
           {works.title}
         </Heading>

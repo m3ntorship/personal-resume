@@ -9,7 +9,7 @@ export const Footer = () => {
   }, []);
   if (data) {
     return (
-      <footer className="w-main-container m-auto flex flex-row justify-between items-center my-8">
+      <footer className="w-main-container m-auto flex flex-row justify-between items-center">
         <div className="mx-12">
           <a href="/">
             <img src={data.logo} alt="Logo" className="w-16" />
