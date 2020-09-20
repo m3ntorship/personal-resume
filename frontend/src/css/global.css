@@ -2,7 +2,7 @@ body {
   @apply font-body;
 }
 section {
-  @apply mt-35;
+  @apply my-32;
 }
 .container {
   max-width: 85%;
