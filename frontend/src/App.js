@@ -5,8 +5,9 @@ import AboutUs from './components/AboutUsSection/AboutUs';
 import BestExpertiseSection from './components/BestExpertiseSection/BestExpertiseSection';
 import EstimateSection from './components/EstimateSection';
 import Gallery from '../src/components/GalleryComponent/Gallery';
-import { UpdatedPosts } from './components/UpdatedPosts';
 import { BestDesignQuality } from '../src/components/best-design-quality/index';
+import { UpdatedPosts } from './components/UpdatedPosts';
+import { Form } from './components/Form';
 import { Footer } from './components/Footer';
 export default class App extends React.Component {
   render() {
@@ -20,6 +21,7 @@ export default class App extends React.Component {
         <Gallery />
         <BestDesignQuality />
         <UpdatedPosts />
+        <Form />
         <Footer />
         {/* <Prototype /> */}
       </div>
