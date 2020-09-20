@@ -21,9 +21,7 @@ export const Footer = () => {
         >
           Back To Top <span className="font-bold mx-1">^</span>
         </a>
-        <span className="text-md text-c300">
-          Copyrights By&copy;Example - 2020
-        </span>
+        <span className="text-md text-c300">{data.copyRights}</span>
       </footer>
     );
   } else {
