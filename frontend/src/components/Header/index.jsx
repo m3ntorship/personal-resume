@@ -4,8 +4,6 @@ import { Heading, HEADING_OPTIONS } from '../shared/heading';
 import { useEffect, useState } from 'react';
 import { API } from '../../modules/apis';
 
-// import { Navbar } from './../../components/Navbar/index.jsx';
-
 const Header = () => {
   const [data, setData] = useState();
   useEffect(() => {
@@ -15,14 +13,18 @@ const Header = () => {
   }, []);
   if (data) {
     return (
-      <header className=" w-full  bg-c400  border-c100 border-b-4 pb-32">
-        <div className="container flex flex-row pt-64 relative">
+      <header className=" w-full  bg-c400  border-c100 border-b-4 pb-40  pt-8">
+        <div className="container flex flex-row pt-32 relative">
           <div className="  mt-16  ">
             <div>
               <span className=" text-c100 font-body text-xxlg font-medium leading-1 ">
                 I am
               </span>
-              <Heading as="h1" fontSize={HEADING_OPTIONS.FONT_SIZES.LARGE}>
+              <Heading
+                as="h1"
+                fontSize={HEADING_OPTIONS.FONT_SIZES.LARGE}
+                className="mb-3"
+              >
                 {data.heading}
               </Heading>
               <p className="text-c300 font-body leading-2 text-lg mb-8 ">
@@ -30,10 +32,10 @@ const Header = () => {
               </p>
             </div>
 
-            <div>
+            <div className="mt-4 pt-6">
               <Button
                 rounded={true}
-                customClassNames="w-56 h-16 mr-4"
+                customClassNames="w-56 h-16 mr-6"
                 bgColor="c100"
               >
                 {data.webServicesButton.title}
