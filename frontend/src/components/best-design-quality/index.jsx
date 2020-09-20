@@ -11,7 +11,7 @@ export const BestDesignQuality = () => {
   }, []);
   if (bestDesign) {
     const images = bestDesign.imagesURL.map((image, i) => {
-      if (i === 0) return null;
+      if (i === 0 || i === 1) return null;
       return (
         <img
           key={image.id}
@@ -46,17 +46,14 @@ export const BestDesignQuality = () => {
             </Heading>
             <p className="mt-2 font-headings font-medium italic text-lg relative">
               {bestDesign.details}
-              <span className="text-c100">
-                <svg
-                  className="fill-current opacity-25 w-40 absolute"
-                  style={{
-                    top: '120'
-                  }}
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 512 512"
-                >
-                  <path d="M478 231c-22-22-50-35-81-36v-8c0-15 11-60 18-85l7-25h-87l-6 9c-2 4-57 94-57 229a120 120 0 10206-84zm-86 164c-44 0-80-36-80-80 0-99 33-173 46-198h12c-6 23-13 54-13 70 0 13 1 23 6 31 4 8 12 17 30 17h1a80 80 0 01-2 160zM206 231c-22-22-50-35-81-36v-8c0-15 11-60 18-85l7-25H63l-6 9c-2 4-57 94-57 229a120 120 0 10206-84zm-86 164c-44 0-80-36-80-80 0-99 33-173 46-198h12c-6 23-13 54-13 70 0 13 1 23 6 31 4 8 12 17 30 17h1a80 80 0 01-2 160z" />
-                </svg>
+              <span
+                className="absolute"
+                style={{
+                  top: '150px',
+                  left: '0'
+                }}
+              >
+                <img src={bestDesign.imagesURL[1].url} alt="" />
               </span>
             </p>
           </div>
