@@ -6,7 +6,8 @@ import BestExpertiseSection from './components/BestExpertiseSection/BestExpertis
 import EstimateSection from './components/EstimateSection';
 import Gallery from '../src/components/GalleryComponent/Gallery';
 import { UpdatedPosts } from './components/UpdatedPosts';
-import ProgressBar from './components/ProgressBar/ProgressBar';
+import { BestDesignQuality } from '../src/components/best-design-quality/index';
+import { Footer } from './components/Footer';
 export default class App extends React.Component {
   render() {
     return (
@@ -18,6 +19,10 @@ export default class App extends React.Component {
         <EstimateSection />
         <Gallery />
         <UpdatedPosts />
+        <BestDesignQuality />
+        <UpdatedPosts />
+        <Footer />
+        {/* <Prototype /> */}
       </div>
     );
   }
