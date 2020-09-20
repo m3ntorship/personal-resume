@@ -12,7 +12,7 @@ export const BestDesignQuality = () => {
   }, []);
   if (bestDesign) {
     const images = bestDesign.imagesURL.map((image, i) => {
-      if (i === 0) return;
+      if (i === 0) return null;
       return (
         <img
           key={image.id}
@@ -22,13 +22,13 @@ export const BestDesignQuality = () => {
             width: '7.5rem'
           }}
           src={image.url}
-          alt=""
+          alt="mock image"
         />
       );
     });
     return (
       <section
-        className="text-c300 bg-c400"
+        className="text-c300 bg-c400 mt-35"
         style={{
           height: '33rem'
         }}
