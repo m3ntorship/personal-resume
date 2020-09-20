@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { API } from '../../modules/apis';
-export const Footer = () => {
+
+const Footer = () => {
   const [data, setData] = useState(null);
   useEffect(() => {
     API('/footer').then(({ data }) => {
@@ -29,3 +30,5 @@ export const Footer = () => {
     return 'Data Broken';
   }
 };
+
+export default Footer;

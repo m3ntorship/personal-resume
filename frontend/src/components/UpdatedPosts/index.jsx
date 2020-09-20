@@ -4,7 +4,8 @@ import { Heading, HEADING_OPTIONS } from '../shared/heading';
 // Import Icons
 import Heart from './heart-regular.svg';
 import Comment from './comment-regular.svg';
-export const UpdatedPosts = () => {
+
+const UpdatedPosts = () => {
   const [data, setData] = useState();
   useEffect(() => {
     API('/updatedPosts').then(({ data }) => {
@@ -81,3 +82,5 @@ export const UpdatedPosts = () => {
     return 'Loading Broken';
   }
 };
+
+export default UpdatedPosts;

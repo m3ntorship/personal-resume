@@ -2,7 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { API } from '../../modules/apis';
 import { Heading, HEADING_OPTIONS } from '../shared/heading';
 import { Button } from '../shared/button';
-export const Form = () => {
+
+const Form = () => {
   const [data, setData] = useState(null);
   useEffect(() => {
     API('/footer').then(({ data }) => {
@@ -84,3 +85,5 @@ export const Form = () => {
     return 'Data Broken';
   }
 };
+
+export default Form;

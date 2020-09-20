@@ -4,7 +4,7 @@ import { API } from '../../modules/apis';
 import { Button } from '../shared/button';
 import Logo from './Logo.png';
 import Icon from './Icon.svg';
-export const Navbar = () => {
+const Navbar = () => {
   // Fetching API from the backend
   const [data, setData] = useState(null);
   const [error, setError] = useState();
@@ -61,3 +61,5 @@ export const Navbar = () => {
     return 'Data broken';
   }
 };
+
+export default Navbar;
