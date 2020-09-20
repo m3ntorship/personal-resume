@@ -156,6 +156,28 @@
       }
     ]
   },
+  "bestDesign": {
+    "title": "“Best Design Quality”",
+    "details": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor inci- didunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exe- rcitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+    "imagesURL": [
+      {
+        "id": "1",
+        "url": "./images/img-gray-laptop-codes.png "
+      },
+      {
+        "id": "2",
+        "url": "./images/silver-imac-displaying-collage-photos.png"
+      },
+      {
+        "id": "3",
+        "url": "./images/person-using-black-and-white-smartphone-and-holding-blue-card.png"
+      },
+      {
+        "id": "4",
+        "url": "./images/black-samsung-tablet-computer.png"
+      }
+    ]
+  },
   "updatedPosts": {
     "postsHeader": "Get Everyday Updates",
     "posts": [
@@ -185,19 +207,52 @@
   "RecentWorks": {
     "title": "My Recent Works",
     "listItems": [
-      { "id": "1", "title": "all works" },
-      { "id": "2", "title": "ui/ux" },
-      { "id": "3", "title": "branding" },
-      { "id": "4", "title": "logo" },
-      { "id": "5", "title": "development" }
+      {
+        "id": "1",
+        "title": "all works"
+      },
+      {
+        "id": "2",
+        "title": "ui/ux"
+      },
+      {
+        "id": "3",
+        "title": "branding"
+      },
+      {
+        "id": "4",
+        "title": "logo"
+      },
+      {
+        "id": "5",
+        "title": "development"
+      }
     ],
     "imagesURL": [
-      { "id": "1", "url": "./images/img-young-woman-thinking.png " },
-      { "id": "2", "url": "./images/img-black-and-white.png " },
-      { "id": "3", "url": "./images/img-battle-board-game.png " },
-      { "id": "4", "url": "./images/img-art.png" },
-      { "id": "5", "url": "./images/img-photo-of-imac.png" },
-      { "id": "6", "url": "./images/img-gray-laptop-codes.png " }
+      {
+        "id": "1",
+        "url": "./images/img-young-woman-thinking.png "
+      },
+      {
+        "id": "2",
+        "url": "./images/img-black-and-white.png "
+      },
+      {
+        "id": "3",
+        "url": "./images/img-battle-board-game.png "
+      },
+      {
+        "id": "4",
+        "url": "./images/img-art.png"
+      },
+      {
+        "id": "5",
+        "url": "./images/img-photo-of-imac.png"
+      },
+      {
+        "id": "6",
+        "url": "./images/img-gray-laptop-codes.png "
+      }
     ],
     "button": {
       "title": "more projects",
