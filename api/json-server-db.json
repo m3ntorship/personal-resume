@@ -203,5 +203,9 @@
       "title": "more projects",
       "url": "/"
     }
+  },
+  "footer": {
+    "logo": "./images/Logo.png",
+    "topUrl": "/"
   }
 }
