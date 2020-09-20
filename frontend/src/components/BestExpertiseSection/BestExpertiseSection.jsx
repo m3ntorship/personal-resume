@@ -15,7 +15,7 @@ const BestExpertiseSection = () => {
       return <Card title={title} details={details} button={button} key={key} />;
     });
     return (
-      <section className="container text-center">
+      <section className="container text-center my-16">
         <Heading as="h2" className="my-10">
           {services.title}
         </Heading>

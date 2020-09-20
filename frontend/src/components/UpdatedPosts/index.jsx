@@ -15,7 +15,7 @@ export const UpdatedPosts = () => {
 
   if (data) {
     return (
-      <div className="w-main-container m-auto grid gap-x-6 grid-cols-3">
+      <div className="w-main-container m-auto grid gap-x-6 grid-cols-3 my-20">
         <Heading
           as="h2"
           color={HEADING_OPTIONS.COLOR.PRIMARY}

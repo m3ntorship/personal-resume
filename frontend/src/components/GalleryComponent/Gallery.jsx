@@ -15,7 +15,7 @@ const Gallery = () => {
       return (
         <li
           key={item.id}
-          className="uppercase mr-8 text-sm font-medium text-c300 hover:text-c100"
+          className="uppercase mr-8 text-sm font-medium text-c300 hover:text-c100 my-20"
         >
           {item.title}
         </li>

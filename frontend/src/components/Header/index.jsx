@@ -13,8 +13,8 @@ const Header = () => {
   }, []);
   if (data) {
     return (
-      <header className=" w-full  bg-c400  border-c100 border-b-4 pb-40  pt-8">
-        <div className="container flex flex-row pt-32 relative">
+      <header className=" w-full  bg-c400  border-c100 border-b-4 pb-48  pt-8 mb-16">
+        <div className="container flex flex-row relative">
           <div className="  mt-16  ">
             <div>
               <span className=" text-c100 font-body text-xxlg font-medium leading-1 ">

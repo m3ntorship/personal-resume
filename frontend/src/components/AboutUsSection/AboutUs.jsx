@@ -24,7 +24,7 @@ const AboutUs = () => {
     } = sectionData;
 
     return (
-      <div className="grid my-10 grid-cols-1 lg:grid-cols-2 items-start container">
+      <div className="grid grid-cols-1 lg:grid-cols-2 items-start container  my-20 ">
         <div
           className="h-full flex"
           style={{

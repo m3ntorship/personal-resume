@@ -1,13 +1,12 @@
 import React from 'react';
-import Header from './components/Header/index.jsx';
-// import { Prototype } from './components/TestComponent';
-import AboutUs from './components/AboutUsSection/AboutUs';
-import EstimateSection from './components/EstimateSection';
-import BestExpertiseSection from './components/BestExpertiseSection/BestExpertiseSection';
-// import { Prototype } from './components/TestComponent';
-import Gallery from '../src/components/GalleryComponent/Gallery';
 import { Navbar } from './components/Navbar/index';
+import Header from './components/Header/index.jsx';
+import AboutUs from './components/AboutUsSection/AboutUs';
+import BestExpertiseSection from './components/BestExpertiseSection/BestExpertiseSection';
+import EstimateSection from './components/EstimateSection';
+import Gallery from '../src/components/GalleryComponent/Gallery';
 import { UpdatedPosts } from './components/UpdatedPosts';
+import ProgressBar from './components/ProgressBar/ProgressBar';
 export default class App extends React.Component {
   render() {
     return (
@@ -16,10 +15,9 @@ export default class App extends React.Component {
         <Header />
         <AboutUs />
         <BestExpertiseSection />
-        <Gallery />
         <EstimateSection />
+        <Gallery />
         <UpdatedPosts />
-        {/* <Prototype /> */}
       </div>
     );
   }
