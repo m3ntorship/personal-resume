@@ -1,0 +1,273 @@
+{
+  "header": {
+    "heading": "Mark Parker",
+    "paragraph": "I am professional UI Designer and Web Developer. I am working in UI Park as a UI/UX Designer.",
+    "avatarUrl": "./images/avatar.png",
+    "dotsUrl": "./images/dots3.png",
+    "webServicesButton": {
+      "title": "web services",
+      "url": "/"
+    },
+    "recentWorkesButton": {
+      "title": "recent workes",
+      "url": "/"
+    }
+  },
+  "navigation": {
+    "linksList": [
+      {
+        "title": "Home",
+        "linkUrl": "/",
+        "id": "314cca42-4e6c-402a-b310-549a0bb03aaa"
+      },
+      {
+        "title": "about us",
+        "linkUrl": "/",
+        "id": "7c01a2b6-76f0-4561-9ece-9377c81c6444"
+      },
+      {
+        "title": "Services",
+        "linkUrl": "/",
+        "id": "7d6a4908-171d-4c8f-9e23-b96d0da4a7d0"
+      },
+      {
+        "title": "Projects",
+        "linkUrl": "/",
+        "id": "c125890e-4a9e-47c5-b1d0-630ba5454aaf"
+      },
+      {
+        "title": "Testimonials",
+        "linkUrl": "/",
+        "id": "8d45ed8e-0567-4692-a22c-438fa8bf8c39"
+      },
+      {
+        "title": "blog",
+        "linkUrl": "/",
+        "id": "74229d31-52ec-488b-83c2-b13908ee248d"
+      },
+      {
+        "title": "contact",
+        "linkUrl": "/",
+        "id": "b092b918-630f-4840-bec1-b8f709749086"
+      }
+    ],
+    "downloadBtn": "Download My CV"
+  },
+  "aboutUs": {
+    "title": "Read About My Life Story",
+    "paragraph": "Donec commodo augue vitae metus interdum molestie. Fusce dapibus non mauris sit amet blandit. Maecenas quis massa nec sem laoreet vehiculaquis sit amet tortor. Proin ornare, lorem ut pellentesque maximus, ex leo viverra lorem, ac dapibus neque tellus id dolor. Curabitur luctus tortor eget dolor ultrices fermentum.",
+    "leftSectionImg": "https://i.imgur.com/nALr0iT.png",
+    "btnLabel": "get in touch",
+    "progressbars": [
+      {
+        "bgcolor": "#f9320c",
+        "progress": 60,
+        "label": "Development",
+        "id": "1",
+        "icon": "https://www.flaticon.com/svg/static/icons/svg/711/711284.svg"
+      },
+      {
+        "bgcolor": "#7a8baa",
+        "progress": 30,
+        "label": "UI/UX Design",
+        "id": "2",
+        "icon": "https://www.flaticon.com/svg/static/icons/svg/2881/2881093.svg"
+      },
+      {
+        "bgcolor": "#ed3ce3",
+        "progress": 53,
+        "label": "Digital Marketing",
+        "id": "3",
+        "icon": "https://www.flaticon.com/svg/static/icons/svg/455/455691.svg"
+      },
+      {
+        "bgcolor": "#74fa5e",
+        "progress": 73,
+        "label": "Graphic Design",
+        "id": "4",
+        "icon": "https://www.flaticon.com/svg/static/icons/svg/84/84498.svg"
+      }
+    ]
+  },
+  "estimatesection": {
+    "subTitle": "Have Any Project On Mind ?",
+    "title": "Estimate your Project!",
+    "button": {
+      "label": "Get In Touch",
+      "url": "/"
+    }
+  },
+  "services": {
+    "title": "My Best Expertise",
+    "cards": [
+      {
+        "title": "Web Development",
+        "details": "Nam eu massa vel quam auctor congue. Suspendisse semper erat id tellus entum ultricies. Nulla neck producw in ultrices devel odio sodales.",
+        "button": {
+          "title": "get this service",
+          "url": "/"
+        },
+        "key": "1"
+      },
+      {
+        "title": "Web Development",
+        "details": "Nam eu massa vel quam auctor congue. Suspendisse semper erat id tellus entum ultricies. Nulla neck producw in ultrices devel odio sodales.",
+        "button": {
+          "title": "get this service",
+          "url": "/"
+        },
+        "key": "2"
+      },
+      {
+        "title": "Web Development",
+        "details": "Nam eu massa vel quam auctor congue. Suspendisse semper erat id tellus entum ultricies. Nulla neck producw in ultrices devel odio sodales.",
+        "button": {
+          "title": "get this service",
+          "url": "/"
+        },
+        "key": "3"
+      },
+      {
+        "title": "Web Development",
+        "details": "Nam eu massa vel quam auctor congue. Suspendisse semper erat id tellus entum ultricies. Nulla neck producw in ultrices devel odio sodales.",
+        "button": {
+          "title": "get this service",
+          "url": "/"
+        },
+        "key": "4"
+      },
+      {
+        "title": "Web Development",
+        "details": "Nam eu massa vel quam auctor congue. Suspendisse semper erat id tellus entum ultricies. Nulla neck producw in ultrices devel odio sodales.",
+        "button": {
+          "title": "get this service",
+          "url": "/"
+        },
+        "key": "5"
+      },
+      {
+        "title": "Web Development",
+        "details": "Nam eu massa vel quam auctor congue. Suspendisse semper erat id tellus entum ultricies. Nulla neck producw in ultrices devel odio sodales.",
+        "button": {
+          "title": "get this service",
+          "url": "/"
+        },
+        "key": "6"
+      }
+    ]
+  },
+  "bestDesign": {
+    "title": "“Best Design Quality”",
+    "details": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor inci- didunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exe- rcitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+    "imagesURL": [
+      {
+        "id": "1",
+        "url": "./images/img-gray-laptop-codes.png "
+      },
+      {
+        "id": "2",
+        "url": "./images/Quote.svg"
+      },
+      {
+        "id": "2",
+        "url": "./images/silver-imac-displaying-collage-photos.png"
+      },
+      {
+        "id": "3",
+        "url": "./images/person-using-black-and-white-smartphone-and-holding-blue-card.png"
+      },
+      {
+        "id": "4",
+        "url": "./images/black-samsung-tablet-computer.png"
+      }
+    ]
+  },
+  "updatedPosts": {
+    "postsHeader": "Get Everyday Updates",
+    "posts": [
+      {
+        "title": "Meet Inclusive Front-End Design Patterns A New Smashing Book",
+        "userName": "John Wick",
+        "likes": "26",
+        "comments": "19",
+        "id": "0abb6506-eb17-4548-b46c-4dbfcba61d40"
+      },
+      {
+        "title": "Meet Inclusive Front-End Design Patterns A New Smashing Book",
+        "userName": "Ricky Garvis",
+        "likes": "69",
+        "comments": "99",
+        "id": "a50ed195-2a86-4b80-a881-e4237e4bcd82"
+      },
+      {
+        "title": "Meet Inclusive Front-End Design Patterns A New Smashing Book",
+        "userName": "Steven Kyle",
+        "likes": "33",
+        "comments": "77",
+        "id": "d0e57738-ed52-49c2-a586-7928ccece9b1"
+      }
+    ]
+  },
+  "RecentWorks": {
+    "title": "My Recent Works",
+    "listItems": [
+      {
+        "id": "1",
+        "title": "all works"
+      },
+      {
+        "id": "2",
+        "title": "ui/ux"
+      },
+      {
+        "id": "3",
+        "title": "branding"
+      },
+      {
+        "id": "4",
+        "title": "logo"
+      },
+      {
+        "id": "5",
+        "title": "development"
+      }
+    ],
+    "imagesURL": [
+      {
+        "id": "1",
+        "url": "./images/img-young-woman-thinking.png "
+      },
+      {
+        "id": "2",
+        "url": "./images/img-black-and-white.png "
+      },
+      {
+        "id": "3",
+        "url": "./images/img-battle-board-game.png "
+      },
+      {
+        "id": "4",
+        "url": "./images/img-art.png"
+      },
+      {
+        "id": "5",
+        "url": "./images/img-photo-of-imac.png"
+      },
+      {
+        "id": "6",
+        "url": "./images/img-gray-laptop-codes.png "
+      }
+    ],
+    "button": {
+      "title": "more projects",
+      "url": "/"
+    }
+  },
+  "footer": {
+    "logo": "./images/Logo.png",
+    "upWardsArrow": "./images/upwards-arrow.svg",
+    "topUrl": "/",
+    "copyRights": "Copyrights By@Example - 2020",
+    "contactPic": "./images/contact.svg"
+  }
+}
