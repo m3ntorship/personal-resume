@@ -166,7 +166,7 @@
       },
       {
         "id": "2",
-        "url":"./images/Quote.svg"
+        "url": "./images/Quote.svg"
       },
       {
         "id": "2",
@@ -267,6 +267,7 @@
     "logo": "./images/Logo.png",
     "upWardsArrow": "./images/upwards-arrow.svg",
     "topUrl": "/",
-    "copyRights": "Copyrights By@Example - 2020"
+    "copyRights": "Copyrights By@Example - 2020",
+    "contactPic": "./images/contact.svg"
   }
 }
