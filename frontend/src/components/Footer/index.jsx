@@ -17,9 +17,10 @@ export const Footer = () => {
         </div>
         <a
           href={data.topUrl}
-          className="text-md font-medium text-c100 flex items-center align-middle"
+          className="text-md font-medium text-c100 flex items-center"
         >
-          Back To Top <span className="font-bold mx-1">^</span>
+          Back To Top
+          <img src={data.upWardsArrow} alt="back to top" className="w-3 ml-2" />
         </a>
         <span className="text-md text-c300">{data.copyRights}</span>
       </footer>
