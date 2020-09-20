@@ -9,7 +9,7 @@ import BestExpertiseSection from './components/BestExpertiseSection/BestExpertis
 import Gallery from '../src/components/GalleryComponent/Gallery';
 import { Navbar } from './components/Navbar';
 import { UpdatedPosts } from './components/UpdatedPosts';
-import { Footer } from './components/Footer';
+import { Form } from './components/Form';
 export default class App extends React.Component {
   render() {
     return (
@@ -22,7 +22,7 @@ export default class App extends React.Component {
         <Gallery />
         <EstimateSection />
         <UpdatedPosts />
-        <Footer />
+        <Form />
       </div>
     );
   }
