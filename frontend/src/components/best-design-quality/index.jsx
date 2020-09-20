@@ -1,4 +1,3 @@
-// import React, { useState, useEffect } from 'react';
 import React, { useState, useEffect } from 'react';
 import { API } from '../../modules/apis';
 import { Heading, HEADING_OPTIONS } from '../shared/heading/index';
