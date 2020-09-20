@@ -10,6 +10,7 @@ import { BestDesignQuality } from '../src/components/best-design-quality/index';
 import { Navbar } from './components/Navbar';
 import { UpdatedPosts } from './components/UpdatedPosts';
 import { Form } from './components/Form';
+import { Footer } from './components/Footer';
 export default class App extends React.Component {
   render() {
     return (
