@@ -6,7 +6,8 @@ import EstimateSection from './components/EstimateSection';
 import BestExpertiseSection from './components/BestExpertiseSection/BestExpertiseSection';
 // import { Prototype } from './components/TestComponent';
 import Gallery from '../src/components/GalleryComponent/Gallery';
-import { Navbar } from './components/Navbar/index';
+import {BestDesignQuality} from '../src/components/best-design-quality/index';
+import { Navbar } from './components/Navbar';
 import { UpdatedPosts } from './components/UpdatedPosts';
 import { Form } from './components/Form';
 export default class App extends React.Component {
@@ -19,6 +20,7 @@ export default class App extends React.Component {
         <BestExpertiseSection />
         <Gallery />
         <EstimateSection />
+        <BestDesignQuality />
         <UpdatedPosts />
         <Form />
         {/* <Prototype /> */}
