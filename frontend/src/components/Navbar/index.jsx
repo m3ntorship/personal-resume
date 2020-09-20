@@ -2,8 +2,7 @@ import React, { useState } from 'react';
 import { useEffect } from 'react';
 import { API } from '../../modules/apis';
 import { Button } from '../shared/button';
-import Logo from './Logo.png';
-import Icon from './Icon.svg';
+
 export const Navbar = () => {
   // Fetching API from the backend
   const [data, setData] = useState(null);
@@ -21,7 +20,7 @@ export const Navbar = () => {
     return (
       <nav className="flex  items-center justify-between w-5/6  bg-white shadow-lg p-3 my-10 rounded-full m-auto">
         <div className="mx-12">
-          <img src={Logo} alt="" className="w-16" />
+          <img src={data.logoUrl} alt="" className="w-16" />
         </div>
         <ul className="flex flex-row items-center justify-between ml-56 text-xl">
           {error ? (
@@ -49,7 +48,7 @@ export const Navbar = () => {
           >
             {data.downloadBtn}
             <span className="ml-2">
-              <img src={Icon} alt="Download" className="w-5 inline" />
+              <img src={data.iconUrl} alt="Download" className="w-5 inline" />
             </span>
           </Button>
         </div>

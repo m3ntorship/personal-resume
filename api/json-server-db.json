@@ -37,7 +37,9 @@
         "id": "b092b918-630f-4840-bec1-b8f709749086"
       }
     ],
-    "downloadBtn": "Download My CV"
+    "downloadBtn": "Download My CV",
+    "logoUrl": "./images/Logo.png",
+    "iconUrl": "./images/Icon.svg"
   },
   "aboutUs": {
     "title": "Read About My Life Story",
