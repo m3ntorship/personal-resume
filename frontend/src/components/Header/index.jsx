@@ -3,7 +3,6 @@ import { Button } from './../shared/button/index.js';
 import { Heading, HEADING_OPTIONS } from '../shared/heading';
 import { useEffect, useState } from 'react';
 import { API } from '../../modules/apis';
-import { Navbar } from './../../components/Navbar/index.jsx';
 
 const Header = () => {
   const [data, setData] = useState();
@@ -15,7 +14,6 @@ const Header = () => {
   if (data) {
     return (
       <header className=" w-full  bg-c400  border-c100 border-b-4 pb-40  pt-8">
-        <Navbar />
         <div className="container flex flex-row pt-32 relative">
           <div className="  mt-16  ">
             <div>
