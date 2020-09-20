@@ -21,7 +21,7 @@ export const BestDesignQuality = () => {
             width: '7.5rem'
           }}
           src={image.url}
-          alt="mock image"
+          alt="mock"
         />
       );
     });
