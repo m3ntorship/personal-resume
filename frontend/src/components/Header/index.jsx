@@ -13,9 +13,9 @@ const Header = () => {
   }, []);
   if (data) {
     return (
-      <header className=" w-full  bg-c400  border-c100 border-b-4 pb-48  pt-8">
+      <header className=" w-full  bg-c400  border-c100 border-b-4 pb-48">
         <div className="container flex flex-row relative">
-          <div className="  mt-16  ">
+          <div className=" mt-48 ">
             <div>
               <span className=" text-c100 font-body text-xxlg font-medium leading-1 ">
                 I am
@@ -54,12 +54,12 @@ const Header = () => {
             <img
               src={data.dotsUrl}
               alt="dots"
-              className=" absolute  mb-32   transform  translate-x-4  -translate-y-8   "
+              className=" absolute   mb-24   transform  translate-x-4  -translate-y-4   "
             />
             <img
               src={data.avatarUrl}
               alt="avatar"
-              className=" object-cover w-60 h-60 relative rounded-full border-8 border-white ml-16 z-10 "
+              className=" transform  scale-100 object-cover absolute w-60 h-60 rounded-full border-8 border-white ml-8 z-10  top-10 "
             />
           </div>
         </div>

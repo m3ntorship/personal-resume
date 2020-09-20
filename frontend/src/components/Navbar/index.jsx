@@ -19,7 +19,7 @@ const Navbar = () => {
   }, []);
   if (data) {
     return (
-      <div className="bg-c400 p-16">
+      <div className="bg-c400 p-12">
         <nav className="flex  items-center justify-between w-5/6  bg-white  shadow-lg p-3  rounded-full m-auto">
           <div className="mx-12">
             <img src={Logo} alt="" className="w-16" />
