@@ -1,10 +1,9 @@
 import React from 'react';
+import WorkProcess from './components/WorkProcessSection';
 import Header from './components/Header/index.jsx';
-// import { Prototype } from './components/TestComponent';
 import AboutUs from './components/AboutUsSection/AboutUs';
 import EstimateSection from './components/EstimateSection';
 import BestExpertiseSection from './components/BestExpertiseSection/BestExpertiseSection';
-// import { Prototype } from './components/TestComponent';
 import Gallery from '../src/components/GalleryComponent/Gallery';
 import { BestDesignQuality } from '../src/components/best-design-quality/index';
 import { Navbar } from './components/Navbar';
@@ -18,6 +17,7 @@ export default class App extends React.Component {
         <Navbar />
         <Header />
         <AboutUs />
+        <WorkProcess />
         <BestExpertiseSection />
         <Gallery />
         <EstimateSection />
@@ -25,7 +25,6 @@ export default class App extends React.Component {
         <UpdatedPosts />
         <Form />
         <Footer />
-        {/* <Prototype /> */}
       </div>
     );
   }
