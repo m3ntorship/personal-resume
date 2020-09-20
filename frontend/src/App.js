@@ -1,5 +1,4 @@
 import React from 'react';
-// import { Prototype } from './components/TestComponent';
 import WorkProcess from './components/WorkProcessSection';
 import Header from './components/Header/index.jsx';
 import AboutUs from './components/AboutUsSection/AboutUs';
@@ -15,11 +14,10 @@ export default class App extends React.Component {
   render() {
     return (
       <div>
-        {/* <Prototype /> */}
-        <WorkProcess />
         <Navbar />
         <Header />
         <AboutUs />
+        <WorkProcess />
         <BestExpertiseSection />
         <Gallery />
         <EstimateSection />
