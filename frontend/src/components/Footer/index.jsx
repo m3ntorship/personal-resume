@@ -8,8 +8,11 @@ export const Footer = () => {
           <img src={Logo} alt="Logo" className="w-16" />
         </a>
       </div>
-      <a href="/" className="text-lg font-bold text-c100">
-        Back To Top ^
+      <a
+        href="/"
+        className="text-md font-medium text-c100 flex items-center align-middle"
+      >
+        Back To Top <span className="font-bold mx-1">^</span>
       </a>
       <span className="text-md text-c300">
         Copyrights By&copy;Example - 2020
