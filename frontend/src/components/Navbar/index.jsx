@@ -24,13 +24,11 @@ export const Navbar = () => {
   if (data) {
     const navLinks = data.linksList.map(({ title, linkUrl, id }) => {
       return (
-        <a
-          href={linkUrl}
-          key={id}
-          className="text-c300 hover:text-c100 uppercase font-medium m-3"
-        >
-          {title}
-        </a>
+        <li key={id} className={`${mobileNavState ? '' : 'hidden'} text-c300 hover:text-c100 uppercase font-medium m-3 whitespace-no-wrap`}>
+          <a href={linkUrl}>
+            {title}
+          </a>
+        </li>
       );
     });
     return (
@@ -65,17 +63,21 @@ export const Navbar = () => {
             </div>
           </div>
         </nav>
-        <div className={`${mobileNavState ? '' : 'hidden'}`}>
+        <div>
           <div
-            className="bg-black opacity-75 w-screen h-full fixed z-60 left-0 bottom-0 "
+            className={`${mobileNavState ? '' : 'hidden'} bg-black opacity-75 w-screen h-full fixed z-60 left-0 bottom-0`}
             onClick={toggleMobileNav}
           ></div>
-          <ul className="bg-c400 w-6/12 lg:w-1/4 h-full fixed z-60 left-0 bottom-0 flex flex-col items-start justify-start text-xl">
+          <ul
+            className={`bg-c400 ${
+              mobileNavState ? 'w-6/12 lg:w-1/4' : 'w-0'
+            } transition-all duration-200 ease-in h-full fixed z-60 left-0 bottom-0 flex flex-col items-start justify-start text-xl`}
+          >
             {error ? <p className="text-c100 text-xl"> Hi </p> : navLinks}
-            <li>
+            <li className={`${mobileNavState ? '' : 'hidden'}`}>
               <Button
                 rounded={true}
-                customClassNames="p-2 ml-2 font-medium md:hidden"
+                customClassNames="p-2 ml-2 font-medium md:hidden whitespace-no-wrap"
                 bgColor="c100"
               >
                 {data.downloadBtn}
