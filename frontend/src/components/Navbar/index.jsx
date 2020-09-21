@@ -1,5 +1,4 @@
-import React, { useRef, useState } from 'react';
-import { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { API } from '../../modules/apis';
 import { Button } from '../shared/button';
 
@@ -7,6 +6,7 @@ export const Navbar = () => {
   // Fetching API from the backend
   const [data, setData] = useState(null);
   const [error, setError] = useState(null);
+  const [mobileNavState, setMobileNavState] = useState('hidden');
   useEffect(() => {
     API('/navigation')
       .then(({ data }) => {
@@ -16,9 +16,10 @@ export const Navbar = () => {
         setError(error.message);
       });
   }, []);
-  const mobileNavRef = useRef();
   const toggleMobileNav = () => {
-    mobileNavRef.current.classList.toggle('hidden');
+    mobileNavState === 'hidden'
+      ? setMobileNavState('')
+      : setMobileNavState('hidden');
   };
   if (data) {
     const navLinks = data.linksList.map(({ title, linkUrl, id }) => {
@@ -63,7 +64,7 @@ export const Navbar = () => {
               <div className="w-8 h-1 bg-c300 mt-1 pointer-events-none"></div>
             </div>
           </div>
-          <div ref={mobileNavRef} className="hidden">
+          <div className={mobileNavState}>
             <div
               className="bg-black opacity-75 w-screen h-full absolute z-40 left-0 bottom-0"
               onClick={toggleMobileNav}
@@ -73,7 +74,7 @@ export const Navbar = () => {
               <li>
                 <Button
                   rounded={true}
-                  customClassNames="p-2 ml-2 font-medium"
+                  customClassNames="p-2 ml-2 font-medium md:hidden"
                   bgColor="c100"
                 >
                   {data.downloadBtn}

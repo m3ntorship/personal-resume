@@ -13,8 +13,10 @@ const Header = () => {
   }, []);
   if (data) {
     return (
-      <header className="w-full bg-c400 border-c100 border-b-4 pb-40 pt-8">
-        <div className="container flex flex-row lg:pt-32 relative">
+      <header className="w-full pb-40 pt-8 relative">
+        <div style={{clipPath: "polygon(0 0, 99.9% 0, 55% 99%, 0 100%)"}} className='hidden lg:block z-10 absolute top-0 left-0 w-full h-full bg-c400 '></div>
+        <div style={{clipPath: "polygon(0 0, 100% 0, 55% 100%, 0 100%)"}} className='hidden lg:block z-0 absolute top-0 left-0 w-full h-full bg-c100 opacity-25'></div>
+        <div className="container z-20 flex flex-row lg:pt-24 relative">
           <div className="lg:mt-16">
             <div>
               <span className="text-c100 font-body text-lg lg:text-xxlg font-medium leading-1">
