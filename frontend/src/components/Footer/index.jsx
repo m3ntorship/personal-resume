@@ -8,6 +8,12 @@ const Footer = () => {
       setData(data);
     });
   }, []);
+
+  const scrollTop = (e) => {
+    e.preventDefault()
+    window.scrollTo({top: 0, behavior: 'smooth'})
+  }
+
   if (data) {
     return (
       <footer className="w-main-container m-auto flex flex-row justify-between py-4 items-center">
@@ -17,6 +23,7 @@ const Footer = () => {
           </a>
         </div>
         <a
+        onClick={scrollTop}
           href={data.topUrl}
           className="text-md font-medium text-c100 flex items-center"
         >
