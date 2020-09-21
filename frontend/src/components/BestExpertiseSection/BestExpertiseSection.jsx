@@ -15,8 +15,11 @@ const BestExpertiseSection = () => {
       return <Card title={title} details={details} button={button} key={key} />;
     });
     return (
-      <section className="container text-center">
-        <Heading as="h2" className="my-10">
+      <section
+        className="container text-center mt-24"
+        style={{ marginTop: '6.5625rem' }}
+      >
+        <Heading as="h2" className="mb-10">
           {services.title}
         </Heading>
         <div className="grid grid-cols-3 gap-8">{cards}</div>

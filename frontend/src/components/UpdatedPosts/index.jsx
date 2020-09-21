@@ -4,7 +4,8 @@ import { Heading, HEADING_OPTIONS } from '../shared/heading';
 // Import Icons
 import Heart from './heart-regular.svg';
 import Comment from './comment-regular.svg';
-export const UpdatedPosts = () => {
+
+const UpdatedPosts = () => {
   const [data, setData] = useState();
   useEffect(() => {
     API('/updatedPosts').then(({ data }) => {
@@ -15,7 +16,10 @@ export const UpdatedPosts = () => {
 
   if (data) {
     return (
-      <div className="w-main-container m-auto grid gap-x-6 grid-cols-3">
+      <section
+        className="w-main-container mx-auto grid gap-x-6 grid-cols-3"
+        style={{ marginTop: '6.875rem' }}
+      >
         <Heading
           as="h2"
           color={HEADING_OPTIONS.COLOR.PRIMARY}
@@ -75,9 +79,11 @@ export const UpdatedPosts = () => {
             </div>
           );
         })}
-      </div>
+      </section>
     );
   } else {
     return 'Loading Broken';
   }
 };
+
+export default UpdatedPosts;

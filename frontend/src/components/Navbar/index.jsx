@@ -4,7 +4,7 @@ import { API } from '../../modules/apis';
 import { Button } from '../shared/button';
 import Logo from './Logo.png';
 import Icon from './Icon.svg';
-export const Navbar = () => {
+const Navbar = () => {
   // Fetching API from the backend
   const [data, setData] = useState(null);
   const [error, setError] = useState();
@@ -19,7 +19,7 @@ export const Navbar = () => {
   }, []);
   if (data) {
     return (
-      <div className="bg-c400 p-6">
+      <div className="bg-c400 p-12">
         <nav className="flex  items-center justify-between w-5/6  bg-white  shadow-lg p-3  rounded-full m-auto">
           <div className="mx-12">
             <img src={Logo} alt="" className="w-16" />
@@ -61,3 +61,5 @@ export const Navbar = () => {
     return 'Data broken';
   }
 };
+
+export default Navbar;

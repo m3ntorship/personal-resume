@@ -2,7 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { API } from '../../modules/apis';
 import { Heading, HEADING_OPTIONS } from '../shared/heading';
 import { Button } from '../shared/button';
-export const Form = () => {
+
+const Form = () => {
   const [data, setData] = useState(null);
   useEffect(() => {
     API('/footer').then(({ data }) => {
@@ -11,7 +12,10 @@ export const Form = () => {
   }, []);
   if (data) {
     return (
-      <div className="w-full bg-c400 py-20 my-4">
+      <section
+        className="w-full bg-c400 py-20"
+        style={{ marginTop: '8.125rem' }}
+      >
         <div className="w-main-container m-auto grid grid-cols-2 gap-16">
           <figure>
             <img
@@ -78,9 +82,11 @@ export const Form = () => {
             </form>
           </div>
         </div>
-      </div>
+      </section>
     );
   } else {
     return 'Data Broken';
   }
 };
+
+export default Form;
