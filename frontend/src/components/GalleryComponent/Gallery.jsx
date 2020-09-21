@@ -25,10 +25,7 @@ const Gallery = () => {
       return <li key={image.id}>{<img src={image.url} alt={image} />}</li>;
     });
     return (
-      <section
-        className="container text-center"
-        style={{ marginTop: '5.3125rem' }}
-      >
+      <section className="container text-center mt-20">
         <Heading as="h2" className="mb-10">
           {works.title}
         </Heading>

@@ -13,7 +13,7 @@ export const UpdatedPosts = () => {
 
   if (data) {
     return (
-      <section className="mx-auto" style={{ marginTop: '6.875rem' }}>
+      <section className="mx-auto mt-32">
         <Heading
           as="h2"
           color={HEADING_OPTIONS.COLOR.PRIMARY}

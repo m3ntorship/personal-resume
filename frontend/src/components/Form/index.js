@@ -12,10 +12,7 @@ const Form = () => {
   }, []);
   if (data) {
     return (
-      <section
-        className="w-full bg-c400 py-20"
-        style={{ marginTop: '8.125rem' }}
-      >
+      <section className="w-full bg-c400 py-20 mt-32">
         <div className="w-main-container m-auto grid grid-cols-2 gap-16">
           <figure>
             <img

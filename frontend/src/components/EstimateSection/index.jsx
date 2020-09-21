@@ -17,13 +17,12 @@ const EstimateSection = () => {
     const { title, subTitle, button } = estimatesection;
     return (
       <section
-        className="py-32 text-c200"
+        className="py-32 text-c200 mt-32"
         style={{
           backgroundImage: 'url(https://i.imgur.com/lSvq0BZ.png)',
           backgroundRepeat: 'no-repeat',
           backgroundSize: '92% 95%',
-          backgroundPosition: '170px 0',
-          marginTop: '8.125rem'
+          backgroundPosition: '170px 0'
         }}
       >
         <div className="container">
