@@ -263,6 +263,32 @@
       "url": "/"
     }
   },
+
+  "workProcess": {
+    "title": "My Work Process",
+    "circleItem": [
+      {
+        "icon": "https://svgshare.com/i/PoL.svg",
+        "title": "Make Wireframe",
+        "id": 1
+      },
+      {
+        "icon": "https://svgshare.com/i/Pqx.svg",
+        "title": "Make Wireframe",
+        "id": 2
+      },
+      {
+        "icon": "https://svgshare.com/i/Pqx.svg",
+        "title": "Make Wireframe",
+        "id": 3
+      },
+      {
+        "icon": "https://svgshare.com/i/Pq4.svg",
+        "title": "Make Wireframe",
+        "id": 4
+      }
+    ]
+  },
   "footer": {
     "logo": "./images/Logo.png",
     "upWardsArrow": "./images/upwards-arrow.svg",
