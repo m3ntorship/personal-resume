@@ -12,7 +12,10 @@ const Form = () => {
   }, []);
   if (data) {
     return (
-      <div className="w-full bg-c400 py-20 my-4">
+      <section
+        className="w-full bg-c400 py-20"
+        style={{ marginTop: '8.125rem' }}
+      >
         <div className="w-main-container m-auto grid grid-cols-2 gap-16">
           <figure>
             <img
@@ -79,7 +82,7 @@ const Form = () => {
             </form>
           </div>
         </div>
-      </div>
+      </section>
     );
   } else {
     return 'Data Broken';

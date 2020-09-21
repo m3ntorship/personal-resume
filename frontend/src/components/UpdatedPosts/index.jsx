@@ -16,7 +16,10 @@ const UpdatedPosts = () => {
 
   if (data) {
     return (
-      <section className="w-main-container mx-auto grid gap-x-6 grid-cols-3">
+      <section
+        className="w-main-container mx-auto grid gap-x-6 grid-cols-3"
+        style={{ marginTop: '6.875rem' }}
+      >
         <Heading
           as="h2"
           color={HEADING_OPTIONS.COLOR.PRIMARY}

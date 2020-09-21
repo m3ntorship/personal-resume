@@ -1,9 +1,9 @@
 body {
   @apply font-body;
 }
-section {
-  @apply my-32;
-}
+/* section {
+  @apply my-24;
+} */
 .container {
   max-width: 85%;
   /* margin: auto; */

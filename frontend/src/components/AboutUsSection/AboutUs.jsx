@@ -24,7 +24,10 @@ const AboutUs = () => {
     } = sectionData;
 
     return (
-      <section className="grid grid-cols-1 lg:grid-cols-2 items-start container ">
+      <section
+        className="grid grid-cols-1 lg:grid-cols-2 items-start container"
+        style={{ marginTop: '6.5rem' }}
+      >
         <div
           className="h-full flex"
           style={{

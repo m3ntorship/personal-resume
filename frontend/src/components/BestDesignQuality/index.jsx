@@ -29,7 +29,8 @@ const BestDesignQuality = () => {
       <section
         className="text-c300 bg-c400"
         style={{
-          height: '33rem'
+          height: '33rem',
+          marginTop: '8.125rem'
         }}
       >
         <div

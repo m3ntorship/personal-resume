@@ -32,7 +32,7 @@ const Header = () => {
               </p>
             </div>
 
-            <div className="mt-4 pt-6">
+            <div className="mt-4 pt-3">
               <Button
                 rounded={true}
                 customClassNames="w-56 h-16 mr-6"
@@ -50,16 +50,16 @@ const Header = () => {
             </div>
           </div>
 
-          <div className="w-1/2 mb-8 pb-8 ">
+          <div className="w-1/2 mb-8 pb-8 ml-6 ">
             <img
               src={data.dotsUrl}
               alt="dots"
-              className=" absolute   mb-24   transform  translate-x-4  -translate-y-4   "
+              className=" absolute transform -translate-y-2  translate-x-2"
             />
             <img
               src={data.avatarUrl}
               alt="avatar"
-              className=" transform  scale-100 object-cover absolute w-60 h-60 rounded-full border-8 border-white ml-8 z-10  top-10 "
+              className=" transform  scale-100  object-cover absolute w-60 h-60 rounded-full border-8 border-white ml-10 z-10  top-10 "
             />
           </div>
         </div>
