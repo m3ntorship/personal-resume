@@ -25,15 +25,20 @@ const AboutUs = () => {
 
     return (
       <section
-        className="grid grid-cols-1 lg:grid-cols-2 items-start container"
+        //grid-cols-1  md:grid-cols-2  lg:grid-cols-3
+        //  the image height doesn't appear like the design
+        //  the grid needs to be 2 columns at the tablet and large screens and one column at the mobile screen
+
+        className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2  lg:grid-cols-2 items-start container"
         style={{ marginTop: '6.5rem' }}
       >
         <div
-          className="h-full  min-h-full   flex"
+          className="h-full  min-h-full   flex "
           style={{
             backgroundImage: `url(${leftSectionImg})`,
             backgroundRepeat: 'no-repeat',
-            backgroundSize: '100% 100%'
+            backgroundSize: '100% 100%',
+            height: '35.3125 rem'
           }}
         >
           <Button
