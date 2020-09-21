@@ -5,7 +5,7 @@ import { Button } from '../../shared/button/index';
 const Card = ({ title, details, button }) => {
   return (
     <article>
-      <div className="bg-c400 p-10 overflow-hidden relative group">
+      <div className="bg-c400 p-4 md:p-10 overflow-hidden relative group">
         {/* Hover Effect */}
         <div className="opacity-0 group-hover:opacity-100 absolute w-full h-full -mt-10 -ml-10 flex items-center justify-center transition-opacity duration-200">
           <div className="bg-c900 w-70 h-70 rounded-full absolute z-30"></div>
