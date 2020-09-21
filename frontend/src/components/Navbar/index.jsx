@@ -45,7 +45,7 @@ export const Navbar = () => {
             {/* Reusable button compnenet */}
             <Button
               rounded={true}
-              customClassNames=" w-48 h-16 lg:w-64 lg:h-20 font-medium my-0"
+              customClassNames="hidden md:block w-48 h-16 lg:w-64 lg:h-20 font-medium my-0"
               bgColor="c100"
             >
               {data.downloadBtn}
@@ -70,6 +70,18 @@ export const Navbar = () => {
             ></div>
             <ul className="bg-white w-6/12 h-full absolute z-50 left-0 bottom-0 flex flex-col items-start justify-start text-xl">
               {error ? <p className="text-c100 text-xl"> Hi </p> : navLinks}
+              <li>
+                <Button
+                  rounded={true}
+                  customClassNames="p-2 ml-2 font-medium"
+                  bgColor="c100"
+                >
+                  {data.downloadBtn}
+                  <span className="ml-2">
+                    <img src={Icon} alt="Download" className="w-5 inline" />
+                  </span>
+                </Button>
+              </li>
             </ul>
           </div>
         </nav>
