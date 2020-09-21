@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { API } from '../../modules/apis';
-export const Footer = () => {
+
+const Footer = () => {
   const [data, setData] = useState(null);
   useEffect(() => {
     API('/footer').then(({ data }) => {
@@ -9,10 +10,10 @@ export const Footer = () => {
   }, []);
   if (data) {
     return (
-      <footer className="w-main-container m-auto flex flex-row justify-between items-center my-8">
+      <footer className="w-main-container m-auto flex flex-row justify-between py-4 items-center">
         <div className="mx-12">
           <a href="/">
-            <img src={data.logo} alt="Logo" className="w-16" />
+            <img src={data.logo} alt="Logo" className="w-14" />
           </a>
         </div>
         <a
@@ -29,3 +30,5 @@ export const Footer = () => {
     return 'Data Broken';
   }
 };
+
+export default Footer;

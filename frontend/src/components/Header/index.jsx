@@ -13,9 +13,9 @@ const Header = () => {
   }, []);
   if (data) {
     return (
-      <header className=" w-full  bg-c400  border-c100 border-b-4 pb-40  pt-8">
-        <div className="container flex flex-row pt-32 relative">
-          <div className="  mt-16  ">
+      <header className=" w-full  bg-c400  border-c100 border-b-4 pb-48">
+        <div className="container flex flex-row relative">
+          <div className=" mt-48 ">
             <div>
               <span className=" text-c100 font-body text-xxlg font-medium leading-1 ">
                 I am
@@ -32,7 +32,7 @@ const Header = () => {
               </p>
             </div>
 
-            <div className="mt-4 pt-6">
+            <div className="mt-4 pt-3">
               <Button
                 rounded={true}
                 customClassNames="w-56 h-16 mr-6"
@@ -50,16 +50,16 @@ const Header = () => {
             </div>
           </div>
 
-          <div className="w-1/2 mb-8 pb-8 ">
+          <div className="w-1/2 mb-8 pb-8 ml-6 ">
             <img
               src={data.dotsUrl}
               alt="dots"
-              className=" absolute  mb-32   transform  translate-x-4  -translate-y-8   "
+              className=" absolute transform -translate-y-2  translate-x-2"
             />
             <img
               src={data.avatarUrl}
               alt="avatar"
-              className=" object-cover w-60 h-60 relative rounded-full border-8 border-white ml-16 z-10 "
+              className=" transform  scale-100  object-cover absolute w-60 h-60 rounded-full border-8 border-white ml-10 z-10  top-10 "
             />
           </div>
         </div>

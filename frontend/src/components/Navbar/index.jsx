@@ -58,3 +58,5 @@ export const Navbar = () => {
     return 'Data broken';
   }
 };
+
+export default Navbar;
