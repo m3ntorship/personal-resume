@@ -7,7 +7,7 @@ import Icon from './Icon.svg';
 export const Navbar = () => {
   // Fetching API from the backend
   const [data, setData] = useState(null);
-  const [error, setError] = useState();
+  const [error, setError] = useState(null);
   useEffect(() => {
     API('/navigation')
       .then(({ data }) => {
@@ -17,35 +17,35 @@ export const Navbar = () => {
         setError(error.message);
       });
   }, []);
+  const toggleMobileNav = () => {
+    document.getElementById('mobileNav').classList.toggle('hidden');
+  };
   if (data) {
+    const navLinks = data.linksList.map(({ title, linkUrl, id }) => {
+      return (
+        <a
+          href={linkUrl}
+          key={id}
+          className="text-c300 hover:text-c100 uppercase font-medium m-4"
+        >
+          {title}
+        </a>
+      );
+    });
     return (
-      <div className="bg-c400 p-6">
-        <nav className="flex  items-center justify-between w-5/6  bg-white  shadow-lg p-3  rounded-full m-auto">
-          <div className="mx-12">
+      <div className="bg-c400 pb-6 lg:p-6 overflow-x-hidden">
+        <nav className="flex items-center justify-between bg-white shadow-lg p-3 lg:w-5/6 lg:rounded-full lg:m-auto">
+          <div className="mx-2 sm:mx-6 md:mx:8 lg:mx-10">
             <img src={Logo} alt="" className="w-16" />
           </div>
-          <ul className="flex flex-row items-center justify-between ml-56 text-xl">
-            {error ? (
-              <p className="text-c100 text-xl"> Hi </p>
-            ) : (
-              data.linksList.map(({ title, linkUrl, id }) => {
-                return (
-                  <a
-                    href={linkUrl}
-                    key={id}
-                    className=" text-c300 hover:text-c100 uppercase font-medium  m-4 "
-                  >
-                    {title}
-                  </a>
-                );
-              })
-            )}
-          </ul>
-          <div>
+          <div className="flex items-center justify-end">
+            <ul className="hidden lg:flex flex-row items-center justify-between ml-56 text-xl">
+              {error ? <p className="text-c100 text-xl"> Hi </p> : navLinks}
+            </ul>
             {/* Reusable button compnenet */}
             <Button
               rounded={true}
-              customClassNames="w-64 h-20 font-medium my-0"
+              customClassNames=" w-48 h-16 lg:w-64 lg:h-20 font-medium my-0"
               bgColor="c100"
             >
               {data.downloadBtn}
@@ -53,6 +53,24 @@ export const Navbar = () => {
                 <img src={Icon} alt="Download" className="w-5 inline" />
               </span>
             </Button>
+            {/* Hamburgur Menu*/}
+            <div
+              className="inline-block mx-3 lg:hidden"
+              onClick={toggleMobileNav}
+            >
+              <div className="w-8 h-1 bg-c300 pointer-events-none"></div>
+              <div className="w-8 h-1 bg-c300 mt-1 pointer-events-none"></div>
+              <div className="w-8 h-1 bg-c300 mt-1 pointer-events-none"></div>
+            </div>
+          </div>
+          <div id="mobileNav" className="hidden">
+            <div
+              className="bg-black opacity-75 w-screen h-full absolute z-40 left-0 bottom-0"
+              onClick={toggleMobileNav}
+            ></div>
+            <ul className="bg-white w-6/12 h-full absolute z-50 left-0 bottom-0 flex flex-col items-start justify-start text-xl">
+              {error ? <p className="text-c100 text-xl"> Hi </p> : navLinks}
+            </ul>
           </div>
         </nav>
       </div>
