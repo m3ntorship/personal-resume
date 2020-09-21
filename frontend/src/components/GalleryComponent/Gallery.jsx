@@ -26,7 +26,7 @@ const Gallery = () => {
     });
     return (
       <section
-        className="m-auto sm:container md:w-11/12 lg:w-main-container xl:w-main-container container  mt-35 text-center"
+        className="m-auto sm:container md:w-11/12 container mt-35 text-center"
         style={{ marginTop: '5.3125rem' }}
       >
         <Heading as="h2" className="mb-10">

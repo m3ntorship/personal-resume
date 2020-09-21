@@ -3,7 +3,6 @@ import { API } from '../../modules/apis';
 import { Button } from '../shared/button';
 
 export const Navbar = () => {
-  // Fetching API from the backend
   const [data, setData] = useState(null);
   const [error, setError] = useState(null);
   const [mobileNavState, setMobileNavState] = useState(false);
