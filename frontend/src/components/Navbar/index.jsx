@@ -65,32 +65,32 @@ export const Navbar = () => {
               <div className="w-8 h-1 bg-c300 mt-1 pointer-events-none"></div>
             </div>
           </div>
-          <div className={`${mobileNavState ? '' : 'hidden'}`}>
-            <div
-              className="bg-black opacity-75 w-screen h-full fixed z-60 left-0 bottom-0 "
-              onClick={toggleMobileNav}
-            ></div>
-            <ul className="bg-c400 w-6/12 lg:w-1/4 h-full fixed z-60 left-0 bottom-0 flex flex-col items-start justify-start text-xl">
-              {error ? <p className="text-c100 text-xl"> Hi </p> : navLinks}
-              <li>
-                <Button
-                  rounded={true}
-                  customClassNames="p-2 ml-2 font-medium md:hidden"
-                  bgColor="c100"
-                >
-                  {data.downloadBtn}
-                  <span className="ml-2">
-                    <img
-                      src={data.iconUrl}
-                      alt="Download"
-                      className="w-5 inline"
-                    />
-                  </span>
-                </Button>
-              </li>
-            </ul>
-          </div>
         </nav>
+        <div className={`${mobileNavState ? '' : 'hidden'}`}>
+          <div
+            className="bg-black opacity-75 w-screen h-full fixed z-60 left-0 bottom-0 "
+            onClick={toggleMobileNav}
+          ></div>
+          <ul className="bg-c400 w-6/12 lg:w-1/4 h-full fixed z-60 left-0 bottom-0 flex flex-col items-start justify-start text-xl">
+            {error ? <p className="text-c100 text-xl"> Hi </p> : navLinks}
+            <li>
+              <Button
+                rounded={true}
+                customClassNames="p-2 ml-2 font-medium md:hidden"
+                bgColor="c100"
+              >
+                {data.downloadBtn}
+                <span className="ml-2">
+                  <img
+                    src={data.iconUrl}
+                    alt="Download"
+                    className="w-5 inline"
+                  />
+                </span>
+              </Button>
+            </li>
+          </ul>
+        </div>
       </div>
     );
   } else {
