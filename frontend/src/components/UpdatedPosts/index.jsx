@@ -21,7 +21,7 @@ export const UpdatedPosts = () => {
         >
           {data.postsHeader}
         </Heading>
-        <div className="w-main-container mx-auto grid gap-x-6   grid-cols-1  sm:grid-cols-1  lg:grid-cols-3 ">
+        <div className="container mx-auto grid gap-x-6 gap-y-6   grid-cols-1  md:grid-cols-2  lg:grid-cols-3 ">
           {data.posts.map(({ title, userName, likes, comments, id }) => {
             return (
               <div className="bg-c400 p-6 block" key={id}>
