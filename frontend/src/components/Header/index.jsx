@@ -15,7 +15,7 @@ const Header = () => {
     return (
       <header className="w-full md:pb-40 pt-8 relative border-b-4 border-c100 md:border-none ">
         <div
-          style={{ clipPath: 'polygon(0 0, 99.9% 0, 55% 99%, 0 100%)' }}
+          style={{ clipPath: 'polygon(0 0, 99.8% 0, 54.8% 99.5%, 0 99.5%)' }}
           className="hidden md:block z-10 absolute top-0 left-0 w-full h-full bg-c400 "
         ></div>
         <div
