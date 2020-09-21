@@ -2,9 +2,9 @@ import React from 'react';
 import {Heading, HEADING_OPTIONS} from '../../shared/heading/index';
 import { Button } from '../../shared/button/index';
 
-const Card = ({ title, details, button, key }) => {
+const Card = ({ title, details, button }) => {
   return (
-    <article key={key}>
+    <article>
       <div className="bg-c400 p-10 overflow-hidden relative group">
         {/* Hover Effect */}
         <div className="opacity-0 group-hover:opacity-100 absolute w-full h-full -mt-10 -ml-10 flex items-center justify-center transition-opacity duration-200">
