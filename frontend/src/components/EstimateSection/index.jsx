@@ -22,7 +22,8 @@ const EstimateSection = () => {
           backgroundImage: 'url(https://i.imgur.com/lSvq0BZ.png)',
           backgroundRepeat: 'no-repeat',
           backgroundSize: '92% 95%',
-          backgroundPosition: '170px 0'
+          backgroundPosition: '170px 0',
+          marginTop: '8.125rem'
         }}
       >
         <div className="container">

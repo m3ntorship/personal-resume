@@ -17,17 +17,23 @@ const Header = () => {
         <div className="container flex flex-row lg:pt-32 relative">
           <div className="lg:mt-16">
             <div>
-              <span className="text-c100 font-body text-xlg lg:text-xxlg font-medium leading-1">
+              <span className="text-c100 font-body text-lg lg:text-xxlg font-medium leading-1">
                 I am
               </span>
               <Heading
                 as="h1"
                 fontSize={HEADING_OPTIONS.FONT_SIZES.LARGE}
-                className="mb-3"
+                className="mb-3 hidden lg:block"
               >
                 {data.heading}
               </Heading>
-              <p className="text-c300 font-body leading-1 md:leading-2 text-base lg:text-lg mb-8 ">
+              <Heading
+                as="h1"
+                className="mb-3 whitespace-no-wrap lg:hidden"
+              >
+                {data.heading}
+              </Heading>
+              <p className="text-c300 font-body leading-1 md:leading-2 text-sm lg:text-lg mb-8 ">
                 {data.paragraph}
               </p>
             </div>
@@ -50,16 +56,16 @@ const Header = () => {
             </div>
           </div>
 
-          <div className="w-1/2 mb-8 pb-8 ">
+          <div className="w-5 md:w-1/2 md:mb-8 md:pb-8 md:ml-6 ">
             <img
               src={data.dotsUrl}
               alt="dots"
-              className=" absolute  mb-32   transform  translate-x-4  -translate-y-8   "
+              className=" absolute transform -translate-y-2  translate-x-2"
             />
             <img
               src={data.avatarUrl}
               alt="avatar"
-              className=" object-cover w-60 h-60 relative rounded-full border-8 border-white ml-16 z-10 "
+              className=" transform  scale-100  object-cover absolute w-60 h-60 rounded-full border-8 border-white ml-10 z-10  top-10 "
             />
           </div>
         </div>

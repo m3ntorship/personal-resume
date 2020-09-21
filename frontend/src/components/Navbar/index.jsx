@@ -1,9 +1,8 @@
-import React, { useState } from 'react';
+import React, { useRef, useState } from 'react';
 import { useEffect } from 'react';
 import { API } from '../../modules/apis';
 import { Button } from '../shared/button';
-import Logo from './Logo.png';
-import Icon from './Icon.svg';
+
 export const Navbar = () => {
   // Fetching API from the backend
   const [data, setData] = useState(null);
@@ -17,8 +16,9 @@ export const Navbar = () => {
         setError(error.message);
       });
   }, []);
+  const mobileNavRef = useRef();
   const toggleMobileNav = () => {
-    document.getElementById('mobileNav').classList.toggle('hidden');
+    mobileNavRef.current.classList.toggle('hidden');
   };
   if (data) {
     const navLinks = data.linksList.map(({ title, linkUrl, id }) => {
@@ -36,7 +36,7 @@ export const Navbar = () => {
       <div className="bg-c400 pb-6 lg:p-6 overflow-x-hidden">
         <nav className="flex items-center justify-between bg-white shadow-lg p-3 lg:w-5/6 lg:rounded-full lg:m-auto">
           <div className="mx-2 sm:mx-6 md:mx:8 lg:mx-10">
-            <img src={Logo} alt="" className="w-16" />
+            <img src={data.logoUrl} alt="logo" className="w-16" />
           </div>
           <div className="flex items-center justify-end">
             <ul className="hidden lg:flex flex-row items-center justify-between ml-56 text-xl">
@@ -50,7 +50,7 @@ export const Navbar = () => {
             >
               {data.downloadBtn}
               <span className="ml-2">
-                <img src={Icon} alt="Download" className="w-5 inline" />
+                <img src={data.iconUrl} alt="Download" className="w-5 inline" />
               </span>
             </Button>
             {/* Hamburgur Menu*/}
@@ -63,7 +63,7 @@ export const Navbar = () => {
               <div className="w-8 h-1 bg-c300 mt-1 pointer-events-none"></div>
             </div>
           </div>
-          <div id="mobileNav" className="hidden">
+          <div ref={mobileNavRef} className="hidden">
             <div
               className="bg-black opacity-75 w-screen h-full absolute z-40 left-0 bottom-0"
               onClick={toggleMobileNav}
@@ -78,7 +78,11 @@ export const Navbar = () => {
                 >
                   {data.downloadBtn}
                   <span className="ml-2">
-                    <img src={Icon} alt="Download" className="w-5 inline" />
+                    <img
+                      src={data.iconUrl}
+                      alt="Download"
+                      className="w-5 inline"
+                    />
                   </span>
                 </Button>
               </li>
@@ -91,3 +95,5 @@ export const Navbar = () => {
     return 'Data broken';
   }
 };
+
+export default Navbar;
