@@ -67,7 +67,7 @@ export const Navbar = () => {
         <div>
           <div
             className={`${
-              mobileNavState ? 'opacity-75' : 'opacity-0'
+              mobileNavState ? 'opacity-75' : 'opacity-0 pointer-events-none'
             } transition-all duration-200 bg-black w-screen h-full fixed z-60 left-0 bottom-0`}
             onClick={toggleMobileNav}
           ></div>
