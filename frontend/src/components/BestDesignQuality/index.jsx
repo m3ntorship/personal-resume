@@ -33,10 +33,7 @@ const BestDesignQuality = () => {
           marginTop: '8.125rem'
         }}
       >
-        <div
-          className="container grid gap-16"
-          style={{ gridTemplateColumns: '1fr 1fr' }}
-        >
+        <div className="container grid grid-cols-1 lg:grid-cols-2 lg:gap-16 justify-center">
           <div className="flex flex-col justify-center items-start">
             <Heading
               color={HEADING_OPTIONS.COLOR.SECONDARY}
@@ -48,10 +45,9 @@ const BestDesignQuality = () => {
             <p className="mt-2 font-headings font-medium italic text-lg relative">
               {bestDesign.details}
               <span
-                className="absolute"
+                className="absolute left-0 hidden lg:block"
                 style={{
-                  top: '150px',
-                  left: '0'
+                  top: '150px'
                 }}
               >
                 <img src={bestDesign.imagesURL[1].url} alt="" />
@@ -59,7 +55,7 @@ const BestDesignQuality = () => {
             </p>
           </div>
           <div
-            className="flex justify-around items-end"
+            className="flex justify-around items-end mx-auto mt-10 lg:mt-0"
             style={{
               background: `url(${bestDesign.imagesURL[0].url}) no-repeat`,
               backgroundSize: 'contain',
