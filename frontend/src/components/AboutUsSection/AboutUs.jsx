@@ -25,10 +25,6 @@ const AboutUs = () => {
 
     return (
       <section
-        //grid-cols-1  md:grid-cols-2  lg:grid-cols-3
-        //  the image height doesn't appear like the design
-        //  the grid needs to be 2 columns at the tablet and large screens and one column at the mobile screen
-
         className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2  lg:grid-cols-2 items-start container"
         style={{ marginTop: '6.5rem' }}
       >
