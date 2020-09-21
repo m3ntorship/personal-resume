@@ -14,7 +14,7 @@ module.exports = {
 
     // These options are passed through directly to PurgeCSS
     options: {
-      whitelist: ['bg-c100','bg-c200'],
+      whitelist: ['bg-c100', 'bg-c200']
     }
   },
   // ...
@@ -64,7 +64,6 @@ module.exports = {
         35: '8.75rem' //Between every two sections
       },
       width: {
-        'main-container': '60%',
         70: '17.5rem', // for the services section hover effect
         90: '22.5rem', // for the services section hover effect
         110: '27.5rem' // for the services section hover effect
@@ -78,9 +77,8 @@ module.exports = {
   },
   variants: {
     opacity: ['responsive', 'hover', 'focus', 'group-hover'], // adding opacity to group-hover
-    backgroundColor: ['responsive', 'hover', 'focus', 'group-hover'],  // adding bg to group-hover
-    textColor: ['responsive', 'hover', 'focus', 'active', 'group-hover'],  // adding textColor to group-hover
-
+    backgroundColor: ['responsive', 'hover', 'focus', 'group-hover'], // adding bg to group-hover
+    textColor: ['responsive', 'hover', 'focus', 'active', 'group-hover'] // adding textColor to group-hover
   },
   plugins: []
 };
