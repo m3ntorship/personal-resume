@@ -25,8 +25,11 @@ const Gallery = () => {
       return <li key={image.id}>{<img src={image.url} alt={image} />}</li>;
     });
     return (
-      <section className=" m-auto sm:container md:w-11/12 lg:w-main-container xl:w-main-container container  mt-35 text-center">
-        <Heading as="h2" className="mb-10 ">
+      <section
+        className="m-auto sm:container md:w-11/12 lg:w-main-container xl:w-main-container container  mt-35 text-center"
+        style={{ marginTop: '5.3125rem' }}
+      >
+        <Heading as="h2" className="mb-10">
           {works.title}
         </Heading>
         <ul className="flex  justify-center items-center  flex-wrap mb-10">
@@ -38,7 +41,7 @@ const Gallery = () => {
         <Button
           rounded={true}
           bgColor="c100"
-          customClassNames="my-12 py-4 px-10"
+          customClassNames="mt-16 py-4 px-10"
         >
           <a href={works.button.url}>{works.button.title}</a>
         </Button>

@@ -1,12 +1,13 @@
 body {
   @apply font-body;
 }
-section {
-  @apply mt-35;
-}
+/* section {
+  @apply my-24;
+} */
 .container {
   max-width: 85%;
-  margin: 0 auto;
+  /* margin: auto; */
+  @apply mx-auto;
 }
 
 @media (min-width: 1280px) {

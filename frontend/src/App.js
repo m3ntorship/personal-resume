@@ -1,16 +1,16 @@
 import React from 'react';
+import Navbar from './components/Navbar/index';
 import Header from './components/Header/index.jsx';
-// import { Prototype } from './components/TestComponent';
 import AboutUs from './components/AboutUsSection/AboutUs';
-import EstimateSection from './components/EstimateSection';
+import WorkProcess from './components/WorkProcessSection';
 import BestExpertiseSection from './components/BestExpertiseSection/BestExpertiseSection';
-// import { Prototype } from './components/TestComponent';
+import EstimateSection from './components/EstimateSection';
 import Gallery from '../src/components/GalleryComponent/Gallery';
-import { BestDesignQuality } from '../src/components/best-design-quality/index';
-import { Navbar } from './components/Navbar';
-import { UpdatedPosts } from './components/UpdatedPosts';
-import { Form } from './components/Form';
-import { Footer } from './components/Footer';
+import BestDesignQuality from './components/BestDesignQuality/index';
+import UpdatedPosts from './components/UpdatedPosts';
+import Form from './components/Form';
+import Footer from './components/Footer';
+
 export default class App extends React.Component {
   render() {
     return (
@@ -18,14 +18,14 @@ export default class App extends React.Component {
         <Navbar />
         <Header />
         <AboutUs />
+        <WorkProcess />
         <BestExpertiseSection />
-        <Gallery />
         <EstimateSection />
+        <Gallery />
         <BestDesignQuality />
         <UpdatedPosts />
         <Form />
         <Footer />
-        {/* <Prototype /> */}
       </div>
     );
   }

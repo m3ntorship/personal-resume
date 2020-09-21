@@ -24,7 +24,10 @@ const AboutUs = () => {
     } = sectionData;
 
     return (
-      <div className="grid my-10 grid-cols-1 lg:grid-cols-2 items-start container">
+      <section
+        className="grid grid-cols-1 lg:grid-cols-2 items-start container"
+        style={{ marginTop: '6.5rem' }}
+      >
         <div
           className="h-full flex"
           style={{
@@ -64,7 +67,7 @@ const AboutUs = () => {
             );
           })}
         </div>
-      </div>
+      </section>
     );
   } else {
     return <div>Fetching..</div>;
