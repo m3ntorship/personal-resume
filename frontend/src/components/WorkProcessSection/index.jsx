@@ -15,9 +15,8 @@ const WorkProcess = () => {
 
     return (
       <section
-        style={{ borderTopLeftRadius: '200px' }}
+        style={{ borderTopLeftRadius: '200px', marginTop: '5.625rem' }}
         className="border-4 border-c1000 pt-24 pb-32 bg-c400  mt-20"
-        style={{ marginTop: '5.625rem' }}
       >
         <Heading
           as="h1"
