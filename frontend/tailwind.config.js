@@ -75,7 +75,7 @@ module.exports = {
         110: '27.5rem' // for the services section hover effect
       },
       minWidth: {
-        navbar: '87.5rem'
+        navbar: '78rem'
       },
       zIndex: {
         60: 60

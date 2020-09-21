@@ -28,20 +28,20 @@ export const Navbar = () => {
         <a
           href={linkUrl}
           key={id}
-          className="text-c300 hover:text-c100 uppercase font-medium m-4"
+          className="text-c300 hover:text-c100 uppercase font-medium m-3"
         >
           {title}
         </a>
       );
     });
     return (
-      <div className="bg-c400 pb-6 lg:p-6 overflow-x-hidden w-screen ">
+      <div className="bg-c400 shadow-lg md:pb-6 lg:p-6 w-screen ">
         <nav className="flex items-center justify-between bg-white shadow-lg p-3 lg:rounded-full lg:m-auto lg:w-4/5 xl:min-w-navbar">
           <div className="mx-2 sm:mx-6 md:mx:8 lg:mx-10">
             <img src={data.logoUrl} alt="logo" className="w-16" />
           </div>
           <div className="flex items-center justify-end">
-            <ul className="hidden xl:flex flex-row items-center justify-between ml-56 text-xl">
+            <ul className="hidden xl:flex flex-row items-center justify-between ml-32 text-xl">
               {error ? <p className="text-c100 text-xl"> Hi </p> : navLinks}
             </ul>
             {/* Reusable button compnenet */}
@@ -55,9 +55,9 @@ export const Navbar = () => {
                 <img src={data.iconUrl} alt="Download" className="w-5 inline" />
               </span>
             </Button>
-            {/* Hamburgur Menu*/}
+            {/* Hamburgur Button*/}
             <div
-              className="inline-block mx-3 xl:hidden"
+              className="inline-block mx-8 xl:hidden"
               onClick={toggleMobileNav}
             >
               <div className="w-8 h-1 bg-c300 pointer-events-none"></div>
@@ -94,7 +94,7 @@ export const Navbar = () => {
       </div>
     );
   } else {
-    return 'Data broken';
+    return null;
   }
 };
 
