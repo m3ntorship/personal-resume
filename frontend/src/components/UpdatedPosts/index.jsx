@@ -7,7 +7,6 @@ export const UpdatedPosts = () => {
   useEffect(() => {
     API('/updatedPosts').then(({ data }) => {
       setData(data);
-      console.log(data);
     });
   }, []);
 
