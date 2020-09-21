@@ -29,7 +29,7 @@ const AboutUs = () => {
         style={{ marginTop: '6.5rem' }}
       >
         <div
-          className="h-full flex"
+          className="h-full  min-h-full   flex"
           style={{
             backgroundImage: `url(${leftSectionImg})`,
             backgroundRepeat: 'no-repeat',
