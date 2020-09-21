@@ -14,8 +14,8 @@ const Header = () => {
   if (data) {
     return (
       <header className=" w-full pb-48 relative">
-        <div style={{clipPath: "polygon(0 0, 99.9% 0, 50% 99%, 0 100%)"}} className='z-10 absolute top-0 left-0 w-full h-full bg-c400 '></div>
-        <div style={{clipPath: "polygon(0 0, 100% 0, 50% 100%, 0 100%)"}} className='z-0 absolute top-0 left-0 w-full h-full bg-c100 opacity-25'></div>
+        <div style={{clipPath: "polygon(0 0, 99.9% 0, 55% 99%, 0 100%)"}} className='z-10 absolute top-0 left-0 w-full h-full bg-c400 '></div>
+        <div style={{clipPath: "polygon(0 0, 100% 0, 55% 100%, 0 100%)"}} className='z-0 absolute top-0 left-0 w-full h-full bg-c100 opacity-25'></div>
         <div className="container flex flex-row relative z-20">
           <div className=" mt-48 ">
             <div>
