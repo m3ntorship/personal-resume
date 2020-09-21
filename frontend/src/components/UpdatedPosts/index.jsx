@@ -2,8 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { API } from '../../modules/apis';
 import { Heading, HEADING_OPTIONS } from '../shared/heading';
 // Import Icons
-import Heart from './heart-regular.svg';
-import Comment from './comment-regular.svg';
+// import Heart from './heart-regular.svg';
+// import Comment from './comment-regular.svg';
 export const UpdatedPosts = () => {
   const [data, setData] = useState();
   useEffect(() => {
@@ -52,7 +52,7 @@ export const UpdatedPosts = () => {
                     <li>
                       <a href="/">
                         <img
-                          src={Heart}
+                          src={data.heartImg}
                           alt="Heart Icon"
                           className="w-4 inline ml-1 border-c300"
                         />
@@ -62,7 +62,7 @@ export const UpdatedPosts = () => {
                     <li className="ml-10">
                       <a href="/">
                         <img
-                          src={Comment}
+                          src={data.CommentImg}
                           alt="Comment Icon"
                           className="w-4 inline ml-1"
                         />

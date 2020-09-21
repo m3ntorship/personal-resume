@@ -186,6 +186,8 @@
   },
   "updatedPosts": {
     "postsHeader": "Get Everyday Updates",
+    "heartImg": "./images/heart-regular.svg",
+    "CommentImg": "./images/comment-regular.svg",
     "posts": [
       {
         "title": "Meet Inclusive Front-End Design Patterns A New Smashing Book",
