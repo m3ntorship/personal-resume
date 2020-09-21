@@ -27,22 +27,22 @@ const Header = () => {
               >
                 {data.heading}
               </Heading>
-              <p className="text-c300 font-body leading-2 text-base lg:text-lg mb-8 ">
+              <p className="text-c300 font-body leading-1 md:leading-2 text-base lg:text-lg mb-8 ">
                 {data.paragraph}
               </p>
             </div>
 
-            <div className="mt-4 pt-6">
+            <div className="flex md:mt-4 md:pt-6">
               <Button
                 rounded={true}
-                customClassNames="w-56 h-16 mr-6"
+                customClassNames="w-32 md:w-56 h-12 md:h-16 mr-6"
                 bgColor="c100"
               >
                 {data.webServicesButton.title}
               </Button>
               <Button
                 rounded={true}
-                customClassNames="w-56 h-16"
+                customClassNames="w-32 md:w-56 h-12 md:h-16"
                 bgColor="c200"
               >
                 {data.recentWorkesButton.title}
