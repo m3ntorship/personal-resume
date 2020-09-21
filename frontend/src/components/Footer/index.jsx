@@ -10,10 +10,10 @@ const Footer = () => {
   }, []);
   if (data) {
     return (
-      <footer className="w-main-container m-auto flex flex-row justify-between items-center">
+      <footer className="w-main-container m-auto flex flex-row justify-between py-4 items-center">
         <div className="mx-12">
           <a href="/">
-            <img src={data.logo} alt="Logo" className="w-16" />
+            <img src={data.logo} alt="Logo" className="w-14" />
           </a>
         </div>
         <a
