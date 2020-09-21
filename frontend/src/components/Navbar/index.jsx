@@ -6,7 +6,7 @@ export const Navbar = () => {
   // Fetching API from the backend
   const [data, setData] = useState(null);
   const [error, setError] = useState(null);
-  const [mobileNavState, setMobileNavState] = useState('hidden');
+  const [mobileNavState, setMobileNavState] = useState(false);
   useEffect(() => {
     API('/navigation')
       .then(({ data }) => {
@@ -17,9 +17,10 @@ export const Navbar = () => {
       });
   }, []);
   const toggleMobileNav = () => {
-    mobileNavState === 'hidden'
-      ? setMobileNavState('')
-      : setMobileNavState('hidden');
+    setMobileNavState(!mobileNavState)
+    // mobileNavState === 'hidden'
+    //   ? setMobileNavState('')
+    //   : setMobileNavState('hidden');
   };
   if (data) {
     const navLinks = data.linksList.map(({ title, linkUrl, id }) => {
@@ -64,7 +65,7 @@ export const Navbar = () => {
               <div className="w-8 h-1 bg-c300 mt-1 pointer-events-none"></div>
             </div>
           </div>
-          <div className={mobileNavState}>
+          <div className={`${mobileNavState ? '':'hidden'}`}>
             <div
               className="bg-black opacity-75 w-screen h-full absolute z-40 left-0 bottom-0"
               onClick={toggleMobileNav}
