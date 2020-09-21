@@ -51,7 +51,9 @@
         "id": "b092b918-630f-4840-bec1-b8f709749086"
       }
     ],
-    "downloadBtn": "Download My CV"
+    "downloadBtn": "Download My CV",
+    "logoUrl": "./images/Logo.png",
+    "iconUrl": "./images/Icon.svg"
   },
   "aboutUs": {
     "title": "Read About My Life Story",
@@ -184,6 +186,8 @@
   },
   "updatedPosts": {
     "postsHeader": "Get Everyday Updates",
+    "heartImg": "./images/heart-regular.svg",
+    "CommentImg": "./images/comment-regular.svg",
     "posts": [
       {
         "title": "Meet Inclusive Front-End Design Patterns A New Smashing Book",
