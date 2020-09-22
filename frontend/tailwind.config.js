@@ -67,7 +67,6 @@ module.exports = {
         35: '8.75rem' //Between every two sections
       },
       width: {
-        'main-container': '60%',
         70: '17.5rem', // for the services section hover effect
         80: '20.5rem', // for the outer circle in my-work-process in mobile
         90: '22.5rem', // for the services section hover effect
