@@ -17,7 +17,7 @@ const Footer = () => {
   if (data) {
     return (
       <footer className="container m-auto grid grid-cols-2 gap-y-12 md:gap-0 md:grid-cols-3 py-4">
-        <div className="mx-12 hidden md:block">
+        <div>
           <a href="/">
             <img src={data.logo} alt="Logo" className="w-14" />
           </a>
@@ -25,7 +25,7 @@ const Footer = () => {
         <a
           onClick={scrollTop}
           href={data.topUrl}
-          className="text-md font-medium text-c100 text-right py-3 col-span-2 md:col-auto justify-self-center self-center"
+          className="text-md font-medium text-c100 text-right py-3 md:col-auto justify-self-center md:justify-self-start self-center"
         >
           Back To Top
           <img
@@ -34,12 +34,7 @@ const Footer = () => {
             className="w-3 ml-2 inline-block"
           />
         </a>
-        <div className="md:hidden justify-self-center self-center">
-          <a href="/">
-            <img src={data.logo} alt="Logo" className="w-14" />
-          </a>
-        </div>
-        <span className="text-base text-c300  lg:text-md justify-self-center self-center">
+        <span className="text-base text-c300 lg:text-md col-span-2 md:col-auto justify-self-center self-center">
           {data.copyRights}
         </span>
       </footer>
