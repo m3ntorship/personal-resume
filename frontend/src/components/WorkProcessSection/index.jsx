@@ -24,7 +24,7 @@ const WorkProcess = () => {
           >
             {title}
           </Heading>
-          <div className=" grid  lg:grid-cols-4 md:grid-cols-2  grid-cols-1 items-center justify-center ">
+          <div className=" grid  lg:grid-cols-4 sm:grid-cols-2  grid-cols-1 items-center justify-center ">
             {circleItem.map(item => {
               const { icon, title, id } = item;
               return (
