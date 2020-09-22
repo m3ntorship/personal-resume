@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { API } from '../../modules/apis';
+import { Container, CONTAINER_OPTIONS } from '../shared/container';
 import { Heading, HEADING_OPTIONS } from '../shared/heading/index';
 
 const BestDesignQuality = () => {
@@ -24,13 +25,19 @@ const BestDesignQuality = () => {
     });
 
     return (
-      <section className="text-c300 mt-32 bg-c400">
-        <div className="container grid grid-cols-1 lg:grid-cols-2 lg:gap-16 justify-center">
+      <Container
+        margin={CONTAINER_OPTIONS.MARGIN.TOP}
+        isBgGray
+        classNames="text-c300"
+        padding={CONTAINER_OPTIONS.PADDING.MOB_PADDING}
+      >
+        <div className="grid grid-cols-1 lg:grid-cols-2 lg:gap-16 justify-center">
           <div className="flex flex-col justify-center">
             <Heading
               color={HEADING_OPTIONS.COLOR.SECONDARY}
               fontSize={HEADING_OPTIONS.FONT_SIZES.SMALL}
               className="mb-6"
+              as="h2"
             >
               {bestDesign.title}
             </Heading>
@@ -57,7 +64,7 @@ const BestDesignQuality = () => {
             </div>
           </div>
         </div>
-      </section>
+      </Container>
     );
   } else {
     return null;
