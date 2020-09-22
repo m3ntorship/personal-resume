@@ -9,28 +9,34 @@ const Footer = () => {
     });
   }, []);
 
-  const scrollTop = (e) => {
-    e.preventDefault()
-    window.scrollTo({top: 0, behavior: 'smooth'})
-  }
-
+  const scrollTop = e => {
+    e.preventDefault();
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+  // flex flex-row flex-wrap justify-between items-center
   if (data) {
     return (
-      <footer className="container m-auto flex flex-row justify-between py-4 items-center">
+      <footer className="container m-auto grid grid-cols-2 gap-y-12 md:gap-0 md:grid-cols-3 py-4">
         <div className="mx-12">
           <a href="/">
             <img src={data.logo} alt="Logo" className="w-14" />
           </a>
         </div>
         <a
-        onClick={scrollTop}
+          onClick={scrollTop}
           href={data.topUrl}
-          className="text-md font-medium text-c100 flex items-center"
+          className="text-md font-medium text-c100 text-right justify-self-center self-center"
         >
           Back To Top
-          <img src={data.upWardsArrow} alt="back to top" className="w-3 ml-2" />
+          <img
+            src={data.upWardsArrow}
+            alt="back to top"
+            className="w-3 ml-2 inline-block"
+          />
         </a>
-        <span className="text-md text-c300">{data.copyRights}</span>
+        <span className="text-md text-c300 md:text-base lg:text-md col-span-2 md:col-auto justify-self-center self-center">
+          {data.copyRights}
+        </span>
       </footer>
     );
   } else {
