@@ -16,12 +16,12 @@ const Form = () => {
         className="w-full bg-c400 py-20"
         style={{ marginTop: '8.125rem' }}
       >
-        <div className="container m-auto grid grid-cols-2 gap-16">
+        <div className="container m-auto grid grid-cols-1 md:grid-cols-2 gap-16">
           <figure>
             <img
               src={data.contactPic}
               alt="Contact Us"
-              className="w-full h-full"
+              className="hidden md:block w-full h-full"
             />
           </figure>
           <div>
@@ -29,7 +29,7 @@ const Form = () => {
               <Heading
                 as="h2"
                 color={HEADING_OPTIONS.COLOR.PRIMARY}
-                className="mb-12"
+                className="mb-12 whitespace-no-wrap "
               >
                 Get In Touch
               </Heading>
