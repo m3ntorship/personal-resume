@@ -11,8 +11,8 @@ const BestExpertiseSection = () => {
     });
   }, []);
   if (services) {
-    const cards = services.cards.map(({ title, details, button, key }) => {
-      return <Card title={title} details={details} button={button} key={key} />;
+    const cards = services.cards.map(({ title, details, button, id }) => {
+      return <Card title={title} details={details} button={button} key={id} />;
     });
     return (
       <section
@@ -22,7 +22,9 @@ const BestExpertiseSection = () => {
         <Heading as="h2" className="mb-10">
           {services.title}
         </Heading>
-        <div className="grid grid-cols-3 gap-8">{cards}</div>
+        <div className="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 gap-8">
+          {cards}
+        </div>
       </section>
     );
   } else {

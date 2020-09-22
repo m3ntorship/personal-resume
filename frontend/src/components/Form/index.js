@@ -16,7 +16,7 @@ const Form = () => {
         className="w-full bg-c400 py-20"
         style={{ marginTop: '8.125rem' }}
       >
-        <div className="w-main-container m-auto grid grid-cols-2 gap-16">
+        <div className="container m-auto grid grid-cols-2 gap-16">
           <figure>
             <img
               src={data.contactPic}
