@@ -14,19 +14,25 @@ const EstimateSection = () => {
   }, []);
 
   if (estimatesection) {
-    const { title, subTitle, button } = estimatesection;
+    const {
+      desktopImage,
+      mobileImage,
+      title,
+      subTitle,
+      button
+    } = estimatesection;
     return (
       <section
-        className="py-32 text-c200"
+        className="py-32 h-auto text-c200 lg:text-left text-center"
         style={{
-          backgroundImage: 'url(https://i.imgur.com/lSvq0BZ.png)',
+          backgroundImage: `url(${desktopImage})`,
           backgroundRepeat: 'no-repeat',
-          backgroundSize: '92% 95%',
-          backgroundPosition: '170px 0',
+          height: 'auto',
+          width: '100%',
           marginTop: '8.125rem'
         }}
       >
-        <div className="container">
+        <div className="container lg:text-left text-center">
           <span className="text-lg">{title}</span>
           <Heading as="h6" className="my-5">
             {subTitle}
@@ -34,7 +40,7 @@ const EstimateSection = () => {
           <Button
             bgColor="c100"
             rounded={true}
-            customClassNames="my-4 block w-56 h-16"
+            customClassNames="lg:my-4 my-0  block w-56 h-16 lg:mx-0 mx-auto "
           >
             {button.label}
           </Button>
