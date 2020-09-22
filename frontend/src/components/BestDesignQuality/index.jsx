@@ -24,7 +24,7 @@ const BestDesignQuality = () => {
     });
 
     return (
-      <section className="text-c300 mt-32">
+      <section className="text-c300 mt-32 bg-c400">
         <div className="container grid grid-cols-1 lg:grid-cols-2 lg:gap-16 justify-center">
           <div className="flex flex-col justify-center">
             <Heading
