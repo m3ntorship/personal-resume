@@ -1,19 +1,22 @@
 import React, { useState, useEffect } from 'react';
 import { API } from '../../modules/apis';
 import { Heading, HEADING_OPTIONS } from '../shared/heading';
+import { Container, CONTAINER_OPTIONS } from '../shared/container';
 
 export const UpdatedPosts = () => {
   const [data, setData] = useState();
   useEffect(() => {
     API('/updatedPosts').then(({ data }) => {
       setData(data);
-      console.log(data);
     });
   }, []);
 
   if (data) {
     return (
-      <section className="mx-auto" style={{ marginTop: '6.875rem' }}>
+      <Container
+        padding={CONTAINER_OPTIONS.PADDING.DEFAULT}
+        margin={CONTAINER_OPTIONS.MARGIN.TOW_SIDES}
+      >
         <Heading
           as="h2"
           color={HEADING_OPTIONS.COLOR.PRIMARY}
@@ -21,7 +24,7 @@ export const UpdatedPosts = () => {
         >
           {data.postsHeader}
         </Heading>
-        <div className="container mx-auto grid gap-x-6 gap-y-6   grid-cols-1  md:grid-cols-2  lg:grid-cols-3 ">
+        <div className="grid gap-x-6 gap-y-6   grid-cols-1  md:grid-cols-2  lg:grid-cols-3 ">
           {data.posts.map(({ title, userName, likes, comments, id }) => {
             return (
               <div className="bg-c400 p-6 block" key={id}>
@@ -75,7 +78,7 @@ export const UpdatedPosts = () => {
             );
           })}
         </div>
-      </section>
+      </Container>
     );
   } else {
     return 'Loading Broken';
