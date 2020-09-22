@@ -30,11 +30,18 @@ const AboutUs = () => {
       >
         <div className="mx-auto my-auto	relative ">
           <img className="h-full  w-full" src={leftSectionImg} alt="" />
-          <div className="absolute " style={{ bottom: '0', left: '30%' }}>
+          <div
+            style={{
+              position: 'absolute',
+              bottom: '0',
+              left: '30%',
+              right: '30%'
+            }}
+          >
             <Button
               bgColor="c100"
               rounded={true}
-              customClassNames="my-4 w-56 h-16 self-end mx-auto mb-24  "
+              customClassNames="my-4  h-16 w-32 sm:w-56  mx-auto mb-24   "
             >
               {btnLabel}
             </Button>
