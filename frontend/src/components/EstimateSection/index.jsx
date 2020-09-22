@@ -19,6 +19,8 @@ const EstimateSection = () => {
     const backImg = {
       backgroundImage: `url(${desktopImage})`,
       backgroundRepeat: 'no-repeat',
+      backgroundSize: "cover",
+      backgroundPosition: 'right',
       height: 'auto',
       width: '100%',
       marginTop: '8.125rem'
