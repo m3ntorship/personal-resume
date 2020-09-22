@@ -14,13 +14,7 @@ const EstimateSection = () => {
   }, []);
 
   if (estimatesection) {
-    const {
-      desktopImage,
-      mobileImage,
-      title,
-      subTitle,
-      button
-    } = estimatesection;
+    const { desktopImage, title, subTitle, button } = estimatesection;
     return (
       <section
         className="py-32 h-auto text-c200 lg:text-left text-center"
