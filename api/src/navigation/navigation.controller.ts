@@ -8,12 +8,12 @@ export class NavigationController {
   constructor(private readonly navigationService: NavigationService) {};
 
   @Get(':id')
-  findOne(@Param('id') id): Promise<Navigation> {
+  async findOne(@Param('id') id): Promise<Navigation> {
     return this.navigationService.findOne(id);
   }
 
   @Post()
-  create(@Body() createNavigationDto: CreateNavigationDto): Promise<Navigation> {
+  async create(@Body() createNavigationDto: CreateNavigationDto): Promise<Navigation> {
     return this.navigationService.create(createNavigationDto);
   }
 };
