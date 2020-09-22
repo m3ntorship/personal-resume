@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { API } from '../../modules/apis';
 import { Heading, HEADING_OPTIONS } from '../shared/heading/index';
 
-export const BestDesignQuality = () => {
+const BestDesignQuality = () => {
   const [bestDesign, setBestDesign] = useState();
   useEffect(() => {
     API('/bestDesign').then(({ data }) => {
@@ -27,9 +27,10 @@ export const BestDesignQuality = () => {
     });
     return (
       <section
-        className="text-c300 bg-c400 mt-35"
+        className="text-c300 bg-c400"
         style={{
-          height: '33rem'
+          height: '33rem',
+          marginTop: '8.125rem'
         }}
       >
         <div
@@ -75,3 +76,5 @@ export const BestDesignQuality = () => {
     return null;
   }
 };
+
+export default BestDesignQuality;

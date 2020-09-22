@@ -15,9 +15,9 @@ const Gallery = () => {
       return (
         <li
           key={item.id}
-          className="uppercase mr-8 text-sm font-medium text-c300 hover:text-c100"
+          className="uppercase mr-4 p-1 text-sm font-medium text-c300 hover:text-c100 flex-shrink"
         >
-          {item.title}
+          <a href={item.itemUrl}> {item.title}</a>
         </li>
       );
     });
@@ -25,18 +25,23 @@ const Gallery = () => {
       return <li key={image.id}>{<img src={image.url} alt={image} />}</li>;
     });
     return (
-      <section className="container text-center mt-35">
+      <section
+        className="m-auto sm:container md:w-11/12 container mt-35 text-center"
+        style={{ marginTop: '5.3125rem' }}
+      >
         <Heading as="h2" className="mb-10">
           {works.title}
         </Heading>
-        <ul className="flex justify-center items-center mb-10 px">
+        <ul className="flex  justify-center items-center  flex-wrap mb-10">
           {listItems}
         </ul>
-        <ul className="grid grid-cols-3 gap-8">{images}</ul>
+        <ul className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3  grid-cols-2  gap-2 sm:gap-2 md:gap-4 lg:gap-8">
+          {images}
+        </ul>
         <Button
           rounded={true}
           bgColor="c100"
-          customClassNames="my-12 py-4 px-10"
+          customClassNames="mt-16 py-4 px-10"
         >
           <a href={works.button.url}>{works.button.title}</a>
         </Button>

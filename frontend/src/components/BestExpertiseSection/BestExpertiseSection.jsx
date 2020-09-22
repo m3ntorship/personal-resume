@@ -11,15 +11,20 @@ const BestExpertiseSection = () => {
     });
   }, []);
   if (services) {
-    const cards = services.cards.map(({ title, details, button, key }) => {
-      return <Card title={title} details={details} button={button} key={key} />;
+    const cards = services.cards.map(({ title, details, button, id }) => {
+      return <Card title={title} details={details} button={button} key={id} />;
     });
     return (
-      <section className="container text-center">
-        <Heading as="h2" className="my-10">
+      <section
+        className="container text-center mt-24"
+        style={{ marginTop: '6.5625rem' }}
+      >
+        <Heading as="h2" className="mb-10">
           {services.title}
         </Heading>
-        <div className="grid grid-cols-3 gap-8">{cards}</div>
+        <div className="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 gap-8">
+          {cards}
+        </div>
       </section>
     );
   } else {
