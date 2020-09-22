@@ -29,13 +29,15 @@ const BestDesignQuality = () => {
         margin={CONTAINER_OPTIONS.MARGIN.TOP}
         isBgGray
         classNames="text-c300"
+        padding={CONTAINER_OPTIONS.PADDING.MOB_PADDING}
       >
-        <div className="container grid grid-cols-1 lg:grid-cols-2 lg:gap-16 justify-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 lg:gap-16 justify-center">
           <div className="flex flex-col justify-center">
             <Heading
               color={HEADING_OPTIONS.COLOR.SECONDARY}
               fontSize={HEADING_OPTIONS.FONT_SIZES.SMALL}
               className="mb-6"
+              as="h2"
             >
               {bestDesign.title}
             </Heading>

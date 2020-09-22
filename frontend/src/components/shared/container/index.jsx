@@ -6,7 +6,8 @@ export const CONTAINER_OPTIONS = {
     ZERO: false, // no padding at all
     DEFAULT: 'default', // default padding == 2rem
     SMALL: 'small', // for footer section
-    BIG: 'big' // big padding == 8rem
+    BIG: 'big', // big padding == 8rem,
+    MOB_PADDING: 'mobile_padding'
   },
   MARGIN: {
     ZERO: false,
@@ -34,6 +35,7 @@ export const Container = ({
           'py-8': padding === CONTAINER_OPTIONS.PADDING.DEFAULT,
           'py-6': padding === CONTAINER_OPTIONS.PADDING.SMALL,
           'py-32': padding === CONTAINER_OPTIONS.PADDING.BIG,
+          'py-10 lg:py-0': padding === CONTAINER_OPTIONS.PADDING.MOB_PADDING,
           'my-0': margin === CONTAINER_OPTIONS.MARGIN.ZERO,
           'my-12': margin === CONTAINER_OPTIONS.MARGIN.TOW_SIDES,
           'mt-12': margin === CONTAINER_OPTIONS.MARGIN.TOP,
