@@ -25,26 +25,22 @@ const AboutUs = () => {
 
     return (
       <section
-        className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2  lg:grid-cols-2 items-start container"
+        className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1  lg:grid-cols-2 items-start container"
         style={{ marginTop: '6.5rem' }}
       >
-        <div
-          className="h-full  min-h-full   flex "
-          style={{
-            backgroundImage: `url(${leftSectionImg})`,
-            backgroundRepeat: 'no-repeat',
-            backgroundSize: '100% 100%',
-            height: '35.3125 rem'
-          }}
-        >
-          <Button
-            bgColor="c100"
-            rounded={true}
-            customClassNames="my-4 w-56 h-16 self-end mx-auto mb-24"
-          >
-            {btnLabel}
-          </Button>
+        <div className="mx-auto my-auto	relative ">
+          <img className="h-full  w-full" src={leftSectionImg} alt="" />
+          <div className="absolute " style={{ bottom: '0', left: '30%' }}>
+            <Button
+              bgColor="c100"
+              rounded={true}
+              customClassNames="my-4 w-56 h-16 self-end mx-auto mb-24  "
+            >
+              {btnLabel}
+            </Button>
+          </div>
         </div>
+
         <div>
           <Heading
             as="h2"
