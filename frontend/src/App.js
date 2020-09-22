@@ -15,17 +15,17 @@ export default class App extends React.Component {
   render() {
     return (
       <div>
-        {/* <Navbar />
+        <Navbar />
         <Header />
         <AboutUs />
         <WorkProcess />
-        <BestExpertiseSection /> */}
+        <BestExpertiseSection />
         <EstimateSection />
-        {/* <Gallery />
+        <Gallery />
         <BestDesignQuality />
         <UpdatedPosts />
         <Form />
-        <Footer /> */}
+        <Footer />
       </div>
     );
   }
