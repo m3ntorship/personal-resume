@@ -60,11 +60,15 @@ module.exports = {
       container: false
     },
     extend: {
+      borderRadius: {
+        md: '12.5rem' // this for the border radius of my-work-process section
+      },
       margin: {
         35: '8.75rem' //Between every two sections
       },
       width: {
         70: '17.5rem', // for the services section hover effect
+        80: '20.5rem', // for the outer circle in my-work-process in mobile
         90: '22.5rem', // for the services section hover effect
         110: '27.5rem' // for the services section hover effect
       },
