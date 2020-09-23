@@ -13,20 +13,24 @@ const EstimateSection = () => {
       setData(data);
     });
   }, []);
-  const backImg = {
-    backgroundImage: 'url(https://i.imgur.com/lSvq0BZ.png)',
-    backgroundRepeat: 'no-repeat',
-    backgroundSize: '92% 95%',
-    backgroundPosition: '170px 0'
-  };
 
   if (estimatesection) {
-    const { title, subTitle, button } = estimatesection;
+    const { desktopImage, title, subTitle, button } = estimatesection;
+    const backImg = {
+      backgroundImage: `url(${desktopImage})`,
+      backgroundRepeat: 'no-repeat',
+      backgroundSize: "cover",
+      backgroundPosition: 'right',
+      height: 'auto',
+      width: '100%',
+      marginTop: '8.125rem'
+    };
     return (
       <Container
         padding={CONTAINER_OPTIONS.PADDING.BIG}
         margin={CONTAINER_OPTIONS.MARGIN.TOW_SIDES}
         inlineStyle={backImg}
+        classNames="lg:text-left text-center py-32 h-auto text-c200"
       >
         <span className="text-lg">{title}</span>
         <Heading as="h6" className="my-5">
@@ -35,7 +39,7 @@ const EstimateSection = () => {
         <Button
           bgColor="c100"
           rounded={true}
-          customClassNames="my-4 block w-56 h-16"
+          customClassNames="lg:my-4 my-0 block w-56 h-16 lg:mx-0 mx-auto"
         >
           {button.label}
         </Button>
