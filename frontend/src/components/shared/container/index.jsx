@@ -22,14 +22,14 @@ export const Container = ({
   padding,
   margin,
   isBgGray,
-  classNames,
-  inlineStyle
+  className,
+  inlineStyle,
+  widthOutContainerDiv
 }) => {
   return (
     <section
       style={inlineStyle}
       className={cn(
-        '',
         {
           'py-0': padding === CONTAINER_OPTIONS.PADDING.ZERO,
           'py-8': padding === CONTAINER_OPTIONS.PADDING.DEFAULT,
@@ -42,10 +42,12 @@ export const Container = ({
           'mb-12': margin === CONTAINER_OPTIONS.MARGIN.BOTTOM,
           'bg-c400': isBgGray
         },
-        classNames
+        className
       )}
     >
-      <div className="container mx-auto">{children}</div>
+      <div className={cn(
+        {"container mx-auto" : !widthOutContainerDiv}
+      )}>{children}</div>
     </section>
   );
 };
