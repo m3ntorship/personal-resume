@@ -1,6 +1,6 @@
 import * as mongoose from 'mongoose';
 
-export const NavigationSchema = new mongoose.Schema({
+export const LinksSchema = new mongoose.Schema({
   title: String,
   linkUrl: String,
 });

@@ -1,5 +1,5 @@
 
-export class CreateNavigationDto {
+export class CreateLinksDto {
   readonly title: string;
   readonly linkUrl: string;
 }

@@ -1,5 +1,5 @@
 import { Test, TestingModule } from '@nestjs/testing';
-import { NavigationController } from './navigation.controller';
+import { NavigationController } from './navLinks.controller';
 
 describe('NavigationController', () => {
   let controller: NavigationController;

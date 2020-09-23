@@ -2,12 +2,12 @@ import { APP_FILTER } from '@nestjs/core';
 import { Module } from '@nestjs/common';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
-import { NavigationModule } from './navigation/navigation.module'
+import { LinksModule } from './navLinks/navLinks.module'
 import { MongooseModule } from  '@nestjs/mongoose';
 import { HttpErrorFilter } from './shared/http-error.filter';
 
 @Module({
-  imports: [NavigationModule, MongooseModule.forRoot(process.env.MONGO_URI)],
+  imports: [LinksModule, MongooseModule.forRoot(process.env.MONGO_URI)],
   controllers: [AppController],
   providers: [AppService, {
     provide: APP_FILTER,
