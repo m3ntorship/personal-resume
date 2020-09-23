@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { API } from '../../modules/apis';
 import { Heading, HEADING_OPTIONS } from '../shared/heading';
 import { Button } from '../shared/button';
+import { Container, CONTAINER_OPTIONS } from '../shared/container/index';
 
 const Form = () => {
   const [data, setData] = useState(null);
@@ -12,11 +13,12 @@ const Form = () => {
   }, []);
   if (data) {
     return (
-      <section
-        className="w-full bg-c400 py-20"
-        style={{ marginTop: '8.125rem' }}
+      <Container
+        isBgGray={true}
+        padding={CONTAINER_OPTIONS.PADDING.BIG}
+        margin={CONTAINER_OPTIONS.MARGIN.TOP}
       >
-        <div className="container m-auto grid grid-cols-1 md:grid-cols-2 gap-16">
+        <div className="m-auto grid grid-cols-1 md:grid-cols-2 gap-16">
           <figure>
             <img
               src={data.contactPic}
@@ -82,7 +84,7 @@ const Form = () => {
             </form>
           </div>
         </div>
-      </section>
+      </Container>
     );
   } else {
     return 'Data Broken';
