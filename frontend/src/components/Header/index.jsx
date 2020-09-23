@@ -1,6 +1,7 @@
 import React from 'react';
 import { Button } from './../shared/button/index.js';
 import { Heading, HEADING_OPTIONS } from '../shared/heading';
+import { Container, CONTAINER_OPTIONS } from '../shared/container';
 import { useEffect, useState } from 'react';
 import { API } from '../../modules/apis';
 
@@ -13,7 +14,10 @@ const Header = () => {
   }, []);
   if (data) {
     return (
-      <header className="w-ful pt-8 relative border-b-4 border-c100 md:border-none">
+      <Container
+        padding={CONTAINER_OPTIONS.PADDING.DEFAULT}
+        className=" relative border-b-4 border-c100 md:border-none"
+      >
         <div
           style={{ clipPath: 'polygon(0 0, 99.8% 0, 54.8% 99.5%, 0 99.5%)' }}
           className="hidden md:block z-10 absolute top-0 left-0 w-full h-full bg-c400 "
@@ -22,7 +26,7 @@ const Header = () => {
           style={{ clipPath: 'polygon(0 0, 100% 0, 55% 100%, 0 100%)' }}
           className="hidden md:block z-0 absolute top-0 left-0 w-full h-full bg-c100 opacity-25"
         ></div>
-        <div className="md:container m-auto w-11/12 sm:w-10/12 z-20 flex flex-row relative">
+        <div className="m-auto z-20 flex flex-row relative">
           <div className="w-70 m-auto lg:ml-16 lg:mr-32 lg:mt-8 xl:m-auto xl:w-auto xl:my-32">
             <div>
               <span className="text-c100 font-body text-lg xl:text-xxlg font-medium leading-1">
@@ -66,7 +70,7 @@ const Header = () => {
               </Button>
             </div>
           </div>
-          <div className="hidden sm:block w-1/2 mb-8 pb-8 md:ml-6 xl:mt-16">
+          <div className="hidden sm:block w-1/2 mb-8 pb-8 md:ml-6">
             <img
               src={data.dotsUrl}
               alt="dots"
@@ -79,7 +83,7 @@ const Header = () => {
             />
           </div>
         </div>
-      </header>
+      </Container>
     );
   } else {
     return null;

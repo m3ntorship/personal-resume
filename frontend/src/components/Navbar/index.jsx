@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { API } from '../../modules/apis';
 import { Button } from '../shared/button';
+import { Container } from '../shared/container';
 
 export const Navbar = () => {
   const [data, setData] = useState(null);
@@ -17,9 +18,6 @@ export const Navbar = () => {
   }, []);
   const toggleMobileNav = () => {
     setMobileNavState(!mobileNavState);
-    // mobileNavState === 'hidden'
-    //   ? setMobileNavState('')
-    //   : setMobileNavState('hidden');
   };
   if (data) {
     const navLinks = data.linksList.map(({ title, linkUrl, id }) => {
@@ -33,7 +31,11 @@ export const Navbar = () => {
       );
     });
     return (
-      <div className="bg-c400 shadow-lg md:pb-6 lg:p-6 w-screen ">
+      <Container
+        widthOutContainerDiv
+        isBgGray
+        className="shadow-lg w-screen lg:py-8"
+      >
         <nav className="flex items-center justify-between bg-white shadow-lg p-3 lg:rounded-full lg:m-auto lg:w-4/5 xl:min-w-navbar">
           <div className="mx-2 sm:mx-6 md:mx:8 lg:mx-10">
             <img src={data.logoUrl} alt="logo" className="w-16" />
@@ -95,7 +97,7 @@ export const Navbar = () => {
             </li>
           </ul>
         </div>
-      </div>
+      </Container>
     );
   } else {
     return null;

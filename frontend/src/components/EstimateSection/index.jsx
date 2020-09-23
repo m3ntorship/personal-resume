@@ -19,7 +19,7 @@ const EstimateSection = () => {
     const backImg = {
       backgroundImage: `url(${desktopImage})`,
       backgroundRepeat: 'no-repeat',
-      backgroundSize: "cover",
+      backgroundSize: 'cover',
       backgroundPosition: 'right',
       height: 'auto',
       width: '100%',
@@ -30,19 +30,22 @@ const EstimateSection = () => {
         padding={CONTAINER_OPTIONS.PADDING.BIG}
         margin={CONTAINER_OPTIONS.MARGIN.TOW_SIDES}
         inlineStyle={backImg}
-        classNames="lg:text-left text-center py-32 h-auto text-c200"
+        className="relative"
       >
-        <span className="text-lg">{title}</span>
-        <Heading as="h6" className="my-5">
-          {subTitle}
-        </Heading>
-        <Button
-          bgColor="c100"
-          rounded={true}
-          customClassNames="lg:my-4 my-0 block w-56 h-16 lg:mx-0 mx-auto"
-        >
-          {button.label}
-        </Button>
+        <div className="absolute z-10 inset-0" style={{background: "#eee", opacity: ".5"}}></div>
+        <div className="lg:text-left z-20 relative text-center h-auto text-c200">
+          <span className="text-lg">{title}</span>
+          <Heading as="h6" className="my-5">
+            {subTitle}
+          </Heading>
+          <Button
+            bgColor="c100"
+            rounded={true}
+            customClassNames="lg:my-4 my-0 block w-56 h-16 lg:mx-0 mx-auto"
+          >
+            {button.label}
+          </Button>
+        </div>
       </Container>
     );
   } else {
