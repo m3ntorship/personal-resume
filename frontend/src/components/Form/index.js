@@ -18,7 +18,7 @@ const Form = () => {
         padding={CONTAINER_OPTIONS.PADDING.BIG}
         margin={CONTAINER_OPTIONS.MARGIN.TOP}
       >
-        <div className="container m-auto grid grid-cols-1 md:grid-cols-2 gap-16">
+        <div className="m-auto grid grid-cols-1 md:grid-cols-2 gap-16">
           <figure>
             <img
               src={data.contactPic}
