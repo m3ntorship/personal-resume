@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import Card from './Card';
 import { API } from '../../modules/apis';
 import { Heading } from '../shared/heading/index';
+import { Container, CONTAINER_OPTIONS } from '../shared/container';
 
 const BestExpertiseSection = () => {
   const [services, setServices] = useState(null);
@@ -14,10 +15,14 @@ const BestExpertiseSection = () => {
     const cards = services.cards.map(({ title, details, button, id }) => {
       return <Card title={title} details={details} button={button} key={id} />;
     });
+    const styling = {
+      marginTop: '6.125rem'
+    };
     return (
-      <section
-        className="container text-center mt-24"
-        style={{ marginTop: '6.5625rem' }}
+      <Container
+        classNames="text-center"
+        margin={CONTAINER_OPTIONS.MARGIN.TOP}
+        inlineStyle={styling}
       >
         <Heading as="h2" className="mb-10">
           {services.title}
@@ -25,7 +30,7 @@ const BestExpertiseSection = () => {
         <div className="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 gap-8">
           {cards}
         </div>
-      </section>
+      </Container>
     );
   } else {
     return <div>Cannot get data from server</div>;
