@@ -1,5 +1,6 @@
 import React from 'react';
 import { Heading, HEADING_OPTIONS } from '../shared/heading';
+import { Container, CONTAINER_OPTIONS } from '../shared/container/index';
 import { useState, useEffect } from 'react';
 import { API } from '../../modules/apis';
 import './style.css';
@@ -14,8 +15,13 @@ const WorkProcess = () => {
     const { title, circleItem } = workProcessData;
 
     return (
-      <section className="border-4 border-c1000 lg:pt-24 pt-16 lg:pb-32 pb-8 bg-c400 lg:rounded-tl-md lg:mt-24 mx-auto">
-        <div className="container relative">
+      <Container
+        isBgGray={true}
+        padding={CONTAINER_OPTIONS.PADDING.BIG}
+        margin={CONTAINER_OPTIONS.MARGIN.TOW_SIDES}
+        classNames="border-4 border-c1000 lg:rounded-tl-md"
+      >
+        <div className="relative">
           <Heading
             as="h1"
             fontSize={HEADING_OPTIONS.FONT_SIZES.MEDIUM}
@@ -50,7 +56,7 @@ const WorkProcess = () => {
             className="h-2 w-4/5 lg:block hidden absolute z-0 bg-c100 opacity-25"
           ></div>
         </div>
-      </section>
+      </Container>
     );
   } else {
     return <div>Fetching..</div>;
