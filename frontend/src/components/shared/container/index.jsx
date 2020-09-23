@@ -37,7 +37,7 @@ export const Container = ({
           'py-32': padding === CONTAINER_OPTIONS.PADDING.BIG,
           'py-10 lg:py-0': padding === CONTAINER_OPTIONS.PADDING.MOB_PADDING,
           'my-0': margin === CONTAINER_OPTIONS.MARGIN.ZERO,
-          'my-12': margin === CONTAINER_OPTIONS.MARGIN.TOW_SIDES,
+          'my-24': margin === CONTAINER_OPTIONS.MARGIN.TOW_SIDES,
           'mt-12': margin === CONTAINER_OPTIONS.MARGIN.TOP,
           'mb-12': margin === CONTAINER_OPTIONS.MARGIN.BOTTOM,
           'bg-c400': isBgGray
