@@ -15,14 +15,10 @@ const BestExpertiseSection = () => {
     const cards = services.cards.map(({ title, details, button, id }) => {
       return <Card title={title} details={details} button={button} key={id} />;
     });
-    const styling = {
-      marginTop: '6.125rem'
-    };
     return (
       <Container
-        classNames="text-center"
+        classNames="text-center mt-24"
         margin={CONTAINER_OPTIONS.MARGIN.TOP}
-        inlineStyle={styling}
       >
         <Heading as="h2" className="mb-10">
           {services.title}
