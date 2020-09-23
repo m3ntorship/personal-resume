@@ -13,10 +13,6 @@ const Form = () => {
   }, []);
   if (data) {
     return (
-      // <section
-      //   className="py-20"
-      //   style={{ marginTop: '8.125rem' }}
-      // >
       <Container
         isBgGray={true}
         padding={CONTAINER_OPTIONS.PADDING.BIG}
