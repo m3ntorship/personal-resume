@@ -28,7 +28,7 @@ const BestDesignQuality = () => {
       <Container
         margin={CONTAINER_OPTIONS.MARGIN.TOP}
         isBgGray
-        classNames="text-c300"
+        className="text-c300"
         padding={CONTAINER_OPTIONS.PADDING.MOB_PADDING}
       >
         <div className="grid grid-cols-1 lg:grid-cols-2 lg:gap-16 justify-center">
