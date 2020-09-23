@@ -1,5 +1,5 @@
 
 export class CreateLinksDto {
   readonly title: string;
-  readonly linkUrl: string;
+  readonly url: string;
 }
