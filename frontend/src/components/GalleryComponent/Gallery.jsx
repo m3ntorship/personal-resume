@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { API } from '../../modules/apis';
 import { Button } from '../shared/button/index';
 import { Heading } from '../shared/heading/index';
+import { Container, CONTAINER_OPTIONS } from '../shared/container/index';
 
 const Gallery = () => {
   const [works, setWorks] = useState({});
@@ -25,10 +26,11 @@ const Gallery = () => {
       return <li key={image.id}>{<img src={image.url} alt={image} />}</li>;
     });
     return (
-      <section
-        className="m-auto sm:container md:w-11/12 container mt-35 text-center"
-        style={{ marginTop: '5.3125rem' }}
-      >
+      // <section
+      //   className="m-auto sm:container md:w-11/12 container mt-35 text-center"
+      //   style={{ marginTop: '5.3125rem' }}
+      // >
+      <Container padding={CONTAINER_OPTIONS.PADDING.BIG} margin={CONTAINER_OPTIONS.MARGIN.TOW_SIDES} classNames="text-center">
         <Heading as="h2" className="mb-10">
           {works.title}
         </Heading>
@@ -45,7 +47,7 @@ const Gallery = () => {
         >
           <a href={works.button.url}>{works.button.title}</a>
         </Button>
-      </section>
+      </Container>
     );
   } else {
     return <div>Cannot load data from api ...</div>;
