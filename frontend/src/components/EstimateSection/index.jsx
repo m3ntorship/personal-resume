@@ -30,7 +30,9 @@ const EstimateSection = () => {
         padding={CONTAINER_OPTIONS.PADDING.BIG}
         margin={CONTAINER_OPTIONS.MARGIN.TOW_SIDES}
         inlineStyle={backImg}
+        className="relative"
       >
+        <div className="absolute inset-0 bg-c200 opacity-25"></div>
         <div className="lg:text-left text-center h-auto text-c200">
           <span className="text-lg">{title}</span>
           <Heading as="h6" className="my-5">
