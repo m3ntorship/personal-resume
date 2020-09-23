@@ -19,7 +19,7 @@ const WorkProcess = () => {
         isBgGray={true}
         padding={CONTAINER_OPTIONS.PADDING.BIG}
         margin={CONTAINER_OPTIONS.MARGIN.TOW_SIDES}
-        classNames="border-4 border-c1000 lg:rounded-tl-md"
+        className="border-4 border-c1000 lg:rounded-tl-md"
       >
         <div className="relative">
           <Heading
