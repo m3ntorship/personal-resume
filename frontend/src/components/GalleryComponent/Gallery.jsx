@@ -30,7 +30,7 @@ const Gallery = () => {
       //   className="m-auto sm:container md:w-11/12 container mt-35 text-center"
       //   style={{ marginTop: '5.3125rem' }}
       // >
-      <Container padding={CONTAINER_OPTIONS.PADDING.BIG} margin={CONTAINER_OPTIONS.MARGIN.TOW_SIDES} className="text-center">
+      <Container padding={CONTAINER_OPTIONS.PADDING.DEFAULT} margin={CONTAINER_OPTIONS.MARGIN.TOW_SIDES} className="text-center">
         <Heading as="h2" className="mb-10">
           {works.title}
         </Heading>
