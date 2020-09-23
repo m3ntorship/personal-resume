@@ -14,10 +14,8 @@ const Footer = () => {
     e.preventDefault();
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
-  // flex flex-row flex-wrap justify-between items-center
   if (data) {
     return (
-      // <footer className="container m-auto  py-4">
       <Container padding={CONTAINER_OPTIONS.PADDING.SMALL}>
         <div className="grid grid-cols-2 md:grid-cols-3 gap-y-12 md:gap-0">
           <div>
