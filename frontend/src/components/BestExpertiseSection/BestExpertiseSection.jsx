@@ -17,8 +17,9 @@ const BestExpertiseSection = () => {
     });
     return (
       <Container
-        classNames="text-center mt-24"
-        margin={CONTAINER_OPTIONS.MARGIN.TOP}
+        className="text-center"
+        margin={CONTAINER_OPTIONS.MARGIN.TOW_SIDES}
+        padding={CONTAINER_OPTIONS.PADDING.DEFAULT}
       >
         <Heading as="h2" className="mb-10">
           {services.title}
