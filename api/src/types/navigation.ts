@@ -1,11 +1,6 @@
 import { Document } from 'mongoose';
 
-export interface Link {
+export interface Navigation extends Document {
   title: string;
   linkUrl: string;
-}
-
-export interface Navigation extends Document {
-  links: Link[];
-  downloadbtn: string;
 }
