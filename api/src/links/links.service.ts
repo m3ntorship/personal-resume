@@ -1,5 +1,5 @@
 import { Injectable } from '@nestjs/common';
-import { Links } from '../types/navLinks';
+import { Links } from '../types/links';
 import { Model } from 'mongoose';
 import { InjectModel } from '@nestjs/mongoose';
 

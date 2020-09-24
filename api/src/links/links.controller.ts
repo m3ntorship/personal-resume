@@ -1,7 +1,7 @@
 import { Controller, Get, Post, Body, Param } from '@nestjs/common';
-import { CreateLinksDto } from './dto/create-navLinks.dto';
-import { LinksService } from './navLinks.service';
-import { Links } from '../types/navLinks';
+import { LinksDto } from './dto/links.dto';
+import { LinksService } from './links.service';
+import { Links } from '../types/links';
 
 @Controller('links')
 export class LinksController {
@@ -15,10 +15,5 @@ export class LinksController {
   @Get(':id')
   async findOne(@Param('id') id): Promise<Links> {
     return this.linksService.findOne(id);
-  }
-
-  @Post()
-  async create(@Body() createLinksDto: CreateLinksDto): Promise<Links> {
-    return this.linksService.create(createLinksDto);
   }
 };
