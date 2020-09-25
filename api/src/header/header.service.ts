@@ -11,7 +11,4 @@ export class HeaderService {
     return await this.headerModel.find();
   }
 
-  async findOne(id: string): Promise<Header> {
-    return await this.headerModel.findOne({ _id: id })
-  }
 }

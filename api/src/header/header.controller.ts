@@ -11,8 +11,4 @@ export class HeaderController {
     return this.headerService.findAll();
   }
 
-  @Get(':id')
-  async findOne(@Param('id') id: string): Promise<Header> {
-    return this.headerService.findOne(id)
-  }
 }
