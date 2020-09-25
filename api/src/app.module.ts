@@ -7,9 +7,10 @@ import { LinksModule } from './links/links.module';
 import { MongooseModule } from  '@nestjs/mongoose';
 import { HttpErrorFilter } from './shared/http-error.filter';
 // import { HeaderModule } from './header/header.module';
+import { EstimateModule } from './estimate/estimate.module';
 
 @Module({
-  imports: [LinksModule, MongooseModule.forRoot(process.env.MONGO_URI)],
+  imports: [LinksModule, MongooseModule.forRoot(process.env.MONGO_URI), EstimateModule],
   controllers: [AppController],
   providers: [AppService, {
     provide: APP_FILTER,
