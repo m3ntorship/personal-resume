@@ -1,5 +1,5 @@
 import { Injectable } from '@nestjs/common';
-import { Links } from '../types/links';
+import { Links } from './entity/links.entity';
 import { Model } from 'mongoose';
 import { InjectModel } from '@nestjs/mongoose';
 
@@ -14,10 +14,5 @@ export class LinksService {
 
   async findOne(id: string): Promise<Links> {
     return await this.linksModel.findOne({ _id: id })
-  }
-
-  async create(links: Links): Promise<Links> {
-    const newLink = new this.linksModel(links);
-    return await newLink.save();
   }
 }
