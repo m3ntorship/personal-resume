@@ -1,4 +1,18 @@
 {
+  "header": {
+    "heading": "Mark Parker",
+    "paragraph": "I am professional UI Designer and Web Developer. I am working in UI Park as a UI/UX Designer.",
+    "avatarUrl": "./images/avatar.png",
+    "dotsUrl": "./images/dots3.png",
+    "webServicesButton": {
+      "title": "web services",
+      "url": "/"
+    },
+    "recentWorkesButton": {
+      "title": "recent workes",
+      "url": "/"
+    }
+  },
   "navigation": {
     "linksList": [
       {
@@ -37,7 +51,9 @@
         "id": "b092b918-630f-4840-bec1-b8f709749086"
       }
     ],
-    "downloadBtn": "Download My CV"
+    "downloadBtn": "Download My CV",
+    "logoUrl": "./images/Logo.png",
+    "iconUrl": "./images/Icon.svg"
   },
   "aboutUs": {
     "title": "Read About My Life Story",
@@ -76,6 +92,7 @@
     ]
   },
   "estimatesection": {
+    "desktopImage": "./images/banner.png",
     "subTitle": "Have Any Project On Mind ?",
     "title": "Estimate your Project!",
     "button": {
@@ -93,7 +110,7 @@
           "title": "get this service",
           "url": "/"
         },
-        "key": "1"
+        "id": "1"
       },
       {
         "title": "Web Development",
@@ -102,7 +119,7 @@
           "title": "get this service",
           "url": "/"
         },
-        "key": "2"
+        "id": "2"
       },
       {
         "title": "Web Development",
@@ -111,7 +128,7 @@
           "title": "get this service",
           "url": "/"
         },
-        "key": "3"
+        "id": "3"
       },
       {
         "title": "Web Development",
@@ -120,7 +137,7 @@
           "title": "get this service",
           "url": "/"
         },
-        "key": "4"
+        "id": "4"
       },
       {
         "title": "Web Development",
@@ -129,7 +146,7 @@
           "title": "get this service",
           "url": "/"
         },
-        "key": "5"
+        "id": "5"
       },
       {
         "title": "Web Development",
@@ -138,31 +155,155 @@
           "title": "get this service",
           "url": "/"
         },
-        "key": "6"
+        "id": "6"
       }
     ]
   },
-
+  "bestDesign": {
+    "title": "“Best Design Quality”",
+    "details": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor inci- didunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exe- rcitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+    "imagesURL": [
+      {
+        "id": "1",
+        "url": "./images/img-gray-laptop-codes.png "
+      },
+      {
+        "id": "2",
+        "url": "./images/Quote.svg"
+      },
+      {
+        "id": "2",
+        "url": "./images/silver-imac-displaying-collage-photos.png"
+      },
+      {
+        "id": "3",
+        "url": "./images/person-using-black-and-white-smartphone-and-holding-blue-card.png"
+      },
+      {
+        "id": "4",
+        "url": "./images/black-samsung-tablet-computer.png"
+      }
+    ]
+  },
+  "updatedPosts": {
+    "postsHeader": "Get Everyday Updates",
+    "heartImg": "./images/heart-regular.svg",
+    "CommentImg": "./images/comment-regular.svg",
+    "posts": [
+      {
+        "title": "Meet Inclusive Front-End Design Patterns A New Smashing Book",
+        "userName": "John Wick",
+        "likes": "26",
+        "comments": "19",
+        "id": "0abb6506-eb17-4548-b46c-4dbfcba61d40"
+      },
+      {
+        "title": "Meet Inclusive Front-End Design Patterns A New Smashing Book",
+        "userName": "Ricky Garvis",
+        "likes": "69",
+        "comments": "99",
+        "id": "a50ed195-2a86-4b80-a881-e4237e4bcd82"
+      },
+      {
+        "title": "Meet Inclusive Front-End Design Patterns A New Smashing Book",
+        "userName": "Steven Kyle",
+        "likes": "33",
+        "comments": "77",
+        "id": "d0e57738-ed52-49c2-a586-7928ccece9b1"
+      }
+    ]
+  },
   "RecentWorks": {
     "title": "My Recent Works",
     "listItems": [
-      { "id": "1", "title": "all works" },
-      { "id": "2", "title": "ui/ux" },
-      { "id": "3", "title": "branding" },
-      { "id": "4", "title": "logo" },
-      { "id": "5", "title": "development" }
+      {
+        "id": "1",
+        "title": "all works",
+        "itemUrl": "/"
+      },
+      {
+        "id": "2",
+        "title": "ui/ux",
+        "itemUrl": "/"
+      },
+      {
+        "id": "3",
+        "title": "branding",
+        "itemUrl": "/"
+      },
+      {
+        "id": "4",
+        "title": "logo",
+        "itemUrl": "/"
+      },
+      {
+        "id": "5",
+        "title": "development",
+        "itemUrl": "/"
+      }
     ],
     "imagesURL": [
-      { "id": "1", "url": "./images/img-young-woman-thinking.png " },
-      { "id": "2", "url": "./images/img-black-and-white.png " },
-      { "id": "3", "url": "./images/img-battle-board-game.png " },
-      { "id": "4", "url": "./images/img-art.png" },
-      { "id": "5", "url": "./images/img-photo-of-imac.png" },
-      { "id": "6", "url": "./images/img-gray-laptop-codes.png " }
+      {
+        "id": "1",
+        "url": "./images/img-young-woman-thinking.png "
+      },
+      {
+        "id": "2",
+        "url": "./images/img-black-and-white.png "
+      },
+      {
+        "id": "3",
+        "url": "./images/img-battle-board-game.png "
+      },
+      {
+        "id": "4",
+        "url": "./images/img-art.png"
+      },
+      {
+        "id": "5",
+        "url": "./images/img-photo-of-imac.png"
+      },
+      {
+        "id": "6",
+        "url": "./images/img-gray-laptop-codes.png "
+      }
     ],
     "button": {
       "title": "more projects",
       "url": "/"
     }
+  },
+
+  "workProcess": {
+    "title": "My Work Process",
+    "circleItem": [
+      {
+        "icon": "https://svgshare.com/i/PoL.svg",
+        "title": "Make Wireframe",
+        "id": 1
+      },
+      {
+        "icon": "https://svgshare.com/i/Pqx.svg",
+        "title": "Make Wireframe",
+        "id": 2
+      },
+      {
+        "icon": "https://svgshare.com/i/Pqx.svg",
+        "title": "Make Wireframe",
+        "id": 3
+      },
+      {
+        "icon": "https://svgshare.com/i/Pq4.svg",
+        "title": "Make Wireframe",
+        "id": 4
+      }
+    ]
+  },
+  "footer": {
+    "logo": "./images/Logo.png",
+    "upWardsArrow": "./images/upwards-arrow.svg",
+    "topUrl": "/",
+    "copyRights": "Copyrights By@Example - 2020",
+    "contactPic": "./images/contact.svg"
   }
 }

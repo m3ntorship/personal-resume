@@ -1,10 +1,10 @@
 module.exports = {
   future: {
-    removeDeprecatedGapUtilities: true
-    // purgeLayersByDefault: true
+    removeDeprecatedGapUtilities: true,
+    purgeLayersByDefault: true
   },
   purge: {
-    enabled: true,
+    // enabled: true,
     content: [
       './public/**/*.html',
       './src/**/*.html',
@@ -14,7 +14,7 @@ module.exports = {
 
     // These options are passed through directly to PurgeCSS
     options: {
-      whitelist: ['bg-c100','bg-c200'],
+      whitelist: ['bg-c100', 'bg-c200']
     }
   },
   // ...
@@ -61,11 +61,12 @@ module.exports = {
     },
     extend: {
       margin: {
-        35: '8.75rem' //Between every two sections
+        35: '8.75rem', //Between every two sections
+        90: '23.4375rem'
       },
       width: {
-        'main-container': '60%',
         70: '17.5rem', // for the services section hover effect
+        80: '20.5rem', // for the outer circle in my-work-process in mobile
         90: '22.5rem', // for the services section hover effect
         110: '27.5rem' // for the services section hover effect
       },
@@ -73,14 +74,19 @@ module.exports = {
         70: '17.5rem', // for the services section hover effect
         90: '22.5rem', // for the services section hover effect
         110: '27.5rem' // for the services section hover effect
+      },
+      minWidth: {
+        navbar: '78rem'
+      },
+      zIndex: {
+        60: 60
       }
     }
   },
   variants: {
     opacity: ['responsive', 'hover', 'focus', 'group-hover'], // adding opacity to group-hover
-    backgroundColor: ['responsive', 'hover', 'focus', 'group-hover'],  // adding bg to group-hover
-    textColor: ['responsive', 'hover', 'focus', 'active', 'group-hover'],  // adding textColor to group-hover
-
+    backgroundColor: ['responsive', 'hover', 'focus', 'group-hover'], // adding bg to group-hover
+    textColor: ['responsive', 'hover', 'focus', 'active', 'group-hover'] // adding textColor to group-hover
   },
   plugins: []
 };

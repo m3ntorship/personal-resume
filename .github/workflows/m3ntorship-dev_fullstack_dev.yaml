@@ -4,7 +4,6 @@ on:
   push:
     branches:
       - develop
-      - setup-and-infrastructure
 
 jobs: 
   prepare:
@@ -86,7 +85,7 @@ jobs:
         shell: bash
         run: |
           mkdir -p ~/.kube
-          echo ${{ secrets.KUBE_CONFIG }} | base64 -d -i > ~/.kube/config
+          echo "${{ secrets.KUBE_CONFIG_DEV }}" | base64 -d -i > ~/.kube/config
       - name: install moustache
         run: |
           curl -sSL https://git.io/get-mo -o mo
@@ -99,7 +98,7 @@ jobs:
         env:
           M3_DEPLOYMENT_PATH: deploy/dev/fullstack
           TEMP_DIR: temp
-          M3_NAMESPACE: default
+          M3_NAMESPACE: personal-resume-dev
           M3_PROJECT: personal-resume
           M3_COMPONENET: fullstack
           M3_ENVIRONMENT: dev
